@@ -1,0 +1,889 @@
+804	ZenFone Max Pro M1 (ZB602KL) (WW) / Max Pro M1 (ZB601KL) (IN)	Asus	Phone
+1898	BQ-5201	BQru	Phone
+4941	Y7 Prime 2019	Huawei	Phone
+5131	Y7	Huawei	Phone
+4949	GX8	Huawei	Phone
+10736	realme 2 Pro	Realme	Phone
+8608	Moto E (4) Plus	Motorola	Phone
+11210	Galaxy J7	Samsung	Phone
+11508	Galaxy S9+	Samsung	Phone
+15696	BOLTON	ZTE	Phone
+11201	Galaxy J7+	Samsung	Phone
+11908	Galaxy J3 Prime	Samsung	Phone
+7447	V40 ThinQ	LGE	Phone
+7308	LG G Stylo	LGE	Phone
+8656	Moto G (1st Gen)	Motorola	Phone
+7103	P2	Lenovo	Phone
+7302	LG it	LGE	Phone
+5093	HUAWEI MediaPad T3 10	Huawei	Tablet
+15130	MIX 2S	Xiaomi	Phone
+11217	Galaxy XCover4	Samsung	Phone
+5051	M3	Huawei	Phone
+1016	ZenFone Lite L1 (ZA551KL) / ZenFone Live L1/L2 (ZA550KL)	Asus	Phone
+5118	MediaPad T3 7	Huawei	Phone
+10920	Galaxy Grand Prime	Samsung	Phone
+15115	MI6	Xiaomi	Phone
+1779	Aquaris X Pro	bq	Phone
+6475	DuraForce PRO	Kyocera	Phone
+963	ZenPad 3S 10 (Z500M)	Asus	Tablet
+4947	G7-L01	Huawei	Phone
+11332	Galaxy J2 Prime	Samsung	Phone
+11514	Galaxy J2	Samsung	Phone
+6860	TAB S8-50LC	Lenovo	Tablet
+10926	Galaxy Grand Prime	Samsung	Phone
+11826	Galaxy Note2	Samsung	Phone
+15189	Redmi Note 4	Xiaomi	Phone
+7304	L90	LGE	Phone
+68	Iconia One 8	Acer	Tablet
+7274	LG K9	LGE	Phone
+15158	Redmi 5 Plus	Xiaomi	Phone
+11661	Galaxy Tab A 8.0	Samsung	Tablet
+2607	CUBOT R11	Cubot	Phone
+11859	Galaxy J7(2016)	Samsung	Phone
+2509	C103	Coolpad	Phone
+11876	Galaxy S5 LTE-A	Samsung	Phone
+11214	Galaxy J7 Prime	Samsung	Phone
+11119	Galaxy Note4	Samsung	Phone
+11124	Galaxy Note4	Samsung	Phone
+6688	Z91	Lava	Phone
+12556	Xperia Z3+	Sony	Phone
+6667	Z60	Lava	Phone
+12729	Xperia XZ	Sony	Phone
+12017	Galaxy S8+	Samsung	Phone
+6792	TAB 2 A10	Lenovo	Tablet
+4997	Mate 10 Pro	Huawei	Phone
+11594	Galaxy Note5	Samsung	Phone
+12720	Xperia Z Ultra	Sony	Phone
+8620	Moto E (4)	Motorola	Phone
+13572	CAMON 11	Tecno	Phone
+11988	Galaxy Tab A 7.0	Samsung	Phone
+4992	Honor 9 Lite	Huawei	Phone
+15166	Redmi 4X	Xiaomi	Phone
+4729	10X	HTC	Phone
+11648	Galaxy S7	Samsung	Phone
+14423	vivo 1726	Vivo	Phone
+9098	Neffos Y5s	Neffos	Phone
+11930	Galaxy J3 Aura	Samsung	Phone
+3617	FP2	Fairphone	Phone
+7044	K5	Lenovo	Phone
+7425	LG G Flex2	LGE	Phone
+11086	Galaxy J1 Ace	Samsung	Phone
+4686	One Google Play edition	HTC	Phone
+10945	Galaxy A9 Pro	Samsung	Phone
+5982	A62	Itel	Phone
+15521	V831W	ZTE	Phone
+9364	Shield	NVIDIA	Phone
+11281	Galaxy E7	Samsung	Phone
+8629	moto g(6) play	Motorola	Phone
+8001	M6T	Meizu	Phone
+15748	Blade X Max	ZTE	Phone
+15529	ZTE Tempo X	ZTE	Phone
+5022	P20 lite	Huawei	Phone
+11276	Galaxy J7 V	Samsung	Phone
+4964	GR3	Huawei	Phone
+10727	RCT6873W42M	RCA	Tablet
+7709	LS-4503	Lyf	Phone
+15167	Mi 5	Xiaomi	Phone
+11381	Galaxy J3 Pop	Samsung	Phone
+15208	Redmi 6Pro	Xiaomi	Phone
+5262	Ultra Storm	Hyundai	Phone
+11100	Galaxy Note 10.1 2014 Edition	Samsung	Tablet
+11166	Galaxy S6	Samsung	Phone
+12744	Xperia XZ1	Sony	Phone
+11929	Chromebook Plus (V2)	Samsung	PC
+11940	Galaxy S10+	Samsung	Phone
+11308	Galaxy S7 Edge	Samsung	Phone
+11194	Galaxy Tab3 VE 7.0	Samsung	Tablet
+4888	P20 Pro	Huawei	Phone
+15182	POCO F1	Xiaomi	Phone
+15140	Mi A2	Xiaomi	Phone
+12587	Xperia L1	Sony	Phone
+12717	Xperia XZ Premium	Sony	Phone
+8193	Bolt	Micromax	Phone
+11240	Galaxy Xcover3	Samsung	Phone
+11897	Galaxy Ace4	Samsung	Phone
+6582	Ilium X510	Lanix	Phone
+12410	PLATINUM_E5	Sky Devices	Phone
+6549	Ilium L1120	Lanix	Phone
+12749	Xperia XA2	Sony	Phone
+4739	HTC U11 life	HTC	Phone
+11383	Galaxy J3 Pop	Samsung	Phone
+11846	Galaxy J6	Samsung	Phone
+13965	Ulefone_S7	Ulefone	Phone
+15451	ZTE BLADE V Ultra Z982	ZTE	Phone
+11301	Galaxy S7 edge	Samsung	Phone
+13150	i20	Symphony	Phone
+12626	Xperia Z5	Sony	Phone
+4184	Pixel	Google	Phone
+7393	G2 MINI	LGE	Phone
+8529	moto e(5) cruise	Motorola	Phone
+11853	Galaxy Tab3V 7.0	Samsung	Tablet
+8558	Moto E (5)	Motorola	Phone
+8530	Nexus 6	Motorola	Phone
+6826	YOGA Tab 3 10	Lenovo	Tablet
+11030	Galaxy S6 Edge	Samsung	Phone
+10979	Galaxy J3	Samsung	Phone
+15536	ZTE A2017G	ZTE	Phone
+15193	Redmi 6A	Xiaomi	Phone
+12403	pro selfie	Sky Devices	Phone
+5134	Mate 20 lite	Huawei	Phone
+10994	Galaxy A3	Samsung	Phone
+15782	Z963VL	ZTE	Phone
+11384	Galaxy J3 Pop	Samsung	Phone
+7212	LG Stylo 2	LGE	Phone
+11970	Galaxy A5	Samsung	Phone
+12718	Xperia XZ Premium	Sony	Phone
+10942	Galaxy S8	Samsung	Phone
+7219	LG Stylo 4	LGE	Phone
+3942	4G	General Mobile	Phone
+988	ZenFone 3 Max (ZC520TL)	Asus	Phone
+11784	Galaxy Alpha	Samsung	Phone
+15196	MI MAX	Xiaomi	Phone
+4931	P10 Plus	Huawei	Phone
+1633	R1 HD	Blu	Phone
+9439	2B	OnePlus	Phone
+13209	REVVL 2	T-Mobile	Phone
+11436	Galaxy J7 Pop	Samsung	Phone
+10918	Galaxy Grand Prime	Samsung	Phone
+5125	HUAWEI Y9 2018	Huawei	Phone
+7233	LG Leon	LGE	Phone
+7453	LG G Pad IV 8.0 FHD LTE	LGE	Tablet
+11171	Galaxy S6	Samsung	Phone
+6447	DuraForce PRO 2 with Sapphire shield	Kyocera	Phone
+9508	CPH1723	Oppo	Phone
+11598	Galaxy Note5	Samsung	Phone
+11731	Galaxy Tab3 Lite 7.0	Samsung	Tablet
+12740	Xperia XZ1	Sony	Phone
+4826	One (M8)	HTC	Phone
+9809	A5000	Packard Bell	Phone
+5233	Ultra Active	Hyundai	Phone
+11458	Galaxy Tab4 7.0	Samsung	Tablet
+11911	Galaxy J3(2017)	Samsung	Phone
+12909	SSB504R	SSB PHONES	Phone
+4960	P10 lite	Huawei	Phone
+7496	LG X charge	LGE	Phone
+64	Iconia Tab 8	Acer	Tablet
+7372	LG K20 Plus	LGE	Phone
+15192	Redmi 3	Xiaomi	Phone
+12737	Xperia E4 Dual	Sony	Phone
+15212	MI 5s Plus	Xiaomi	Phone
+11891	Galaxy S8 Active	Samsung	Phone
+11110	Galaxy A5(2017)	Samsung	Phone
+11304	Galaxy S7 Edge	Samsung	Phone
+13425	ELEMENT5	TCT (Alcatel)	Phone
+11523	Galaxy Note9	Samsung	Phone
+902	ZenFone 4 Max (ZC554KL)	Asus	Phone
+11571	SM-J337AZ	Samsung	Phone
+10964	Galaxy Tab S2	Samsung	Tablet
+4890	Honor 10	Huawei	Phone
+11143	Galaxy Tab4 8.0	Samsung	Tablet
+13998	U452TL	Umax	Phone
+15122	MI 5X	Xiaomi	Phone
+4903	LISZT	Huawei	Tablet
+11443	Galaxy S5 mini	Samsung	Phone
+7234	Nexus 5	LGE	Phone
+8610	Motorola one	Motorola	Phone
+15410	Z812	ZTE	Phone
+15153	MI 8 Lite	Xiaomi	Phone
+9438	OnePlus5T	OnePlus	Phone
+8852	my28S	Myphone	Phone
+10943	Galaxy S8	Samsung	Phone
+13734	hudl 2	Tesco	Tablet
+8628	moto g(6) play	Motorola	Phone
+4780	Desire 830 dual sim	HTC	Phone
+11658	Galaxy Tab A 8.0	Samsung	Tablet
+13208	REVVL 2 PLUS	T-Mobile	Phone
+979	ZenFone 5 (ZE620KL)	Asus	Phone
+12564	Xperia Z5 Premium	Sony	Phone
+8254	Clover	Mint	Phone
+7086	Lenovo TAB3 7 Essential	Lenovo	Tablet
+11431	Galaxy J7 Neo	Samsung	Phone
+4979	HUAWEI P smart 2019	Huawei	Phone
+11964	Galaxy Note3 Neo	Samsung	Phone
+11382	Galaxy J3 Pop	Samsung	Phone
+8614	moto e5 play	Motorola	Phone
+7006	P70	Lenovo	Phone
+9565	realme C1	Oppo	Phone
+8665	Moto Z Play	Motorola	Phone
+11645	Galaxy S7	Samsung	Phone
+6791	TAB 2 A10	Lenovo	Tablet
+11401	Galaxy A6	Samsung	Phone
+15199	MIX 2	Xiaomi	Phone
+5083	HUAWEI MediaPad M5 Pro	Huawei	Tablet
+11573	Galaxy TabS 10.5	Samsung	Tablet
+11005	Galaxy Note8	Samsung	Phone
+11347	Galaxy J3(2016)	Samsung	Phone
+11184	Galaxy S3 Neo	Samsung	Phone
+7395	LG Stylo3	LGE	Phone
+11917	Galaxy S6 edge+	Samsung	Phone
+7335	LG Stylo 2 Plus	LGE	Phone
+8456	mobiistar C2	MobiiStar	Phone
+8537	Moto X Pure Edition	Motorola	Phone
+5099	G8	Huawei	Phone
+15615	BLADE V8 SE	ZTE	Phone
+13407	A466BG	TCT (Alcatel)	Phone
+7325	LG Tribute Dynasty	LGE	Phone
+11890	Galaxy S8 Active	Samsung	Phone
+7347	LG G4	LGE	Phone
+11183	Galaxy S10e	Samsung	Phone
+15198	Mi 5s	Xiaomi	Phone
+11669	Galaxy J5 Pro	Samsung	Phone
+5078	Mate 20 Pro	Huawei	Phone
+12029	Galaxy Tab E 8.0	Samsung	Tablet
+2821	ES355	DEXP	Phone
+11605	Galaxy Tab S4	Samsung	Tablet
+8574	Moto G Plus (5th Gen)	Motorola	Phone
+14985	Tommy2 Plus	Wiko	Phone
+9237	Nokia 7.1	Nokia	Phone
+9434	OnePlus3	OnePlus	Phone
+11261	Galaxy S5 Neo	Samsung	Phone
+8621	Moto E (4)	Motorola	Phone
+1487	Vivo XL4	Blu	Phone
+11325	Galaxy Core Prime	Samsung	Phone
+11092	Galaxy J1	Samsung	Phone
+11239	Galaxy J1 Mini Prime	Samsung	Phone
+11206	Galaxy J7	Samsung	Phone
+8585	Moto G (5S) Plus	Motorola	Phone
+11316	Galaxy Core Prime	Samsung	Phone
+7377	LG G7 ThinQ	LGE	Phone
+8653	moto g(6)	Motorola	Phone
+4950	H60-L04	Huawei	Phone
+10922	Galaxy Grand Prime	Samsung	Phone
+10941	Galaxy S8	Samsung	Phone
+5116	Y625-U32	Huawei	Phone
+13450	Alcatel 1	TCT (Alcatel)	Phone
+1352	BV6000s	Blackview	Phone
+5040	Honor 5C	Huawei	Phone
+9249	Nokia 3.1	Nokia	Phone
+5008	FIG-LX1	Huawei	Phone
+7322	LG K10	LGE	Phone
+13366	9027W	TCT (Alcatel)	Phone
+6811	TAB 2 A7-10F	Lenovo	Tablet
+6840	VIBE K6	Lenovo	Phone
+10958	Galaxy S6 Active	Samsung	Phone
+11633	Galaxy S9	Samsung	Phone
+8644	moto e5 plus	Motorola	Phone
+12018	Galaxy S8+	Samsung	Phone
+15123	Redmi Note 5A	Xiaomi	Phone
+15127	MI PAD	Xiaomi	Tablet
+5136	HUAWEI Y7 Prime 2018	Huawei	Phone
+8428	BERRY PLUS	Mobicell	Phone
+5043	Nexus 6P	Huawei	Phone
+5058	Honor 7A	Huawei	Phone
+11094	Galaxy J1	Samsung	Phone
+4835	U12 Life	HTC	Phone
+7262	LG Aristo 3+	LGE	Phone
+12796	Xperia XZ1 Compact	Sony	Phone
+9649	R9s	Oppo	Phone
+5038	Honor View 10	Huawei	Phone
+4208	Pixel XL	Google	Phone
+5104	honor 10 Lite	Huawei	Phone
+9481	CPH1725	Oppo	Phone
+15164	Redmi 4A	Xiaomi	Phone
+10939	Galaxy S8	Samsung	Phone
+9239	Nokia 2	Nokia	Phone
+2256	CHUWI	Chuwi	Tablet
+7296	Nexus 5X	LGE	Phone
+10930	Galaxy Grand Prime	Samsung	Phone
+4917	Y360-U82	Huawei	Phone
+11531	Galaxy J3 V	Samsung	Phone
+8523	Moto C	Motorola	Phone
+8612	Droid Turbo	Motorola	Phone
+6853	TAB 2 A7-20F	Lenovo	Tablet
+11456	Galaxy J7 Refine	Samsung	Phone
+7750	iQM960	Making Life Simple	Tablet
+11152	Galaxy Tab E 9.6	Samsung	Tablet
+4785	Desire 626	HTC	Phone
+7280	Phoenix 3	LGE	Phone
+11528	Galaxy Note9	Samsung	Phone
+11433	Galaxy Tab A6	Samsung	Tablet
+9553	F1f	Oppo	Phone
+5546	HOT5	Infinix	Phone
+9963	IM-100K	Pantech	Phone
+11211	Galaxy J7 Prime	Samsung	Phone
+7348	LG Volt II	LGE	Phone
+11675	Galaxy S5	Samsung	Phone
+10924	Galaxy Grand Prime	Samsung	Phone
+8139	Micromax C2A	Micromax	Phone
+14434	1601E	Vivo	Phone
+14558	vivo 1803	Vivo	Phone
+7413	LG K10 LTE	LGE	Phone
+13651	W3 Pro	Tecno	Phone
+13468	ALCATEL ONE TOUCH 6032	TCT (Alcatel)	Phone
+13364	5059Z	TCT (Alcatel)	Phone
+9545	realme 2	Oppo	Phone
+10987	Galaxy Ace Style	Samsung	Phone
+4970	P9	Huawei	Phone
+8575	Moto G Plus (5th Gen)	Motorola	Phone
+12526	Xperia XA1 Ultra	Sony	Phone
+4214	Pixel 2 XL	Google	Phone
+11672	Galaxy S5	Samsung	Phone
+7211	LG G Pad F2 8.0	LGE	Tablet
+11544	Galaxy Note3	Samsung	Phone
+11120	Galaxy Note4	Samsung	Phone
+14428	vivo 1714	Vivo	Phone
+12082	Galaxy A7	Samsung	Phone
+837	ZenFone 3 (ZE520KL)	Asus	Phone
+4802	Nexus 9	HTC	Tablet
+11042	Galaxy Note Edge	Samsung	Phone
+10953	Galaxy Tab S3	Samsung	Tablet
+10709	7 Voyager III	RCA	Tablet
+1447	Studio J1	Blu	Phone
+11011	Galaxy Note8	Samsung	Phone
+4962	P8 Lite	Huawei	Phone
+7218	LG Stylo 4	LGE	Phone
+811	ZenFone 4 Max (ZC520KL)	Asus	Phone
+15188	Redmi Note 5 Pro	Xiaomi	Phone
+12021	Galaxy J3 Star	Samsung	Phone
+11412	Galaxy J3 Eclipse	Samsung	Phone
+11182	Galaxy S10e	Samsung	Phone
+11010	Galaxy Note8	Samsung	Phone
+11588	Galaxy Note5	Samsung	Phone
+15136	Redmi 5	Xiaomi	Phone
+11773	Galaxy On5	Samsung	Phone
+12055	Galaxy J3 Orbit	Samsung	Phone
+11617	Galaxy TabS 8.4	Samsung	Tablet
+7354	LG Spirit LTE	LGE	Phone
+11461	Galaxy Tab4 7.0	Samsung	Tablet
+11918	Galaxy S6 Edge+	Samsung	Phone
+15190	Redmi Note 4	Xiaomi	Phone
+11278	Galaxy E7	Samsung	Phone
+4199	Pixelbook	Google	PC
+13255	A30	TCT (Alcatel)	Phone
+6715	iris50	Lava	Phone
+14464	vivo 1812	Vivo	Phone
+11173	Galaxy S6	Samsung	Phone
+891	ZenPad C 7.0 (Z170CG)	Asus	Tablet
+8008	M8c	Meizu	Phone
+14901	Sunny2 Plus	Wiko	Phone
+15553	ZTE AVID 4	ZTE	Phone
+12787	Xperia Z4 Tablet	Sony	Tablet
+2620	CUBOT CHEETAH 2	Cubot	Phone
+4883	P20	Huawei	Phone
+10919	Galaxy Grand Prime	Samsung	Phone
+8662	Moto X (2nd Gen)	Motorola	Phone
+11518	Galaxy J2	Samsung	Phone
+8564	Moto G (5) Plus	Motorola	Phone
+11438	Galaxy J7 Pop	Samsung	Phone
+14990	Spark	Wileyfox	Phone
+11157	Galaxy S10	Samsung	Phone
+7265	LG X Venture	LGE	Phone
+14976	TOMMY2	Wiko	Phone
+8835	Hammer Energy	Myphone	Phone
+11770	Galaxy On5	Samsung	Phone
+14631	Smart V8	Vodafone	Phone
+9259	Nokia 2.1	Nokia	Phone
+7495	LG X power2	LGE	Phone
+12023	Galaxy A3(2016)	Samsung	Phone
+2417	TFX714L	Condor	Tablet
+11469	Galaxy Tab Pro 10.1	Samsung	Tablet
+9258	Nokia 6.1 Plus	Nokia	Phone
+8377	RUSH	Mobicell	Phone
+9606	CPH1801	Oppo	Phone
+34	Accent Camelon C6	Accent	Phone
+5020	Y3III	Huawei	Phone
+1014	ZenFone Lite L1 (ZA551KL) / ZenFone Live L1/L2 (ZA550KL)	Asus	Phone
+11349	Galaxy J3(2016)	Samsung	Phone
+7293	LG Q6	LGE	Phone
+12031	Galaxy Tab E 8.0	Samsung	Tablet
+14891	RAINBOW JAM	Wiko	Phone
+12303	SHIFT6m	SHIFT	Phone
+11468	Galaxy Tab4 7.0	Samsung	Tablet
+11548	Galaxy Note3	Samsung	Phone
+11939	Galaxy S7 Active	Samsung	Phone
+1782	Aquaris X2 PRO	bq	Phone
+4195	Intel Apollo Lake Chromebook	Google	PC
+7253	LG G5 SE	LGE	Phone
+15574	N817	ZTE	Phone
+15742	BLADE V0720	ZTE	Phone
+11270	Galaxy J5(2016)	Samsung	Phone
+13413	Alcatel Raven LTE	TCT (Alcatel)	Phone
+8601	Moto X (4)	Motorola	Phone
+12753	Xperia XA2	Sony	Phone
+4894	P10	Huawei	Phone
+6824	YOGA BOOK	Lenovo	Tablet
+11903	Galaxy Note Pro 12.2	Samsung	Tablet
+11525	Galaxy Note9	Samsung	Phone
+7023	Lenovo YOGA Tab 3 Plus	Lenovo	Tablet
+11667	Galaxy Tab A 8.0	Samsung	Tablet
+13416	Nitro	TCT (Alcatel)	Phone
+11118	Galaxy Note4	Samsung	Phone
+894	ZenFone Max Plus M1 (ZB570TL)	Asus	Phone
+5892	VOX  Energy	Iris	Phone
+11987	Galaxy Tab A 7.0	Samsung	Tablet
+11956	Galaxy Star2 Plus	Samsung	Phone
+7433	LG X cam	LGE	Phone
+6342	Ektra	Kodak	Phone
+11002	Galaxy C9 Pro	Samsung	Phone
+15206	MI 9	Xiaomi	Phone
+10706	RCT6773W22	RCA	Tablet
+11656	Galaxy S7	Samsung	Phone
+8553	Moto X (1st Gen)	Motorola	Phone
+15209	Redmi 6 Pro	Xiaomi	Phone
+5069	Honor 7X	Huawei	Phone
+5071	HUAWEI Y6 2018	Huawei	Phone
+7099	Z90/VIBE Shot	Lenovo	Phone
+11161	Galaxy S6	Samsung	Phone
+11803	Galaxy On7 Prime	Samsung	Phone
+13301	tbd	TCT (Alcatel)	Phone
+12658	Xperia XA Ultra	Sony	Phone
+11350	Galaxy J3(2016)	Samsung	Phone
+3209	X10	Dragontouch	Tablet
+15154	MI 8	Xiaomi	Phone
+903	ZenFone 4 Max (ZC554KL)	Asus	Phone
+9496	CPH1853	Oppo	Phone
+15201	Redmi 5A	Xiaomi	Phone
+11200	Chromebook 3	Samsung	PC
+9446	X	OnePlus	Phone
+687	Archos Access 55 3G	Archos	Phone
+7292	LG Q6	LGE	Phone
+7246	LG G Pad 8.3 LTE	LGE	Tablet
+9451	OnePlus 6	OnePlus	Phone
+6683	Z50	Lava	Phone
+11213	Galaxy J7 Prime	Samsung	Phone
+9444	OnePlus6T	OnePlus	Phone
+12019	Galaxy S8+	Samsung	Phone
+8626	Moto G(4) Plus	Motorola	Phone
+12034	Galaxy Tab E 8.0	Samsung	Tablet
+11974	Galaxy A5	Samsung	Phone
+11686	Galaxy S5	Samsung	Phone
+4862	Desire 650	HTC	Phone
+9432	One	OnePlus	Phone
+12589	Xperia L1	Sony	Phone
+11526	Galaxy Note9	Samsung	Phone
+7016	YOGA Tab 3 8	Lenovo	Tablet
+4185	Mediatek MTK8173 Chromebook	Google	PC
+8586	Moto G (5S) Plus	Motorola	Phone
+12036	Galaxy Tab E 8.0	Samsung	Tablet
+12131	P5504	sencor	Phone
+6489	DuraForce PRO with Sapphire Shield	Kyocera	Phone
+8525	moto g(7) power	Motorola	Phone
+7394	LG Stylo3	LGE	Phone
+9955	IM-A850L	Pantech	Phone
+11981	Galaxy C5	Samsung	Phone
+10030	S326	Philips	Phone
+11208	Galaxy J7	Samsung	Phone
+11870	Galaxy J7 Star	Samsung	Phone
+978	ZenPad 10 (Z301M)	Asus	Tablet
+7431	G Pad 10.1	LGE	Tablet
+12800	Xperia Z5 Compact	Sony	Phone
+937	ZenFone 5 Lite (ZC600KL)	Asus	Phone
+14012	One Max E	Umidigi	Phone
+15211	Mi Note2	Xiaomi	Phone
+12080	Galaxy A7	Samsung	Phone
+8534	DROID MAXX 2	Motorola	Phone
+11503	Galaxy A7(2017)	Samsung	Phone
+13390	8063A	TCT (Alcatel)	Tablet
+7102	P2	Lenovo	Phone
+1763	K107	BMXC	Tablet
+12003	Galaxy J3 Achieve	Samsung	Phone
+4972	Y6	Huawei	Phone
+11205	Galaxy J7	Samsung	Phone
+8951	myPhone_Prime_2	MyPhone (PL)	Phone
+12632	Xperia XZ2	Sony	Phone
+4842	U11	HTC	Phone
+14017	Z2 Pro	Umidigi	Phone
+11178	Galaxy S6	Samsung	Phone
+14460	Y53	Vivo	Phone
+7264	V10	LGE	Phone
+11260	Galaxy S5 Neo	Samsung	Phone
+7435	LG Magna	LGE	Phone
+15124	Redmi Note 5A	Xiaomi	Phone
+8104	Bharat Go	Micromax	Phone
+5032	Y6 Pro	Huawei	Phone
+11153	Galaxy Tab E 9.6	Samsung	Tablet
+8649	Moto G(4)	Motorola	Phone
+11743	Galaxy S3	Samsung	Phone
+13971	Armor 2	Ulefone	Phone
+1399	BV7000 Pro	Blackview	Phone
+8019	M6 Note	Meizu	Phone
+8627	Moto Z (2) Force	Motorola	Phone
+7451	Premier	LGE	Phone
+11343	Galaxy J3(2016)	Samsung	Phone
+7271	LG X500	LGE	Phone
+129	Chromebook 15 (CB3-532)	Acer	PC
+11593	Galaxy Note5	Samsung	Phone
+7240	LG Leon 4G LTE	LGE	Phone
+11032	Galaxy J1 (2016)	Samsung	Phone
+984	ZenPad S 8.0 (Z580CA)	Asus	Tablet
+14567	Y55s	Vivo	Phone
+11655	Galaxy S7	Samsung	Phone
+11654	Galaxy S7	Samsung	Phone
+11310	Galaxy J7 Crown	Samsung	Phone
+6976	Lenovo TAB4 8	Lenovo	Tablet
+4764	Desire 828 dual sim	HTC	Phone
+2069	Cat S41	Cat	Phone
+11780	Galaxy Tab4 10.0	Samsung	Tablet
+5097	Honor 5X	Huawei	Phone
+11961	Galaxy J7 Sky Pro	Samsung	Phone
+9529	A37f	Oppo	Phone
+13178	V85	Symphony	Phone
+4975	GR5	Huawei	Phone
+7389	LG V35 ThinQ	LGE	Phone
+8639	DROID Turbo 2	Motorola	Phone
+10659	Phone 2	Razer	Phone
+883	ASUS Chromebook Flip C302	Asus	PC
+11263	Galaxy J6+	Samsung	Phone
+11792	Galaxy J8	Samsung	Phone
+3638	Fero Vibe	Fero	Phone
+11510	Galaxy S9+	Samsung	Phone
+8615	moto e5 play	Motorola	Phone
+9443	OnePlus6T	OnePlus	Phone
+12010	Galaxy A7 (2018)	Samsung	Phone
+4186	Pixel 3 XL	Google	Phone
+9240	Nokia 7 plus	Nokia	Phone
+7498	LG G5	LGE	Phone
+12054	Galaxy J3 Orbit	Samsung	Phone
+2564	1803Q	Coolpad	Phone
+11198	Galaxy J1 Mini	Samsung	Phone
+7436	LG Magna	LGE	Phone
+7324	Optimus Fuel	LGE	Phone
+8630	moto g(6) play	Motorola	Phone
+11496	Galaxy Tab A	Samsung	Tablet
+7711	LS-4505	Lyf	Phone
+8547	Moto E (1st Gen)	Motorola	Phone
+11137	SM-J337A	Samsung	Phone
+12776	Xperia 1	Sony	Phone
+11380	Galaxy J7 Max	Samsung	Phone
+9252	Nokia 1	Nokia	Phone
+11052	Galaxy S4	Samsung	Phone
+4989	HUAWEI Y5 Prime 2018	Huawei	Phone
+7445	G Vista	LGE	Phone
+10992	Galaxy A3	Samsung	Phone
+11288	Galaxy Tab E	Samsung	Tablet
+12786	Xperia Z4 Tablet	Sony	Tablet
+7075	Lenovo TAB4 10	Lenovo	Tablet
+8655	Moto G (1st Gen)	Motorola	Phone
+5088	Y5 2017	Huawei	Phone
+6821	VIBE X3 Lite	Lenovo	Phone
+14916	W_K120	Wiko	Phone
+1819	BQ-5057 Strike 2	BQru	Phone
+7416	LG Stylo 3 Plus	LGE	Phone
+13949	Armor_3	Ulefone	Phone
+9612	CPH1701	Oppo	Phone
+4847	U Play	HTC	Phone
+9682	F7	Oppo	Phone
+11712	Galaxy S4 Mini	Samsung	Phone
+11290	Galaxy Note Fan Edition	Samsung	Phone
+11515	Galaxy J2	Samsung	Phone
+12646	Xperia M4 Aqua	Sony	Phone
+56	Iconia Tab 10	Acer	Tablet
+11299	Galaxy S7 Edge	Samsung	Phone
+14884	Harry2	Wiko	Phone
+11674	Galaxy S5	Samsung	Phone
+11108	Galaxy A8(2018)	Samsung	Phone
+11627	Galaxy S9	Samsung	Phone
+11025	Galaxy S6 edge	Samsung	Phone
+5068	HUAWEI MediaPad M5 10.8	Huawei	Tablet
+10959	Galaxy J2 Core	Samsung	Phone
+1805	Aquaris M10	bq	Tablet
+10949	Galaxy Tab S3	Samsung	Tablet
+4196	Intel Apollo Lake Chromebook	Google	PC
+8619	Moto E4	Motorola	Phone
+11505	Galaxy S9+	Samsung	Phone
+7615	L-EMENT 403	Logicom	Phone
+11529	Galaxy Note9	Samsung	Phone
+11464	Galaxy Tab4 7.0	Samsung	Tablet
+12555	Xperia Z3 Compact	Sony	Phone
+7399	LG X Style	LGE	Phone
+11685	Galaxy S5	Samsung	Phone
+8592	Moto Z Droid	Motorola	Phone
+5507	HOT 4 Pro	Infinix	Phone
+8646	Moto Z(3)	Motorola	Phone
+6877	Lenovo TAB4 10 Plus	Lenovo	Tablet
+15699	ZTE BLADE V0850	ZTE	Phone
+15477	NX549J	ZTE	Phone
+14416	vivo 1806	Vivo	Phone
+13303	TCL LX	TCT (Alcatel)	Phone
+12766	Xperia XZ3	Sony	Phone
+11006	Galaxy Note8	Samsung	Phone
+13438	5054S	TCT (Alcatel)	Phone
+10966	Galaxy J5	Samsung	Phone
+14483	Y71	Vivo	Phone
+11642	Galaxy S7	Samsung	Phone
+9153	NX16A10132S	Nextbook	Tablet
+10975	Galaxy J5	Samsung	Phone
+801	ZenFone 4 Selfie (ZD553KL)	Asus	Phone
+6030	P32	Itel	Phone
+15604	Warp 7	ZTE	Phone
+11101	Galaxy Note 10.1 2014 Edition	Samsung	Tablet
+11296	Galaxy S7 edge	Samsung	Phone
+10366	MULTIPAD WIZE 3108 3G	Prestigio	Tablet
+15513	B2017G	ZTE	Phone
+15681	Z839	ZTE	Phone
+4895	Honor 8 Pro	Huawei	Phone
+7272	Qua tab PX	LGE	Tablet
+5087	Y5 2017	Huawei	Phone
+145	ALIGATOR S4080 Duo	Adart	Phone
+7134	PB1-750M/Lenovo PHAB	Lenovo	Phone
+14523	vivo 1807	Vivo	Phone
+13977	Armor6	Ulefone	Phone
+9224	Nokia 6.1	Nokia	Phone
+11209	Galaxy J7	Samsung	Phone
+13458	U5	TCT (Alcatel)	Phone
+5112	Honor Play	Huawei	Phone
+10724	RCT6773W42B	RCA	Tablet
+7015	YOGA Tab 3 8	Lenovo	Tablet
+15169	MI MAX 2	Xiaomi	Phone
+12618	Xperia X	Sony	Phone
+2619	NOTE S	Cubot	Phone
+881	ZenFone AR (ZS571KL)	Asus	Phone
+10673	10 Viking II	RCA	Tablet
+11635	Galaxy J4	Samsung	Phone
+6893	A536	Lenovo	Phone
+821	ZenFone 3 Max (ZC553KL)	Asus	Phone
+5059	Honor 7A	Huawei	Phone
+7492	V30	LGE	Phone
+12081	Galaxy A7	Samsung	Phone
+8581	Moto Z (2) Play	Motorola	Phone
+10925	Galaxy Grand Prime	Samsung	Phone
+11942	Galaxy S10+	Samsung	Phone
+4187	Pixel C	Google	Tablet
+7333	LG K8 (2017) Dual	LGE	Phone
+4192	Pixel Slate	Google	PC
+11935	Galaxy Tab A (2016)	Samsung	Tablet
+11435	Galaxy A6+	Samsung	Phone
+9785	K5	Oukitel	Phone
+11193	Galaxy A8+(2018)	Samsung	Phone
+5011	Honor 9	Huawei	Phone
+11085	Galaxy J1 Ace	Samsung	Phone
+5506	Hot 4 Pro	Infinix	Phone
+4446	F23	Hisense	Phone
+9441	OnePlus3T	OnePlus	Phone
+15457	BLADE A6 MAX	ZTE	Phone
+8595	Moto G4 Play	Motorola	Phone
+9517	CPH1851	Oppo	Phone
+13389	5049W	TCT (Alcatel)	Phone
+15566	GrayJoy	ZTE	Phone
+12546	Xperia X Performance	Sony	Phone
+2043	VIA_A1_1	Casper	Phone
+13995	UMAX	Umax	Phone
+4022	Gigaset GS270	Gigaset	Phone
+9265	Nokia 3	Nokia	Phone
+5096	nova 3	Huawei	Phone
+15152	MIX 3	Xiaomi	Phone
+5985	A32F	Itel	Phone
+7343	LG Q7+	LGE	Phone
+11543	Galaxy Note3	Samsung	Phone
+4182	Pixel 3	Google	Phone
+12748	Xperia Z2	Sony	Phone
+2489	3632A-mpcs	Coolpad	Phone
+5938	it1513	Itel	Phone
+11407	Galaxy A6	Samsung	Phone
+12768	Xperia XZ3	Sony	Phone
+5241	Ultra Live II	Hyundai	Phone
+14876	W_P200CM	Wiko	Phone
+11652	Galaxy S7	Samsung	Phone
+9442	OnePlus5	OnePlus	Phone
+11027	Galaxy S6 Edge	Samsung	Phone
+11806	Galaxy C5 Pro	Samsung	Phone
+11825	Galaxy Note2	Samsung	Phone
+11587	Galaxy Note5	Samsung	Phone
+6883	Lenovo TAB4 8 Plus	Lenovo	Tablet
+13440	TETRA	TCT (Alcatel)	Phone
+12009	Galaxy S5 Active	Samsung	Phone
+9255	Nokia 5	Nokia	Phone
+15160	Redmi 4 Pro	Xiaomi	Phone
+12642	Xperia Z2 Tablet	Sony	Tablet
+9351	NUU A3 (TC)	Nuu	Phone
+12015	Galaxy S8+	Samsung	Phone
+11910	Galaxy J3 Prime	Samsung	Phone
+11994	Galaxy A7(2016)	Samsung	Phone
+11083	Galaxy J1 Ace	Samsung	Phone
+991	ZenFone 2 Laser (ZE500KL)	Asus	Phone
+7437	LG K8	LGE	Phone
+11646	Galaxy S7	Samsung	Phone
+9247	Nokia 8	Nokia	Phone
+11536	Galaxy Tab4 10.1	Samsung	Tablet
+4885	HUAWEI MediaPad M5 8.4	Huawei	Phone
+9231	Nokia 6	Nokia	Phone
+15184	Redmi Pro	Xiaomi	Phone
+8602	Moto X (4)	Motorola	Phone
+11169	Galaxy S6	Samsung	Phone
+8633	Moto G (3rd Gen)	Motorola	Phone
+12057	Galaxy Tab A (2016) with S Pen	Samsung	Tablet
+11091	Galaxy J1	Samsung	Phone
+2255	Hi9Pro	Chuwi	Tablet
+4898	M5	Huawei	Tablet
+11484	Galaxy J4+	Samsung	Phone
+7191	LG Premier Pro	LGE	Phone
+11342	Galaxy J3(2016)	Samsung	Phone
+10683	10 Viking Pro	RCA	Tablet
+7199	V20	LGE	Phone
+10790	Redmi 6	Redmi	Phone
+9613	CPH1903	Oppo	Phone
+6874	X3a40	Lenovo	Phone
+4909	Honor 8	Huawei	Phone
+4936	Huawei Mate 20 X	Huawei	Phone
+11512	Galaxy S9+	Samsung	Phone
+4881	Mate 9	Huawei	Phone
+11305	Galaxy S7 Edge	Samsung	Phone
+4700	Desire 10 lifestyle	HTC	Phone
+11277	Galaxy J7 V	Samsung	Phone
+11497	Galaxy Tab A	Samsung	Tablet
+8131	Canvas 5 Lite	Micromax	Phone
+11513	Galaxy J2	Samsung	Phone
+12743	Xperia XZ1	Sony	Phone
+11632	Galaxy S9	Samsung	Phone
+4999	nova 3i	Huawei	Phone
+11459	Galaxy Tab4 7.0	Samsung	Tablet
+13482	Fire	Tech 4u	Phone
+863	ZenFone 2 (ZE551ML)	Asus	Phone
+8600	Moto G with 4G LTE (1st Gen)	Motorola	Phone
+11302	Galaxy S7 Edge	Samsung	Phone
+10080	I4G	Plaisio	Phone
+11920	Galaxy S6 Edge+	Samsung	Phone
+9642	A3s	Oppo	Phone
+15780	ZTE ZFive C LTE	ZTE	Phone
+11098	Galaxy Note 10.1 2014 Edition	Samsung	Tablet
+7058	Lenovo TAB 10	Lenovo	Tablet
+4667	Chromebook x360 11 G1 EE	HP	PC
+11586	Galaxy Note5	Samsung	Phone
+866	ZenFone Max Pro M2 (ZB631KL) (WW) / Max Pro M2 (ZB630KL) (IN)	Asus	Phone
+12525	Xperia XA1 Ultra	Sony	Phone
+11105	Galaxy J3 Emerge	Samsung	Phone
+124	A3-A20	Acer	Tablet
+7330	LG K4/K7 (2017)	LGE	Phone
+4906	Y635-L03	Huawei	Phone
+8561	Moto G (5S)	Motorola	Phone
+6854	Lenovo TAB 7 Essential	Lenovo	Tablet
+4492	Sero 8	Hisense	Tablet
+12726	Xperia XZ	Sony	Phone
+4823	One (M8)	HTC	Phone
+4844	U11	HTC	Phone
+11774	Galaxy On5	Samsung	Phone
+8667	moto g(6) plus	Motorola	Phone
+15418	Zmax Pro	ZTE	Phone
+15142	Redmi Note 3	Xiaomi	Phone
+9640	R9s Plus	Oppo	Phone
+1000	ZenPad 10 (Z300M)	Asus	Tablet
+15171	Redmi 3S	Xiaomi	Phone
+1294	B9505	Bitel	Phone
+10662	Voyager	RCA	Tablet
+11702	Galaxy S4 Mini	Samsung	Phone
+11998	Galaxy A5(2016)	Samsung	Phone
+11945	Galaxy Tab A (2017)	Samsung	Tablet
+1606	BLU Grand M3	Blu	Phone
+13321	PIXI4 (3.5)	TCT (Alcatel)	Phone
+10658	Phone 2	Razer	Phone
+1358	A7PRO	Blackview	Phone
+7104	YOGA Tab 3 PRO 10	Lenovo	Phone
+11109	Galaxy A5(2017)	Samsung	Phone
+1570	Vivo 8	Blu	Phone
+11386	Galaxy A3(2017)	Samsung	Phone
+6787	A6600	Lenovo	Phone
+13401	ALCATEL ONETOUCH POP 3 (5)	TCT (Alcatel)	Phone
+11033	Galaxy J1(2016)	Samsung	Phone
+877	Nexus 7 (2013)	Asus	Tablet
+13267	ALCATEL 3C	TCT (Alcatel)	Phone
+11388	Galaxy Note 8.0	Samsung	Tablet
+5039	Mate 10	Huawei	Phone
+9532	R7005	Oppo	Phone
+7443	LG K10 (2017)	LGE	Phone
+7362	L70	LGE	Phone
+11606	Galaxy Tab S4	Samsung	Tablet
+5062	P8 lite 2017	Huawei	Phone
+9260	Nokia 8.1	Nokia	Phone
+15168	HM 1SC	Xiaomi	Phone
+4921	P9 lite	Huawei	Phone
+14427	vivo 1724	Vivo	Phone
+7338	LG K8 V	LGE	Phone
+11405	Galaxy A6	Samsung	Phone
+805	ZenFone Max Pro M1 (ZB602KL) (WW) / Max Pro M1 (ZB601KL) (IN)	Asus	Phone
+14468	vivo 1804	Vivo	Phone
+8623	Moto G (5th Gen)	Motorola	Phone
+4988	MediaPad M3 Lite 10	Huawei	Tablet
+8092	Micromax Bharat 2 Plus	Micromax	Phone
+4952	MediaPad T2 10.0 pro	Huawei	Tablet
+11061	Galaxy S4	Samsung	Phone
+11106	Galaxy A8(2018)	Samsung	Phone
+5026	CHM-U01	Huawei	Phone
+14501	1609T	Vivo	Phone
+4203	Pixel 2	Google	Phone
+5126	6X	Huawei	Phone
+15611	Z717VL	ZTE	Phone
+14142	Ellipsis 7 (QMV7B)	Verizon Wireless	Tablet
+11855	Galaxy J7(2016)	Samsung	Phone
+12788	Xperia X Compact	Sony	Phone
+5132	HUAWEI Y3 2017	Huawei	Phone
+7291	LG Stylus3	LGE	Phone
+11080	Galaxy Tab A 8	Samsung	Tablet
+11130	Galaxy Grand Neo Plus	Samsung	Phone
+6776	Le Max2	Leeco	Phone
+6383	K1 Trio	KOOLNEE	Phone
+7074	Lenovo TAB4 10	Lenovo	Tablet
+13259	ALCATEL PIXI 4 (5)	TCT (Alcatel)	Phone
+6827	YOGA Tab 3 10	Lenovo	Tablet
+11499	Galaxy Tab A	Samsung	Tablet
+5012	Mate 10 lite	Huawei	Phone
+15181	Mi A1	Xiaomi	Phone
+8637	DROID RAZR M	Motorola	Phone
+10968	Galaxy J5	Samsung	Phone
+6991	VIBE K6 Note	Lenovo	Phone
+15441	Majesty Pro LTE	ZTE	Phone
+15129	MI MAX 3	Xiaomi	Phone
+5120	Y6II	Huawei	Phone
+11934	Galaxy Tab A (2016)	Samsung	Tablet
+11634	Galaxy S9	Samsung	Phone
+12663	Xperia E5	Sony	Phone
+11546	Galaxy Note3	Samsung	Phone
+11020	Galaxy S6 Edge	Samsung	Phone
+5408	A20	IkuMobile	Phone
+5091	HUWEI MediaPad T3	Huawei	Phone
+6939	A5500-F	Lenovo	Tablet
+9720	Wonder	Orbic	Phone
+1888	BQru-7082	BQru	Phone
+4942	Y541-U02	Huawei	Phone
+12603	Xperia Z	Sony	Phone
+10915	Galaxy Grand Prime	Samsung	Phone
+4983	Mate 20	Huawei	Phone
+11013	Galaxy J5 Prime	Samsung	Phone
+8669	moto g(6) plus	Motorola	Phone
+1018	ZenPad Z10	Asus	Tablet
+1307	KEYone	BlackBerry	Phone
+10970	Galaxy J5	Samsung	Phone
+11590	Galaxy Note5	Samsung	Phone
+11640	Galaxy S7	Samsung	Phone
+8658	motorola one power	Motorola	Phone
+527	L50	ANS	Phone
+11224	Galaxy A9 (2018)	Samsung	Phone
+4944	MediaPad	Huawei	Tablet
+9232	Nokia 6	Nokia	Phone
+7753	iQGW516	Making Life Simple	Phone
+6848	Z5	Lenovo	Phone
+11659	Galaxy Tab A 8.0	Samsung	Tablet
+6925	Lenovo K8 Plus	Lenovo	Phone
+4851	One M9	HTC	Phone
+9361	SHIELD Tablet	NVIDIA	Tablet
+807	ZenFone Max Pro M1 (ZB602KL) (WW) / Max Pro M1 (ZB601KL) (IN)	Asus	Phone
+5061	Honor 8X	Huawei	Phone
+7237	LG Spirit 4G LTE	LGE	Phone
+6843	Lenovo K8 Note	Lenovo	Phone
+12016	Galaxy S8+	Samsung	Phone
+3008	DIGMA HIT Q401 3G HT4039PG	Digma	Phone
+10386	PMT3101_4G	Prestigio	Tablet
+15577	K88	ZTE	Tablet
+932	Transformer Pad (TF103C)	Asus	Tablet
+12610	Xperia XA1	Sony	Phone
+9492	CPH1729	Oppo	Phone
+7279	LG K4	LGE	Phone
+4939	P9 Plus	Huawei	Phone
+11158	Galaxy S10	Samsung	Phone
+7022	Lenovo YOGA Tab 3 Plus	Lenovo	Tablet
+11604	Galaxy Tab S4	Samsung	Tablet
+14104	s8	Vankyo	Tablet
+7216	LG G3	LGE	Phone
+15114	Mi A2 Lite	Xiaomi	Phone
+3455	PH-1	Essential Products	Phone
+135	Chromebook R11 (C738T)	Acer	PC
+7195	F70	LGE	Phone
+9584	CPH1707	Oppo	Phone
+7442	LG K10 (2017)	LGE	Phone
+11026	Galaxy S6 Edge	Samsung	Phone
+14894	LENNY3	Wiko	Phone
+7353	LG G6	LGE	Phone
+11901	Galaxy Note Pro 12.2	Samsung	Tablet
+14530	vivo 1723	Vivo	Phone
+5119	MediaPad T3 7	Huawei	Phone
+15088	JOY10_LTE	X-TIGI	Tablet
+15195	Redmi  S2	Xiaomi	Phone

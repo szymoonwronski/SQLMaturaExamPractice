@@ -1,0 +1,131 @@
+1	Wsiasc do Pociagu: Europa	familijna
+2	Pandemia	kooperacyjna
+3	Splendor	familijna
+4	Dixit	familijna
+5	Dobble	familijna
+6	Azul	logiczna
+7	Na skrzydlach	familijna
+8	Terraformacja Marsa	strategiczna
+9	Zamki Burgundii	strategiczna
+10	Terra Mistica	strategiczna
+11	Scythe	strategiczna
+12	Great Western Trail	strategiczna
+13	7 Cudow Swiata	strategiczna
+14	Star Wars rebelia	strategiczna
+15	Szarlatani z Pasikorowic	familijna
+16	Uczta Odyna	strategiczna
+17	Puerto Rico	strategiczna
+18	Viticulture	strategiczna
+19	Kawerna	strategiczna
+20	Agricola	strategiczna
+21	Nemesis	strategiczna
+22	Blood Rage	strategiczna
+23	Everdell	strategiczna
+24	Robinson Crusoe	kooperacyjna
+25	Anachrony	strategiczna
+26	Piec klanow	strategiczna
+27	Keyflower	strategiczna
+28	Kemet	strategiczna
+29	Cyklady	strategiczna
+30	Fauna	familijna
+31	Drako	strategiczna
+32	Tajemnice labiryntu	familijna
+33	Kowale losu	familijna
+34	Reef	logiczna
+35	Manhatan	logiczna
+36	Szeryf z Nottingham	imprezowa
+37	La Cucaracha	familijna
+38	Epoka kamienia	familijna
+39	Brzdek	strategiczna
+40	Teby	familijna
+41	Sagrada	logiczna
+42	Santorini	logiczna
+43	Simurgh	strategiczna
+44	Mombasa	strategiczna
+45	Patchwork	familijna
+46	Ogrodek	familijna
+47	Park niedzwiedzi	familijna
+48	Sztuka wojny	strategiczna
+49	Gipf	logiczna
+50	Yinsh	logiczna
+51	Torres	logiczna
+52	Lyngk	logiczna
+53	Wybuchowa mieszanka	familijna
+54	Tikal	strategiczna
+55	Spindirella	familijna
+56	Colt Express	imprezowa
+57	Tash Kalar	logiczna
+58	K2	strategiczna
+59	Zamek smokow	logiczna
+60	Chinczyk	familijna
+61	Szachy	logiczna
+62	Warcaby	logiczna
+63	Go	logiczna
+64	Ubongo	logiczna
+65	Carcassone	familijna
+66	Dominion	strategiczna
+67	Troyes	strategiczna
+68	Paladyni	strategiczna
+69	Architekci	strategiczna
+70	Alchemicy	strategiczna
+71	Welcome to	familijna
+72	Bukiet	familijna
+73	Miasteczka	familijna
+74	Jaipur	familijna
+75	Memoir'44	strategiczna
+76	Detektyw	strategiczna
+77	Wyprawa do El Dorado	familijna
+78	4 pory roku	strategiczna
+79	Wielka Petla	familijna
+80	Bolidy	familijna
+81	Catan	familijna
+82	5 sekund	imprezowa
+83	Century Korzenny Szlak	strategiczna
+84	Wyspa Sky	familijna
+85	Sushi Go	imprezowa
+86	Gejsze	familijna
+87	Kingdomino	familijna
+88	Gizmos	familijna
+89	Krolestwo krolikow	familijna
+90	Takenoko	familijna
+91	Qeendomino	familijna
+92	Fotosynteza	logiczna
+93	Przebiegle wielblady	imprezowa
+94	Broom Service	familijna
+95	Chatka z piernika	familijna
+96	Zooloretto	familijna
+97	Via Nebula	strategiczna
+98	Brass	strategiczna
+99	Imperium Atakuje	strategiczna
+100	Avalone	imprezowa
+101	Inis	strategiczna
+102	Dvonn	logiczna
+103	Eurobisness	familijna
+104	Bitwa Morska	familijna
+105	Fortuna	familijna
+106	Milionerzy	familijna
+107	Star Realms	strategiczna
+108	Swiatowy Konflikt	imprezowa
+109	Posrod gwiazd	strategiczna
+110	Pedzace zolwie	familijna
+111	Jenga	imprezowa
+112	Scrabble	logiczna
+113	Domek	familijna
+114	Laguna	logiczna
+115	Geniusz	logiczna
+116	Manewry morskie	logiczna
+117	Ubongo 3D	logiczna
+118	Luxor	familijna
+119	Mr. Jack	strategiczna
+120	Roj	logiczna
+121	Mandala	logiczna
+122	Taluva	logiczna
+123	Tzaar	logiczna
+124	Blokus	logiczna
+125	Cywilizacja	strategiczna
+126	Concordia	strategiczna
+127	Root	strategiczna
+128	Tzolkin	strategiczna
+129	Podwodne miasta	strategiczna
+130	Mamy szpiega	imprezowa
+131	Koncept	imprezowa

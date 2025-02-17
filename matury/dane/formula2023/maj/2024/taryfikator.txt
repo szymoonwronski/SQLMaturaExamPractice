@@ -1,0 +1,6 @@
+1;Przekroczenie predkosci do 10 km/h;0;50
+2;Przekroczenie predkosci od 11 do 20 km/h;2;100
+3;Przekroczenie predkosci od 21 do 30 km/h;4;200
+4;Przekroczenie predkosci od 31 do 40 km/h;6;300
+5;Przekroczenie predkosci od 41 do 50 km/h;8;400
+6;Przekroczenie predkosci od 51 km/h;10;500

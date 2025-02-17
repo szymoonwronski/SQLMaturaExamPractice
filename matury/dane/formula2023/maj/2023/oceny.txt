@@ -1,0 +1,3921 @@
+66	1	posiada	8
+72	1	chce kupic	3
+79	1	sprzedal	8
+43	2	posiada	9
+45	2	chce kupic	7
+59	2	sprzedal	9
+77	2	posiada	6
+78	2	posiada	3
+109	2	posiada	8
+107	4	posiada	7
+131	4	posiada	6
+35	5	posiada	5
+48	5	posiada	7
+54	5	posiada	8
+56	5	posiada	7
+65	5	posiada	7
+73	5	posiada	5
+106	5	posiada	7
+126	5	sprzedal	8
+3	6	sprzedal	7
+13	6	sprzedal	7
+17	6	sprzedal	5
+28	6	sprzedal	7
+43	6	sprzedal	7
+53	6	sprzedal	9
+84	6	sprzedal	9
+100	6	chce kupic	2
+102	6	chce kupic	6
+54	7	chce kupic	10
+68	7	chce kupic	10
+75	7	posiada	7
+84	7	chce kupic	9
+102	7	sprzedal	5
+45	8	posiada	4
+84	8	chce kupic	2
+108	8	sprzedal	9
+1	9	posiada	3
+39	9	sprzedal	5
+55	9	sprzedal	9
+75	9	chce kupic	8
+76	9	chce kupic	4
+78	9	chce kupic	3
+12	10	chce kupic	10
+23	10	posiada	10
+94	10	chce kupic	3
+1	11	sprzedal	9
+32	11	posiada	5
+67	11	chce kupic	6
+73	11	sprzedal	6
+76	11	posiada	6
+7	12	posiada	1
+82	12	posiada	5
+47	13	posiada	4
+49	13	chce kupic	6
+85	13	sprzedal	7
+38	14	posiada	9
+62	14	chce kupic	5
+70	14	sprzedal	6
+72	14	posiada	10
+74	14	posiada	10
+85	14	posiada	10
+93	14	posiada	7
+123	14	posiada	7
+45	15	posiada	10
+92	15	posiada	7
+96	15	posiada	9
+104	15	posiada	8
+120	15	posiada	10
+50	16	posiada	9
+85	16	posiada	6
+130	16	posiada	7
+36	17	sprzedal	6
+53	17	sprzedal	7
+117	17	sprzedal	8
+120	17	sprzedal	10
+2	18	sprzedal	6
+22	18	sprzedal	9
+2	19	sprzedal	10
+19	19	sprzedal	6
+70	19	chce kupic	10
+80	19	chce kupic	8
+130	19	chce kupic	8
+10	20	chce kupic	9
+49	20	posiada	7
+74	20	chce kupic	8
+95	20	sprzedal	10
+96	20	posiada	10
+92	21	chce kupic	10
+105	21	sprzedal	6
+18	22	posiada	7
+31	22	sprzedal	6
+35	22	sprzedal	6
+99	22	chce kupic	7
+118	22	chce kupic	6
+34	23	chce kupic	9
+35	23	chce kupic	10
+62	23	posiada	7
+69	23	chce kupic	6
+99	23	sprzedal	8
+2	24	posiada	7
+93	24	chce kupic	10
+97	24	sprzedal	6
+29	25	posiada	9
+32	25	posiada	10
+78	25	posiada	6
+102	25	posiada	6
+107	25	chce kupic	6
+26	26	sprzedal	9
+84	26	posiada	10
+96	26	chce kupic	6
+97	26	posiada	10
+30	27	posiada	9
+35	27	posiada	10
+42	27	posiada	6
+95	27	posiada	10
+108	27	posiada	9
+128	27	posiada	6
+58	28	posiada	8
+83	28	posiada	9
+116	28	posiada	7
+2	29	posiada	9
+7	29	posiada	8
+20	29	posiada	9
+61	29	sprzedal	8
+103	29	sprzedal	9
+121	29	sprzedal	10
+22	30	posiada	10
+88	30	posiada	8
+96	30	posiada	9
+102	30	posiada	8
+114	30	sprzedal	8
+53	31	chce kupic	7
+58	31	chce kupic	8
+68	31	chce kupic	9
+70	31	chce kupic	7
+45	32	posiada	9
+128	32	chce kupic	6
+13	33	sprzedal	7
+25	33	posiada	9
+32	33	chce kupic	10
+33	33	sprzedal	6
+38	33	posiada	6
+76	33	sprzedal	6
+90	33	sprzedal	7
+2	34	chce kupic	9
+20	34	chce kupic	6
+60	35	chce kupic	10
+45	36	chce kupic	8
+84	36	posiada	7
+92	37	chce kupic	7
+24	38	sprzedal	9
+40	38	posiada	8
+4	39	chce kupic	6
+26	39	sprzedal	9
+40	39	posiada	10
+42	39	posiada	9
+66	39	posiada	8
+79	39	posiada	7
+49	40	chce kupic	6
+84	40	sprzedal	8
+28	41	posiada	7
+49	41	chce kupic	7
+55	41	sprzedal	9
+77	41	posiada	10
+94	41	posiada	9
+33	42	posiada	7
+74	42	posiada	9
+43	43	posiada	7
+46	43	posiada	7
+48	43	posiada	9
+22	44	posiada	9
+53	45	posiada	10
+42	46	posiada	7
+100	46	posiada	9
+26	47	posiada	6
+34	47	posiada	7
+71	47	sprzedal	8
+74	47	sprzedal	9
+12	48	sprzedal	7
+29	48	sprzedal	9
+60	48	sprzedal	10
+83	48	sprzedal	7
+107	48	sprzedal	10
+119	48	sprzedal	7
+126	48	chce kupic	8
+73	49	chce kupic	8
+88	49	chce kupic	9
+121	49	chce kupic	6
+26	50	posiada	10
+30	50	chce kupic	7
+60	50	sprzedal	10
+91	50	posiada	8
+18	51	chce kupic	9
+63	51	sprzedal	6
+93	51	posiada	6
+100	51	sprzedal	8
+97	52	sprzedal	10
+53	53	chce kupic	8
+69	53	chce kupic	6
+74	53	chce kupic	9
+100	53	chce kupic	10
+112	53	posiada	9
+32	54	chce kupic	8
+44	54	sprzedal	8
+97	54	posiada	7
+36	55	chce kupic	7
+55	55	sprzedal	9
+60	55	posiada	6
+71	55	posiada	10
+104	55	posiada	10
+21	56	posiada	6
+114	56	chce kupic	10
+130	56	sprzedal	10
+98	57	posiada	6
+100	57	chce kupic	9
+113	57	sprzedal	8
+10	58	posiada	6
+24	58	posiada	10
+32	58	posiada	10
+35	58	posiada	6
+40	58	posiada	8
+48	58	posiada	8
+101	58	posiada	10
+24	59	posiada	8
+44	59	posiada	9
+103	59	posiada	7
+22	60	posiada	8
+81	60	posiada	9
+56	61	posiada	7
+66	61	sprzedal	8
+38	62	sprzedal	8
+76	62	sprzedal	7
+84	62	sprzedal	10
+71	63	sprzedal	10
+117	63	sprzedal	6
+1	64	sprzedal	9
+22	64	sprzedal	7
+70	64	chce kupic	9
+107	64	chce kupic	10
+42	65	chce kupic	9
+30	66	chce kupic	8
+109	66	posiada	6
+79	67	chce kupic	7
+97	67	sprzedal	9
+113	67	posiada	7
+115	67	chce kupic	6
+29	68	sprzedal	9
+61	68	posiada	7
+65	68	sprzedal	8
+82	68	sprzedal	7
+85	68	chce kupic	7
+125	68	chce kupic	10
+98	69	chce kupic	6
+126	69	chce kupic	8
+38	70	posiada	10
+18	71	chce kupic	7
+69	71	sprzedal	9
+97	71	posiada	7
+117	71	chce kupic	9
+119	71	sprzedal	7
+120	71	posiada	7
+6	72	posiada	9
+57	72	posiada	6
+68	72	posiada	9
+82	72	chce kupic	9
+121	73	sprzedal	10
+3	75	posiada	7
+4	75	chce kupic	10
+7	75	sprzedal	10
+55	75	posiada	9
+70	75	posiada	9
+116	75	posiada	9
+59	76	posiada	6
+81	76	posiada	10
+94	76	posiada	8
+98	76	posiada	8
+4	77	posiada	8
+39	77	posiada	7
+76	77	posiada	6
+121	77	posiada	7
+124	77	posiada	10
+15	78	posiada	7
+49	78	sprzedal	7
+23	79	sprzedal	9
+51	79	sprzedal	7
+97	79	sprzedal	9
+24	80	sprzedal	10
+48	80	sprzedal	7
+92	80	sprzedal	6
+43	81	sprzedal	10
+44	81	chce kupic	8
+65	81	chce kupic	10
+80	81	chce kupic	6
+131	81	chce kupic	6
+16	82	posiada	9
+31	82	chce kupic	8
+43	82	sprzedal	7
+76	82	posiada	10
+14	83	chce kupic	8
+17	83	sprzedal	10
+31	83	posiada	7
+45	83	sprzedal	6
+46	83	sprzedal	9
+57	83	chce kupic	7
+84	83	chce kupic	9
+99	83	chce kupic	8
+83	84	chce kupic	8
+8	85	posiada	6
+26	85	chce kupic	8
+40	85	sprzedal	9
+41	85	posiada	10
+62	85	chce kupic	6
+63	85	sprzedal	8
+84	85	posiada	9
+106	85	posiada	10
+129	85	posiada	8
+17	86	posiada	7
+51	86	chce kupic	8
+59	86	sprzedal	6
+93	86	posiada	7
+125	86	chce kupic	8
+28	88	sprzedal	9
+93	88	posiada	8
+1	89	posiada	10
+15	89	posiada	7
+63	89	posiada	6
+82	89	posiada	10
+12	90	posiada	10
+18	90	posiada	8
+27	90	posiada	7
+108	90	posiada	7
+22	91	posiada	9
+56	91	posiada	7
+3	92	posiada	9
+49	92	posiada	7
+90	92	sprzedal	7
+3	93	sprzedal	7
+18	93	sprzedal	7
+95	93	sprzedal	6
+111	93	sprzedal	7
+12	94	sprzedal	6
+25	94	sprzedal	7
+32	94	sprzedal	8
+90	94	chce kupic	6
+26	95	chce kupic	7
+32	95	chce kupic	10
+41	95	chce kupic	9
+61	95	posiada	7
+75	95	chce kupic	8
+116	95	sprzedal	8
+124	95	posiada	10
+44	96	chce kupic	9
+98	96	sprzedal	9
+75	97	posiada	6
+76	97	sprzedal	10
+4	98	sprzedal	8
+17	98	chce kupic	7
+68	98	chce kupic	6
+87	98	chce kupic	10
+110	98	chce kupic	8
+8	99	posiada	7
+53	99	chce kupic	10
+54	99	sprzedal	6
+13	100	posiada	10
+27	100	chce kupic	10
+36	100	sprzedal	10
+68	100	posiada	8
+70	100	posiada	8
+80	100	posiada	7
+88	100	posiada	7
+99	100	chce kupic	7
+121	100	sprzedal	7
+13	101	posiada	10
+86	101	chce kupic	9
+118	101	sprzedal	8
+54	102	posiada	10
+100	102	posiada	7
+118	102	posiada	6
+130	102	posiada	10
+21	103	posiada	9
+52	103	posiada	9
+55	103	posiada	7
+62	103	posiada	6
+84	103	posiada	6
+61	104	posiada	9
+116	104	posiada	10
+14	105	posiada	10
+87	105	posiada	8
+98	105	sprzedal	10
+112	105	sprzedal	9
+116	105	sprzedal	8
+118	105	sprzedal	7
+32	106	sprzedal	9
+43	106	sprzedal	6
+61	106	sprzedal	9
+98	106	sprzedal	10
+5	107	chce kupic	7
+23	107	chce kupic	6
+48	107	chce kupic	9
+63	107	chce kupic	9
+78	107	posiada	7
+92	107	chce kupic	7
+93	107	sprzedal	7
+35	108	posiada	6
+51	108	chce kupic	9
+63	108	sprzedal	7
+114	108	posiada	10
+12	109	sprzedal	7
+49	109	sprzedal	10
+82	109	chce kupic	7
+79	110	chce kupic	10
+117	110	chce kupic	6
+11	111	chce kupic	10
+55	111	posiada	9
+130	111	chce kupic	6
+4	112	sprzedal	6
+17	112	posiada	8
+27	112	chce kupic	8
+73	112	sprzedal	6
+95	112	posiada	10
+6	113	posiada	7
+64	113	posiada	6
+73	113	posiada	9
+104	113	chce kupic	6
+108	113	sprzedal	10
+101	114	posiada	8
+55	115	chce kupic	6
+1	116	sprzedal	6
+70	116	posiada	9
+85	116	posiada	7
+100	116	posiada	9
+116	116	posiada	9
+121	116	posiada	7
+57	117	posiada	10
+71	117	posiada	7
+105	117	posiada	6
+116	117	posiada	10
+130	117	posiada	10
+50	118	posiada	10
+82	118	posiada	7
+104	118	posiada	7
+103	119	sprzedal	6
+104	119	sprzedal	10
+57	120	sprzedal	8
+71	120	sprzedal	9
+117	120	sprzedal	7
+26	121	sprzedal	10
+36	121	sprzedal	7
+42	121	sprzedal	6
+101	121	chce kupic	8
+2	122	chce kupic	9
+31	122	chce kupic	8
+52	122	chce kupic	9
+89	122	posiada	7
+15	123	chce kupic	7
+21	123	sprzedal	9
+1	124	posiada	9
+13	124	chce kupic	9
+28	124	sprzedal	8
+33	124	posiada	10
+105	124	sprzedal	9
+126	124	sprzedal	8
+22	125	chce kupic	8
+23	125	chce kupic	10
+30	125	chce kupic	10
+75	125	chce kupic	10
+89	125	posiada	7
+96	125	chce kupic	7
+17	126	sprzedal	9
+29	126	posiada	10
+63	126	chce kupic	10
+11	127	sprzedal	6
+56	127	posiada	8
+100	127	posiada	8
+129	127	posiada	10
+19	128	posiada	10
+18	129	chce kupic	7
+94	129	sprzedal	8
+95	129	posiada	8
+43	130	chce kupic	10
+75	130	sprzedal	9
+112	130	posiada	9
+114	130	posiada	9
+7	131	posiada	10
+15	131	posiada	10
+112	131	posiada	10
+115	131	posiada	6
+11	132	posiada	10
+66	132	posiada	10
+84	132	posiada	8
+118	132	posiada	6
+52	133	posiada	9
+54	133	posiada	10
+71	133	posiada	10
+92	133	sprzedal	7
+46	134	sprzedal	8
+102	134	sprzedal	6
+57	135	sprzedal	6
+76	135	sprzedal	6
+88	135	sprzedal	6
+55	136	sprzedal	8
+14	137	sprzedal	10
+22	137	chce kupic	7
+67	137	chce kupic	8
+14	138	chce kupic	8
+23	138	chce kupic	8
+29	138	posiada	8
+131	138	chce kupic	9
+64	139	sprzedal	8
+96	139	posiada	8
+21	140	chce kupic	10
+43	140	sprzedal	6
+67	140	posiada	7
+74	140	sprzedal	6
+116	140	sprzedal	7
+120	140	chce kupic	8
+5	141	chce kupic	7
+24	141	chce kupic	10
+33	142	chce kupic	6
+66	142	posiada	7
+101	142	chce kupic	6
+104	142	sprzedal	9
+16	143	posiada	10
+44	143	chce kupic	7
+93	143	sprzedal	8
+31	144	posiada	6
+89	144	posiada	10
+18	145	posiada	8
+31	145	posiada	10
+72	145	chce kupic	6
+77	145	sprzedal	7
+98	145	posiada	8
+117	145	chce kupic	9
+25	146	sprzedal	7
+71	147	posiada	6
+91	147	posiada	9
+124	147	posiada	6
+126	147	posiada	7
+4	148	posiada	9
+20	148	posiada	6
+36	148	posiada	7
+70	148	posiada	7
+99	148	posiada	7
+113	148	posiada	10
+127	148	posiada	9
+39	149	posiada	9
+66	149	posiada	9
+115	149	sprzedal	6
+116	149	sprzedal	10
+122	149	sprzedal	6
+13	150	sprzedal	5
+27	150	sprzedal	7
+35	150	sprzedal	5
+64	150	sprzedal	6
+2	151	sprzedal	4
+24	151	chce kupic	10
+55	151	chce kupic	8
+65	151	chce kupic	4
+86	151	chce kupic	4
+92	152	posiada	10
+22	153	chce kupic	10
+83	153	sprzedal	2
+50	154	posiada	5
+16	155	chce kupic	1
+40	155	sprzedal	7
+58	155	posiada	10
+127	155	sprzedal	2
+2	156	sprzedal	10
+11	156	chce kupic	5
+40	156	chce kupic	6
+71	156	chce kupic	9
+124	156	chce kupic	8
+65	157	posiada	8
+103	157	chce kupic	5
+108	157	sprzedal	8
+30	158	posiada	5
+61	158	chce kupic	6
+99	158	sprzedal	9
+48	159	posiada	7
+20	160	posiada	10
+32	160	posiada	10
+62	160	posiada	9
+66	160	chce kupic	8
+100	160	sprzedal	7
+71	161	posiada	7
+89	161	chce kupic	8
+94	161	sprzedal	8
+100	161	posiada	10
+7	162	posiada	10
+24	162	posiada	9
+75	162	posiada	9
+98	162	posiada	7
+126	162	posiada	8
+52	163	posiada	8
+69	163	posiada	9
+70	163	posiada	8
+128	163	posiada	7
+129	163	posiada	9
+2	164	posiada	9
+38	164	posiada	9
+43	164	sprzedal	9
+124	164	sprzedal	10
+60	165	sprzedal	8
+2	166	sprzedal	7
+20	166	sprzedal	7
+24	166	sprzedal	8
+78	166	sprzedal	7
+80	166	sprzedal	10
+114	166	chce kupic	8
+124	166	chce kupic	9
+4	167	chce kupic	8
+87	167	chce kupic	10
+35	168	posiada	7
+103	168	chce kupic	7
+112	168	sprzedal	10
+119	168	posiada	8
+122	168	chce kupic	7
+50	169	sprzedal	10
+69	169	posiada	9
+77	169	sprzedal	7
+126	169	sprzedal	9
+12	170	chce kupic	7
+65	170	chce kupic	8
+69	170	chce kupic	8
+12	171	chce kupic	7
+13	171	posiada	8
+68	171	chce kupic	10
+86	171	sprzedal	8
+22	172	posiada	10
+76	172	chce kupic	10
+79	172	sprzedal	8
+120	172	posiada	10
+130	172	posiada	8
+13	173	posiada	7
+36	173	posiada	10
+54	173	chce kupic	9
+59	173	sprzedal	8
+84	173	posiada	8
+118	173	chce kupic	8
+13	174	sprzedal	9
+41	174	posiada	10
+63	174	posiada	7
+68	174	posiada	10
+129	174	posiada	7
+130	174	posiada	9
+9	175	posiada	9
+26	175	posiada	8
+27	175	posiada	10
+49	175	posiada	9
+66	175	posiada	9
+35	176	posiada	8
+44	176	posiada	9
+46	176	posiada	7
+77	176	sprzedal	8
+126	176	sprzedal	8
+49	177	sprzedal	8
+67	177	sprzedal	7
+99	177	sprzedal	7
+127	177	sprzedal	9
+49	178	sprzedal	8
+59	178	sprzedal	8
+97	178	chce kupic	8
+17	179	chce kupic	9
+59	179	chce kupic	7
+78	179	chce kupic	9
+123	179	posiada	8
+125	179	chce kupic	9
+7	180	sprzedal	10
+44	180	posiada	7
+34	181	chce kupic	8
+48	181	sprzedal	8
+96	181	posiada	8
+26	182	sprzedal	10
+46	182	sprzedal	9
+61	182	chce kupic	9
+76	182	chce kupic	10
+80	182	chce kupic	9
+94	182	chce kupic	8
+5	183	posiada	10
+23	183	chce kupic	10
+117	183	sprzedal	9
+5	184	posiada	7
+80	184	chce kupic	9
+14	185	sprzedal	7
+24	185	posiada	9
+27	185	posiada	9
+69	185	posiada	10
+82	185	posiada	7
+26	186	chce kupic	10
+65	186	sprzedal	8
+96	186	posiada	9
+108	186	chce kupic	9
+20	187	sprzedal	7
+46	187	posiada	7
+73	187	posiada	10
+74	187	posiada	9
+7	188	posiada	9
+36	188	posiada	10
+57	188	posiada	7
+101	188	posiada	10
+103	188	posiada	8
+107	188	posiada	8
+127	188	posiada	9
+68	189	posiada	10
+82	189	posiada	7
+110	189	posiada	10
+118	189	sprzedal	9
+119	189	sprzedal	8
+40	190	sprzedal	10
+42	190	sprzedal	8
+67	190	sprzedal	10
+3	191	sprzedal	9
+34	191	sprzedal	8
+94	192	sprzedal	8
+98	192	chce kupic	8
+99	192	chce kupic	7
+110	192	chce kupic	10
+131	192	chce kupic	9
+18	193	posiada	10
+38	193	chce kupic	8
+88	193	sprzedal	8
+32	194	posiada	8
+75	194	chce kupic	8
+115	194	sprzedal	10
+47	195	posiada	10
+57	195	sprzedal	8
+77	195	sprzedal	9
+125	195	chce kupic	9
+126	195	chce kupic	8
+14	196	chce kupic	10
+58	196	chce kupic	10
+78	196	posiada	8
+16	197	chce kupic	8
+97	197	sprzedal	9
+109	197	posiada	10
+110	197	chce kupic	10
+117	197	sprzedal	7
+125	197	posiada	10
+16	198	posiada	9
+52	198	posiada	7
+81	198	posiada	9
+122	198	chce kupic	8
+43	199	sprzedal	10
+61	199	posiada	10
+113	199	chce kupic	8
+120	200	sprzedal	10
+1	201	posiada	7
+59	201	posiada	8
+65	201	posiada	9
+87	201	posiada	9
+111	201	posiada	8
+114	201	posiada	7
+5	202	posiada	10
+10	202	posiada	9
+4	203	posiada	8
+34	203	posiada	8
+57	203	posiada	7
+68	203	posiada	7
+74	203	posiada	10
+66	204	sprzedal	7
+70	204	sprzedal	8
+87	204	sprzedal	7
+1	205	sprzedal	7
+46	205	sprzedal	8
+90	205	sprzedal	9
+57	206	sprzedal	8
+60	206	sprzedal	7
+71	206	chce kupic	7
+77	206	chce kupic	7
+96	206	chce kupic	8
+25	207	chce kupic	8
+58	207	posiada	10
+76	207	chce kupic	8
+41	208	sprzedal	8
+45	208	posiada	7
+52	208	chce kupic	8
+80	208	sprzedal	9
+122	208	posiada	7
+1	209	sprzedal	10
+15	209	sprzedal	10
+43	209	chce kupic	9
+53	209	chce kupic	7
+129	209	chce kupic	8
+27	210	chce kupic	8
+60	210	posiada	7
+88	210	chce kupic	10
+127	210	sprzedal	9
+54	211	posiada	7
+103	211	chce kupic	8
+7	212	sprzedal	10
+24	212	posiada	10
+46	212	posiada	7
+12	213	posiada	10
+17	213	posiada	8
+59	213	chce kupic	7
+106	213	sprzedal	10
+38	214	posiada	9
+61	214	chce kupic	9
+105	214	sprzedal	8
+119	214	posiada	10
+30	215	posiada	9
+35	215	posiada	10
+70	215	posiada	10
+108	215	posiada	10
+123	215	posiada	10
+58	216	posiada	7
+61	216	posiada	10
+103	216	posiada	8
+108	216	posiada	10
+114	216	posiada	8
+25	217	posiada	8
+56	217	posiada	10
+64	217	sprzedal	8
+88	217	sprzedal	7
+128	217	sprzedal	10
+1	218	sprzedal	8
+8	218	sprzedal	7
+12	218	sprzedal	8
+39	218	sprzedal	7
+11	219	sprzedal	10
+16	219	chce kupic	8
+94	219	chce kupic	7
+97	219	chce kupic	8
+117	219	chce kupic	8
+10	220	posiada	7
+35	220	chce kupic	10
+104	220	sprzedal	8
+112	220	posiada	9
+9	221	chce kupic	9
+96	221	sprzedal	9
+103	221	posiada	7
+63	222	sprzedal	8
+19	223	sprzedal	7
+39	223	chce kupic	7
+56	223	chce kupic	8
+121	223	chce kupic	8
+43	225	chce kupic	10
+64	225	posiada	7
+70	225	chce kupic	8
+125	225	sprzedal	10
+117	226	posiada	9
+39	227	chce kupic	10
+129	227	sprzedal	7
+49	228	posiada	10
+91	228	posiada	9
+108	228	posiada	8
+38	229	posiada	7
+129	229	chce kupic	8
+15	231	sprzedal	7
+18	231	posiada	7
+39	231	chce kupic	7
+90	231	sprzedal	7
+92	231	posiada	7
+120	231	posiada	10
+19	232	posiada	9
+22	232	posiada	7
+74	232	posiada	7
+110	232	posiada	10
+31	233	posiada	10
+40	233	posiada	7
+83	233	posiada	7
+98	233	posiada	10
+100	233	posiada	7
+111	233	posiada	9
+79	234	posiada	10
+102	234	sprzedal	9
+106	234	sprzedal	7
+1	235	sprzedal	7
+77	235	sprzedal	10
+81	235	sprzedal	10
+104	235	sprzedal	7
+128	235	sprzedal	7
+7	236	sprzedal	9
+12	236	chce kupic	9
+39	236	chce kupic	7
+46	236	chce kupic	10
+92	236	chce kupic	9
+30	237	posiada	10
+99	237	chce kupic	10
+130	237	sprzedal	8
+70	238	posiada	8
+119	238	chce kupic	8
+27	239	sprzedal	7
+29	240	posiada	9
+67	240	sprzedal	7
+71	240	sprzedal	8
+88	240	chce kupic	9
+23	241	chce kupic	8
+57	241	chce kupic	9
+72	241	chce kupic	9
+81	241	posiada	8
+115	241	chce kupic	10
+18	242	sprzedal	8
+19	242	posiada	8
+32	242	chce kupic	7
+50	242	sprzedal	7
+59	242	posiada	7
+42	243	posiada	7
+50	243	posiada	8
+76	243	posiada	8
+103	244	chce kupic	8
+10	245	sprzedal	8
+14	245	posiada	10
+87	245	chce kupic	7
+95	245	sprzedal	10
+103	245	posiada	8
+104	245	posiada	8
+23	246	posiada	10
+63	246	posiada	7
+67	246	posiada	7
+125	246	posiada	7
+22	247	posiada	10
+27	247	posiada	10
+81	247	posiada	10
+87	247	posiada	9
+127	247	posiada	8
+70	248	posiada	10
+14	249	posiada	9
+5	250	sprzedal	8
+69	250	sprzedal	8
+71	250	sprzedal	7
+102	250	sprzedal	10
+129	250	sprzedal	8
+35	251	sprzedal	7
+50	251	sprzedal	9
+51	251	sprzedal	8
+58	251	chce kupic	7
+130	251	chce kupic	8
+82	252	chce kupic	9
+95	252	chce kupic	10
+46	253	posiada	7
+53	253	chce kupic	7
+76	253	sprzedal	10
+88	253	posiada	9
+107	253	chce kupic	9
+13	254	sprzedal	8
+63	254	posiada	9
+96	254	sprzedal	9
+28	255	sprzedal	9
+61	255	chce kupic	9
+98	255	chce kupic	8
+105	255	chce kupic	9
+131	255	chce kupic	9
+86	256	posiada	9
+120	256	chce kupic	9
+28	257	sprzedal	9
+32	257	posiada	8
+110	257	chce kupic	7
+116	257	sprzedal	9
+126	257	posiada	7
+75	258	posiada	10
+16	260	posiada	8
+47	260	posiada	7
+67	261	posiada	10
+128	261	posiada	8
+5	262	posiada	10
+40	262	posiada	9
+65	262	posiada	10
+69	262	posiada	7
+98	262	posiada	7
+29	263	sprzedal	10
+79	263	sprzedal	8
+17	264	sprzedal	9
+33	264	sprzedal	10
+77	264	sprzedal	9
+93	264	sprzedal	10
+15	265	sprzedal	10
+61	265	sprzedal	10
+71	265	chce kupic	8
+80	265	chce kupic	8
+108	265	chce kupic	9
+123	265	chce kupic	7
+42	266	posiada	9
+8	267	chce kupic	10
+13	267	sprzedal	10
+33	267	posiada	9
+39	267	chce kupic	9
+47	267	sprzedal	7
+80	267	posiada	9
+87	267	sprzedal	7
+108	267	sprzedal	7
+109	267	chce kupic	9
+4	268	chce kupic	10
+23	268	chce kupic	10
+77	268	chce kupic	9
+96	268	posiada	8
+113	268	chce kupic	8
+29	269	sprzedal	7
+87	269	posiada	8
+34	270	chce kupic	10
+60	270	sprzedal	8
+62	270	posiada	7
+74	270	posiada	8
+98	270	posiada	10
+1	271	posiada	9
+79	271	posiada	10
+84	271	posiada	10
+91	271	posiada	10
+97	271	posiada	9
+114	271	posiada	7
+117	271	posiada	9
+51	272	posiada	8
+82	272	sprzedal	10
+95	272	sprzedal	7
+117	272	sprzedal	10
+1	273	sprzedal	10
+86	273	sprzedal	9
+18	274	sprzedal	7
+27	274	sprzedal	7
+78	274	sprzedal	10
+112	274	chce kupic	10
+126	274	chce kupic	8
+77	275	chce kupic	10
+83	275	chce kupic	7
+58	276	posiada	8
+89	276	chce kupic	9
+124	276	sprzedal	9
+13	277	posiada	8
+99	277	chce kupic	9
+6	278	sprzedal	7
+15	278	posiada	8
+16	278	sprzedal	9
+28	278	sprzedal	9
+58	278	chce kupic	8
+81	278	chce kupic	9
+87	278	chce kupic	8
+115	278	chce kupic	8
+58	279	posiada	9
+59	279	chce kupic	10
+97	279	sprzedal	9
+125	279	posiada	10
+128	279	chce kupic	10
+26	280	sprzedal	10
+59	280	posiada	10
+61	280	posiada	10
+86	280	posiada	9
+92	280	posiada	9
+3	281	posiada	7
+24	281	posiada	8
+29	282	posiada	7
+47	282	posiada	8
+35	283	posiada	7
+51	283	posiada	8
+72	283	posiada	9
+87	283	sprzedal	7
+103	283	sprzedal	10
+120	283	sprzedal	9
+20	284	sprzedal	8
+36	284	sprzedal	7
+90	284	sprzedal	9
+10	285	sprzedal	9
+39	285	sprzedal	10
+58	285	chce kupic	7
+66	286	chce kupic	9
+100	286	chce kupic	7
+126	286	chce kupic	8
+10	287	posiada	10
+23	287	chce kupic	8
+52	287	sprzedal	8
+24	288	posiada	7
+60	288	chce kupic	7
+61	288	sprzedal	7
+74	288	posiada	8
+81	288	sprzedal	9
+122	288	sprzedal	9
+2	289	chce kupic	9
+38	289	chce kupic	9
+39	289	chce kupic	10
+80	289	chce kupic	8
+28	290	posiada	8
+38	290	chce kupic	7
+42	290	sprzedal	7
+94	290	posiada	10
+97	290	chce kupic	7
+107	290	sprzedal	10
+3	291	posiada	9
+6	291	posiada	8
+42	291	posiada	8
+53	291	posiada	8
+118	292	posiada	7
+128	292	posiada	8
+3	293	posiada	9
+24	293	posiada	9
+36	293	posiada	7
+70	293	posiada	9
+106	293	posiada	10
+112	293	sprzedal	8
+12	294	sprzedal	9
+39	294	sprzedal	7
+58	294	sprzedal	8
+63	294	sprzedal	7
+82	294	sprzedal	9
+93	294	sprzedal	8
+102	294	sprzedal	8
+118	294	chce kupic	7
+14	296	chce kupic	8
+50	296	chce kupic	8
+92	296	chce kupic	7
+111	296	posiada	10
+11	297	chce kupic	7
+18	297	sprzedal	8
+84	297	posiada	8
+44	298	chce kupic	7
+65	298	sprzedal	9
+103	298	posiada	7
+126	298	sprzedal	10
+30	299	sprzedal	9
+32	299	chce kupic	10
+43	299	chce kupic	8
+50	299	chce kupic	8
+74	299	chce kupic	8
+79	299	posiada	8
+100	299	chce kupic	8
+40	300	sprzedal	10
+52	300	posiada	8
+88	300	chce kupic	7
+25	301	sprzedal	7
+34	301	posiada	10
+35	301	posiada	10
+51	301	posiada	10
+67	301	posiada	10
+81	301	posiada	10
+108	301	posiada	8
+98	302	posiada	10
+21	303	posiada	8
+121	303	posiada	10
+19	304	posiada	10
+28	304	posiada	9
+114	304	sprzedal	9
+5	305	sprzedal	10
+27	305	sprzedal	7
+32	305	sprzedal	8
+35	305	sprzedal	9
+85	305	sprzedal	8
+1	306	sprzedal	7
+112	306	sprzedal	9
+3	307	chce kupic	9
+129	307	chce kupic	9
+130	307	chce kupic	7
+8	308	chce kupic	10
+21	308	posiada	8
+55	308	chce kupic	7
+68	309	sprzedal	9
+14	311	posiada	9
+74	311	chce kupic	7
+17	312	sprzedal	9
+53	312	posiada	7
+69	312	sprzedal	9
+71	312	sprzedal	8
+10	313	chce kupic	9
+29	313	chce kupic	9
+66	313	chce kupic	7
+127	313	chce kupic	9
+15	314	posiada	9
+56	314	chce kupic	9
+76	314	sprzedal	7
+101	314	posiada	7
+3	315	chce kupic	10
+16	315	sprzedal	8
+21	315	posiada	10
+85	315	posiada	10
+86	315	posiada	9
+111	315	posiada	7
+3	316	posiada	8
+26	316	posiada	9
+18	317	posiada	9
+19	317	posiada	8
+20	317	posiada	9
+24	317	posiada	8
+42	317	posiada	7
+45	317	sprzedal	10
+69	317	sprzedal	7
+70	317	sprzedal	10
+120	317	sprzedal	9
+4	318	sprzedal	9
+18	318	sprzedal	7
+24	318	sprzedal	8
+74	318	sprzedal	8
+119	318	chce kupic	10
+6	319	chce kupic	7
+23	319	chce kupic	9
+25	319	chce kupic	8
+82	319	posiada	9
+104	319	chce kupic	7
+125	320	sprzedal	10
+57	321	posiada	10
+88	321	chce kupic	8
+115	321	sprzedal	9
+21	322	posiada	8
+48	322	sprzedal	8
+51	322	sprzedal	7
+80	322	chce kupic	7
+100	322	chce kupic	10
+105	322	chce kupic	9
+24	323	chce kupic	7
+30	323	posiada	7
+39	323	chce kupic	7
+45	323	sprzedal	7
+101	323	posiada	10
+120	323	chce kupic	7
+19	324	sprzedal	10
+101	324	posiada	9
+111	324	posiada	9
+11	325	posiada	7
+32	325	posiada	9
+44	325	posiada	7
+103	325	posiada	8
+122	325	posiada	8
+18	326	posiada	9
+82	326	posiada	8
+37	327	posiada	8
+69	327	posiada	8
+65	328	sprzedal	9
+75	328	sprzedal	8
+11	329	sprzedal	7
+29	329	sprzedal	7
+57	329	sprzedal	10
+110	329	sprzedal	9
+114	329	sprzedal	10
+117	329	sprzedal	8
+19	330	chce kupic	8
+106	330	chce kupic	8
+121	330	chce kupic	7
+11	331	chce kupic	9
+29	331	posiada	9
+76	331	chce kupic	8
+87	331	sprzedal	10
+96	331	posiada	10
+30	332	chce kupic	10
+43	332	sprzedal	8
+51	332	posiada	9
+78	332	sprzedal	10
+63	333	sprzedal	10
+78	333	chce kupic	9
+95	333	chce kupic	10
+18	334	chce kupic	8
+36	334	chce kupic	8
+68	334	posiada	8
+73	334	chce kupic	10
+104	334	sprzedal	8
+23	335	posiada	8
+72	335	chce kupic	8
+121	335	sprzedal	9
+4	336	posiada	10
+31	336	posiada	9
+40	336	posiada	10
+48	336	posiada	10
+60	336	posiada	10
+99	336	posiada	9
+107	336	posiada	9
+1	337	posiada	8
+2	337	posiada	9
+102	337	posiada	7
+112	337	posiada	10
+121	337	sprzedal	9
+68	338	sprzedal	7
+79	338	sprzedal	8
+8	339	sprzedal	10
+10	339	sprzedal	7
+13	339	sprzedal	8
+26	339	sprzedal	10
+40	339	sprzedal	9
+55	339	chce kupic	9
+60	339	chce kupic	8
+67	339	chce kupic	9
+79	339	chce kupic	10
+99	339	posiada	7
+107	339	chce kupic	9
+124	339	sprzedal	4
+15	340	posiada	4
+82	340	chce kupic	8
+122	340	sprzedal	8
+17	341	posiada	8
+25	341	sprzedal	2
+40	341	sprzedal	9
+68	341	chce kupic	3
+81	341	chce kupic	10
+7	342	chce kupic	3
+30	342	chce kupic	2
+68	342	posiada	10
+86	342	chce kupic	9
+129	343	sprzedal	2
+6	344	posiada	5
+56	344	chce kupic	4
+84	344	sprzedal	1
+101	344	posiada	7
+32	345	posiada	2
+130	345	posiada	8
+4	346	posiada	10
+9	346	posiada	9
+19	346	posiada	10
+23	346	posiada	8
+33	346	posiada	8
+96	346	posiada	8
+115	346	posiada	8
+44	347	posiada	8
+108	347	sprzedal	8
+119	347	sprzedal	9
+121	347	sprzedal	9
+15	348	sprzedal	8
+35	348	sprzedal	10
+43	348	sprzedal	8
+107	348	sprzedal	8
+117	348	sprzedal	10
+126	348	chce kupic	10
+36	349	chce kupic	8
+38	349	chce kupic	9
+7	350	chce kupic	10
+31	350	posiada	8
+8	351	chce kupic	10
+24	351	sprzedal	8
+25	351	posiada	10
+79	351	chce kupic	8
+117	351	sprzedal	10
+131	351	posiada	10
+62	352	sprzedal	8
+71	352	sprzedal	9
+76	352	chce kupic	8
+80	352	chce kupic	10
+125	352	chce kupic	8
+55	353	chce kupic	8
+59	353	posiada	8
+109	353	chce kupic	8
+131	353	sprzedal	9
+60	354	posiada	8
+94	354	chce kupic	8
+16	355	sprzedal	10
+42	355	posiada	9
+54	355	posiada	8
+89	355	posiada	9
+32	356	posiada	9
+89	356	posiada	10
+97	356	posiada	10
+108	356	posiada	8
+5	357	posiada	9
+11	357	posiada	8
+7	358	posiada	8
+26	358	posiada	10
+97	358	sprzedal	10
+122	358	sprzedal	10
+69	359	sprzedal	10
+85	359	sprzedal	8
+122	359	sprzedal	9
+18	360	sprzedal	8
+24	360	sprzedal	10
+91	360	sprzedal	9
+93	360	chce kupic	10
+104	360	chce kupic	10
+19	361	chce kupic	9
+71	361	chce kupic	10
+127	361	posiada	10
+66	362	chce kupic	10
+71	362	sprzedal	10
+76	362	posiada	10
+126	362	chce kupic	9
+76	363	sprzedal	8
+84	363	posiada	10
+124	363	sprzedal	8
+2	364	sprzedal	9
+5	364	chce kupic	10
+61	364	chce kupic	10
+101	364	chce kupic	8
+114	364	chce kupic	10
+5	365	posiada	8
+74	365	chce kupic	8
+98	365	sprzedal	8
+112	365	posiada	8
+40	367	chce kupic	8
+57	367	sprzedal	8
+64	367	posiada	10
+71	367	posiada	10
+83	367	posiada	9
+122	367	posiada	9
+28	368	posiada	8
+104	368	posiada	8
+115	368	posiada	9
+9	369	posiada	8
+42	369	posiada	10
+97	369	posiada	8
+100	369	posiada	8
+115	369	sprzedal	9
+18	370	sprzedal	10
+32	370	sprzedal	8
+33	370	sprzedal	10
+43	370	sprzedal	8
+81	370	sprzedal	8
+15	371	sprzedal	8
+23	371	sprzedal	9
+25	371	chce kupic	8
+54	371	chce kupic	10
+84	371	chce kupic	8
+97	371	chce kupic	9
+111	371	posiada	10
+24	372	chce kupic	9
+36	372	sprzedal	8
+89	372	posiada	8
+122	372	chce kupic	8
+58	373	sprzedal	8
+113	373	posiada	8
+117	373	sprzedal	10
+51	374	sprzedal	8
+85	374	chce kupic	10
+97	374	chce kupic	9
+65	375	chce kupic	9
+105	375	chce kupic	10
+10	376	posiada	10
+63	376	chce kupic	8
+93	376	sprzedal	8
+98	376	posiada	10
+102	376	chce kupic	9
+48	377	sprzedal	8
+58	377	posiada	10
+92	377	posiada	8
+8	378	posiada	8
+18	378	posiada	8
+34	379	posiada	10
+51	379	posiada	8
+58	379	posiada	8
+86	379	posiada	8
+90	379	posiada	8
+115	379	posiada	9
+121	379	posiada	8
+124	379	sprzedal	10
+21	380	sprzedal	10
+62	380	sprzedal	10
+97	380	sprzedal	8
+131	380	sprzedal	10
+26	381	sprzedal	8
+92	381	sprzedal	8
+128	381	sprzedal	8
+20	382	chce kupic	10
+60	382	chce kupic	8
+126	382	chce kupic	10
+51	383	chce kupic	10
+82	383	posiada	9
+110	383	chce kupic	9
+121	383	sprzedal	10
+38	384	posiada	10
+68	384	chce kupic	8
+129	384	sprzedal	8
+16	385	posiada	9
+34	385	sprzedal	10
+43	385	sprzedal	10
+53	385	chce kupic	8
+55	385	chce kupic	8
+62	385	chce kupic	9
+69	385	chce kupic	8
+82	385	posiada	8
+115	385	chce kupic	8
+122	385	sprzedal	10
+4	386	posiada	10
+15	386	chce kupic	9
+21	386	sprzedal	10
+23	386	posiada	8
+47	386	posiada	8
+73	386	posiada	9
+12	387	posiada	10
+36	387	posiada	10
+89	387	posiada	10
+63	388	posiada	9
+69	388	posiada	9
+100	388	posiada	10
+103	388	posiada	10
+20	389	posiada	9
+60	389	sprzedal	10
+65	389	sprzedal	9
+91	389	sprzedal	8
+122	389	sprzedal	9
+6	390	sprzedal	8
+7	390	sprzedal	10
+8	390	sprzedal	8
+58	390	sprzedal	10
+32	391	chce kupic	9
+44	391	chce kupic	10
+58	391	chce kupic	8
+63	391	chce kupic	9
+121	391	posiada	9
+123	391	chce kupic	9
+27	392	sprzedal	9
+45	392	posiada	9
+77	392	chce kupic	10
+99	392	sprzedal	10
+125	392	posiada	9
+30	393	sprzedal	9
+38	393	sprzedal	10
+90	393	chce kupic	8
+99	393	chce kupic	8
+110	393	chce kupic	9
+1	394	chce kupic	8
+2	394	posiada	9
+24	394	chce kupic	10
+35	394	sprzedal	9
+83	394	posiada	10
+103	394	chce kupic	8
+119	394	sprzedal	9
+14	395	posiada	9
+26	395	posiada	9
+34	395	posiada	10
+57	395	posiada	9
+62	395	posiada	8
+102	395	posiada	9
+38	396	posiada	8
+66	396	posiada	8
+122	396	posiada	8
+9	397	posiada	10
+38	397	posiada	9
+107	397	sprzedal	9
+13	398	sprzedal	8
+27	398	sprzedal	9
+29	398	sprzedal	9
+33	398	sprzedal	9
+62	398	sprzedal	9
+83	398	sprzedal	8
+94	398	sprzedal	9
+8	399	chce kupic	8
+69	399	chce kupic	8
+117	399	chce kupic	10
+3	400	chce kupic	8
+13	400	posiada	9
+76	400	chce kupic	8
+109	400	sprzedal	8
+131	400	posiada	9
+27	401	chce kupic	9
+52	401	sprzedal	8
+108	401	posiada	9
+69	402	sprzedal	9
+83	402	sprzedal	9
+100	402	chce kupic	10
+120	402	chce kupic	8
+14	403	chce kupic	9
+114	403	chce kupic	10
+116	403	posiada	9
+43	404	chce kupic	10
+60	404	sprzedal	10
+123	404	posiada	9
+7	405	chce kupic	10
+81	405	sprzedal	10
+57	406	posiada	10
+12	407	posiada	10
+47	407	posiada	9
+71	407	posiada	9
+99	407	posiada	8
+106	407	posiada	9
+73	408	posiada	8
+29	409	posiada	9
+30	409	posiada	9
+45	409	posiada	9
+58	409	posiada	10
+110	409	sprzedal	9
+122	409	sprzedal	9
+53	410	sprzedal	9
+63	410	sprzedal	8
+68	410	sprzedal	10
+82	410	sprzedal	9
+55	411	sprzedal	8
+35	412	sprzedal	9
+55	412	chce kupic	10
+76	412	chce kupic	10
+56	413	chce kupic	9
+107	413	chce kupic	10
+112	413	posiada	9
+120	413	chce kupic	9
+26	414	sprzedal	10
+47	414	posiada	10
+55	414	chce kupic	8
+40	415	sprzedal	8
+43	415	posiada	8
+61	415	sprzedal	10
+40	416	sprzedal	9
+70	416	chce kupic	10
+87	416	chce kupic	10
+88	416	chce kupic	8
+116	416	chce kupic	10
+44	417	posiada	8
+62	417	chce kupic	8
+75	417	sprzedal	9
+117	417	posiada	10
+32	418	chce kupic	10
+55	418	sprzedal	8
+78	419	posiada	8
+119	419	posiada	10
+131	419	posiada	8
+21	420	posiada	9
+66	420	posiada	8
+71	420	posiada	8
+88	420	posiada	9
+123	420	posiada	10
+2	421	posiada	10
+40	421	posiada	10
+84	421	posiada	8
+87	421	sprzedal	10
+106	421	sprzedal	9
+120	421	sprzedal	10
+8	422	sprzedal	10
+58	422	sprzedal	9
+74	422	sprzedal	9
+114	422	sprzedal	8
+16	423	sprzedal	8
+20	423	chce kupic	9
+26	423	chce kupic	8
+47	423	chce kupic	10
+59	423	chce kupic	8
+85	423	posiada	8
+114	423	chce kupic	10
+11	424	sprzedal	9
+114	425	posiada	9
+129	425	chce kupic	8
+18	426	sprzedal	8
+24	426	posiada	9
+85	426	sprzedal	8
+115	426	sprzedal	8
+128	426	chce kupic	9
+103	427	chce kupic	9
+106	427	chce kupic	8
+26	428	chce kupic	9
+51	428	posiada	10
+91	428	chce kupic	8
+124	428	sprzedal	9
+128	428	posiada	10
+12	429	chce kupic	9
+75	429	sprzedal	8
+82	429	posiada	8
+14	430	posiada	9
+19	430	posiada	9
+76	430	posiada	9
+106	430	posiada	10
+16	431	posiada	8
+42	431	posiada	9
+60	431	posiada	9
+63	431	posiada	10
+101	431	posiada	8
+123	431	posiada	8
+126	431	sprzedal	8
+8	432	sprzedal	9
+72	432	sprzedal	8
+127	432	sprzedal	9
+37	433	sprzedal	8
+57	433	sprzedal	9
+93	433	sprzedal	8
+48	434	sprzedal	9
+92	434	chce kupic	8
+2	435	chce kupic	8
+15	435	chce kupic	8
+121	436	chce kupic	10
+124	436	posiada	10
+15	437	chce kupic	10
+99	437	sprzedal	10
+125	437	posiada	10
+25	438	chce kupic	8
+30	438	sprzedal	8
+34	438	posiada	9
+82	438	sprzedal	10
+5	439	sprzedal	9
+37	439	chce kupic	9
+70	439	chce kupic	8
+22	440	chce kupic	10
+25	440	chce kupic	8
+68	440	posiada	10
+82	440	chce kupic	8
+17	441	sprzedal	10
+23	441	posiada	8
+55	441	chce kupic	8
+101	441	sprzedal	10
+114	441	posiada	8
+32	442	posiada	8
+34	442	posiada	8
+91	442	posiada	8
+128	442	posiada	9
+30	443	posiada	9
+37	443	posiada	8
+83	443	posiada	10
+103	443	posiada	8
+64	444	posiada	9
+65	444	posiada	10
+7	445	sprzedal	8
+43	445	sprzedal	9
+80	445	sprzedal	10
+104	445	sprzedal	10
+52	446	sprzedal	9
+106	446	sprzedal	9
+109	446	sprzedal	9
+128	446	sprzedal	9
+72	447	chce kupic	10
+80	447	chce kupic	9
+34	448	chce kupic	10
+82	448	chce kupic	9
+127	448	posiada	9
+12	449	chce kupic	8
+54	449	sprzedal	10
+111	449	posiada	8
+18	450	chce kupic	10
+21	450	sprzedal	9
+61	450	posiada	8
+6	451	sprzedal	8
+43	451	sprzedal	9
+58	451	chce kupic	10
+4	452	chce kupic	10
+5	452	chce kupic	10
+28	452	chce kupic	10
+34	452	posiada	9
+87	452	chce kupic	9
+101	452	sprzedal	9
+102	452	posiada	10
+4	453	chce kupic	8
+17	453	sprzedal	8
+59	453	posiada	9
+118	453	posiada	8
+131	453	posiada	10
+33	454	posiada	9
+34	454	posiada	8
+70	454	posiada	8
+97	454	posiada	10
+105	454	posiada	9
+15	455	posiada	10
+30	455	posiada	10
+36	455	posiada	9
+48	455	sprzedal	8
+73	455	sprzedal	9
+103	455	sprzedal	8
+121	455	sprzedal	9
+130	455	sprzedal	9
+8	456	sprzedal	8
+53	456	sprzedal	9
+61	456	sprzedal	8
+113	456	chce kupic	8
+116	456	chce kupic	9
+125	456	chce kupic	9
+126	456	chce kupic	9
+47	457	posiada	9
+94	457	chce kupic	9
+87	458	sprzedal	8
+92	458	posiada	8
+110	458	chce kupic	8
+122	458	sprzedal	9
+124	458	posiada	10
+2	459	sprzedal	8
+26	459	sprzedal	9
+28	459	chce kupic	9
+8	460	chce kupic	10
+12	460	chce kupic	9
+76	460	chce kupic	10
+45	461	posiada	8
+114	461	chce kupic	9
+5	462	sprzedal	9
+31	463	posiada	10
+50	463	chce kupic	10
+93	464	sprzedal	10
+10	466	posiada	10
+44	466	posiada	10
+99	466	posiada	10
+103	466	posiada	10
+111	466	posiada	10
+114	466	posiada	9
+87	467	posiada	9
+96	467	posiada	8
+125	467	posiada	8
+5	468	posiada	9
+11	468	posiada	9
+41	468	sprzedal	10
+99	468	sprzedal	9
+1	469	sprzedal	8
+67	469	sprzedal	10
+81	469	sprzedal	8
+114	469	sprzedal	8
+124	469	sprzedal	9
+6	470	sprzedal	8
+27	470	chce kupic	8
+63	470	chce kupic	10
+64	470	chce kupic	8
+130	470	chce kupic	9
+44	471	posiada	10
+84	471	chce kupic	8
+96	471	sprzedal	9
+100	471	posiada	8
+112	471	chce kupic	9
+43	472	sprzedal	9
+55	472	posiada	10
+66	472	sprzedal	9
+109	472	sprzedal	9
+19	473	chce kupic	10
+40	473	chce kupic	9
+42	473	chce kupic	9
+28	474	chce kupic	10
+79	474	posiada	9
+28	475	chce kupic	9
+59	475	sprzedal	10
+77	475	posiada	9
+91	475	chce kupic	9
+48	476	sprzedal	9
+80	476	posiada	9
+95	476	posiada	9
+113	476	posiada	8
+95	477	posiada	10
+101	477	posiada	9
+103	477	posiada	9
+110	477	posiada	8
+38	478	posiada	9
+79	478	posiada	9
+100	478	posiada	10
+101	478	posiada	10
+25	479	sprzedal	10
+48	479	sprzedal	10
+55	479	sprzedal	10
+99	479	sprzedal	10
+12	480	sprzedal	10
+59	480	sprzedal	9
+90	480	sprzedal	10
+95	480	sprzedal	9
+106	480	chce kupic	8
+114	480	chce kupic	8
+125	480	chce kupic	8
+2	481	chce kupic	8
+10	481	posiada	9
+19	481	chce kupic	9
+23	481	sprzedal	10
+53	481	posiada	9
+8	482	chce kupic	9
+114	482	sprzedal	8
+120	482	posiada	10
+124	482	sprzedal	10
+131	482	sprzedal	8
+6	483	chce kupic	10
+10	483	chce kupic	9
+65	483	chce kupic	9
+26	484	chce kupic	10
+9	485	posiada	9
+58	485	chce kupic	8
+72	485	sprzedal	8
+117	485	posiada	9
+4	486	chce kupic	8
+33	486	sprzedal	10
+45	486	posiada	9
+97	486	posiada	9
+44	487	posiada	8
+68	487	posiada	10
+24	488	posiada	9
+6	489	posiada	9
+7	489	posiada	9
+25	489	posiada	8
+31	489	posiada	10
+48	489	posiada	9
+95	489	posiada	9
+98	489	sprzedal	8
+104	489	sprzedal	10
+112	489	sprzedal	9
+3	490	sprzedal	8
+47	490	sprzedal	10
+127	490	sprzedal	10
+24	491	sprzedal	8
+52	491	sprzedal	8
+67	491	chce kupic	9
+110	491	chce kupic	9
+39	492	chce kupic	8
+73	492	chce kupic	9
+113	492	posiada	8
+10	493	chce kupic	9
+25	493	sprzedal	8
+38	493	posiada	9
+21	494	chce kupic	9
+36	494	sprzedal	9
+97	494	posiada	9
+130	494	sprzedal	10
+5	495	sprzedal	9
+38	495	chce kupic	10
+47	495	chce kupic	10
+97	495	chce kupic	9
+14	496	chce kupic	8
+69	496	posiada	8
+87	496	chce kupic	8
+9	497	sprzedal	9
+13	497	posiada	10
+18	497	chce kupic	8
+38	497	sprzedal	9
+50	497	posiada	9
+21	498	posiada	8
+32	498	posiada	10
+39	498	posiada	10
+67	498	posiada	9
+91	498	posiada	10
+80	499	posiada	10
+82	499	posiada	8
+9	500	posiada	9
+124	500	posiada	10
+5	501	posiada	10
+31	501	sprzedal	9
+115	501	sprzedal	9
+17	502	sprzedal	8
+58	502	sprzedal	10
+123	502	sprzedal	8
+33	503	sprzedal	10
+74	503	sprzedal	10
+128	503	sprzedal	10
+32	504	chce kupic	9
+92	504	chce kupic	8
+101	504	chce kupic	10
+47	505	chce kupic	10
+61	505	posiada	9
+67	505	chce kupic	8
+112	505	sprzedal	10
+131	505	posiada	9
+4	506	chce kupic	10
+15	506	sprzedal	8
+28	506	posiada	9
+50	506	sprzedal	8
+55	506	sprzedal	10
+81	506	chce kupic	8
+18	507	chce kupic	10
+82	507	chce kupic	9
+131	507	chce kupic	10
+49	508	posiada	8
+98	508	chce kupic	9
+119	508	sprzedal	9
+4	509	posiada	9
+13	509	chce kupic	10
+23	509	sprzedal	8
+48	509	posiada	10
+97	509	posiada	10
+119	510	posiada	8
+126	510	posiada	9
+17	511	posiada	9
+64	511	posiada	9
+68	511	posiada	8
+109	511	posiada	10
+117	511	posiada	8
+119	511	posiada	8
+3	512	posiada	9
+126	512	sprzedal	8
+18	513	sprzedal	8
+30	513	sprzedal	10
+46	513	sprzedal	8
+63	513	sprzedal	8
+48	514	sprzedal	9
+90	514	sprzedal	9
+112	514	sprzedal	8
+10	515	chce kupic	8
+68	515	chce kupic	9
+131	515	chce kupic	8
+36	516	chce kupic	8
+51	516	posiada	10
+112	516	chce kupic	8
+60	517	sprzedal	8
+100	517	posiada	8
+127	517	chce kupic	9
+49	519	sprzedal	8
+77	519	posiada	10
+90	519	sprzedal	10
+130	519	sprzedal	9
+43	520	chce kupic	10
+72	520	chce kupic	10
+77	520	chce kupic	8
+130	520	chce kupic	9
+10	521	posiada	9
+44	521	chce kupic	8
+55	521	sprzedal	9
+75	521	posiada	8
+89	521	chce kupic	9
+3	522	sprzedal	9
+9	522	posiada	8
+20	522	posiada	8
+35	522	posiada	10
+38	522	posiada	9
+40	522	posiada	8
+51	522	posiada	10
+56	523	posiada	8
+58	523	posiada	9
+93	523	posiada	9
+105	523	posiada	9
+130	523	posiada	8
+1	524	sprzedal	9
+5	524	sprzedal	8
+83	524	sprzedal	9
+27	525	sprzedal	9
+127	525	sprzedal	8
+23	526	sprzedal	10
+36	526	sprzedal	10
+14	527	sprzedal	8
+19	527	chce kupic	8
+20	527	chce kupic	9
+64	527	chce kupic	10
+58	528	chce kupic	9
+64	528	posiada	9
+78	528	chce kupic	9
+21	529	sprzedal	9
+44	529	posiada	9
+45	529	chce kupic	9
+64	529	sprzedal	9
+73	529	posiada	8
+95	529	sprzedal	8
+36	530	sprzedal	10
+67	530	chce kupic	8
+100	530	chce kupic	9
+126	530	chce kupic	10
+41	531	chce kupic	9
+81	531	posiada	8
+6	532	chce kupic	9
+14	532	sprzedal	8
+70	532	posiada	8
+73	532	chce kupic	9
+82	532	sprzedal	9
+99	532	posiada	8
+33	533	posiada	10
+76	533	posiada	9
+28	534	posiada	10
+95	534	posiada	8
+123	534	posiada	10
+38	535	posiada	8
+102	535	posiada	8
+24	536	posiada	10
+41	536	posiada	9
+59	536	posiada	8
+69	536	sprzedal	10
+70	536	sprzedal	8
+86	536	sprzedal	10
+109	536	sprzedal	10
+121	536	sprzedal	10
+7	537	sprzedal	9
+20	537	sprzedal	9
+49	537	sprzedal	10
+88	537	chce kupic	10
+127	537	chce kupic	8
+12	538	chce kupic	10
+22	538	chce kupic	10
+41	538	posiada	9
+120	538	chce kupic	8
+36	539	sprzedal	9
+115	539	posiada	10
+10	540	chce kupic	10
+50	540	sprzedal	10
+98	540	posiada	8
+114	540	sprzedal	9
+85	541	sprzedal	8
+98	541	chce kupic	10
+115	541	chce kupic	9
+122	541	chce kupic	10
+4	542	chce kupic	9
+18	542	posiada	8
+36	542	chce kupic	9
+53	542	sprzedal	10
+117	542	posiada	9
+2	543	chce kupic	8
+9	543	sprzedal	8
+25	543	posiada	10
+27	543	posiada	9
+2	544	posiada	10
+8	544	posiada	9
+88	544	posiada	9
+89	544	posiada	8
+92	544	posiada	9
+4	545	posiada	8
+12	545	posiada	8
+59	545	posiada	9
+75	545	posiada	9
+1	546	sprzedal	10
+13	547	sprzedal	10
+86	547	sprzedal	8
+107	547	sprzedal	9
+127	547	sprzedal	10
+55	548	sprzedal	9
+73	548	sprzedal	8
+130	548	sprzedal	10
+46	549	chce kupic	10
+119	549	chce kupic	10
+121	549	chce kupic	8
+1	550	chce kupic	9
+110	550	posiada	9
+122	550	chce kupic	10
+124	550	sprzedal	9
+109	551	posiada	9
+127	551	chce kupic	10
+44	552	sprzedal	10
+58	552	posiada	9
+77	552	sprzedal	8
+82	552	sprzedal	9
+34	553	chce kupic	8
+35	553	chce kupic	8
+76	553	chce kupic	9
+80	553	chce kupic	9
+11	554	posiada	9
+12	554	chce kupic	10
+31	554	sprzedal	8
+79	554	posiada	9
+99	554	chce kupic	9
+108	554	sprzedal	9
+123	554	posiada	9
+131	554	posiada	10
+1	555	posiada	9
+22	555	posiada	8
+60	555	posiada	8
+112	555	posiada	8
+8	556	posiada	9
+20	556	posiada	8
+42	556	posiada	8
+55	556	posiada	8
+60	556	posiada	10
+108	556	sprzedal	10
+15	557	sprzedal	10
+27	557	sprzedal	9
+89	557	sprzedal	8
+96	557	sprzedal	9
+105	557	sprzedal	10
+32	558	sprzedal	10
+35	558	sprzedal	8
+58	558	chce kupic	10
+106	558	chce kupic	9
+107	558	chce kupic	9
+122	558	chce kupic	9
+26	559	posiada	10
+52	559	chce kupic	8
+58	559	sprzedal	9
+89	559	posiada	10
+61	560	chce kupic	10
+77	560	sprzedal	8
+57	561	posiada	8
+14	562	sprzedal	10
+18	562	sprzedal	8
+94	562	chce kupic	9
+32	563	chce kupic	10
+33	563	chce kupic	8
+11	564	chce kupic	8
+10	565	posiada	10
+32	565	chce kupic	8
+85	565	sprzedal	10
+104	565	posiada	10
+48	566	chce kupic	9
+55	566	sprzedal	8
+79	566	posiada	8
+80	566	posiada	9
+114	566	posiada	10
+117	566	posiada	8
+24	567	posiada	10
+77	567	posiada	8
+117	567	posiada	10
+118	567	posiada	8
+119	567	posiada	9
+125	567	posiada	8
+130	567	posiada	9
+19	568	sprzedal	2
+36	568	sprzedal	1
+60	568	sprzedal	8
+79	568	sprzedal	3
+90	568	sprzedal	9
+102	568	sprzedal	3
+106	568	sprzedal	7
+123	568	sprzedal	9
+126	568	chce kupic	7
+48	569	chce kupic	8
+59	569	chce kupic	6
+80	569	chce kupic	5
+88	569	posiada	1
+117	569	chce kupic	7
+38	570	sprzedal	8
+101	570	posiada	8
+107	571	chce kupic	10
+50	572	sprzedal	8
+86	572	posiada	6
+4	573	sprzedal	7
+38	573	sprzedal	6
+47	573	chce kupic	8
+52	573	chce kupic	8
+69	573	chce kupic	9
+87	573	chce kupic	7
+96	573	posiada	6
+110	573	chce kupic	8
+15	574	sprzedal	9
+19	574	posiada	9
+57	574	chce kupic	10
+81	574	sprzedal	7
+86	574	posiada	8
+93	574	posiada	8
+94	574	posiada	10
+125	574	posiada	8
+50	575	posiada	9
+66	575	posiada	10
+87	575	posiada	9
+98	575	posiada	10
+117	575	posiada	9
+77	576	posiada	9
+101	576	posiada	10
+116	576	sprzedal	9
+10	577	sprzedal	9
+58	577	sprzedal	7
+69	577	sprzedal	8
+72	577	sprzedal	10
+88	577	sprzedal	9
+97	577	sprzedal	10
+120	577	sprzedal	9
+7	578	chce kupic	8
+52	578	chce kupic	7
+56	578	chce kupic	7
+104	578	chce kupic	6
+84	579	posiada	7
+110	579	chce kupic	8
+16	580	sprzedal	6
+116	580	posiada	10
+124	580	chce kupic	8
+41	581	sprzedal	9
+48	581	posiada	6
+86	581	sprzedal	6
+112	581	sprzedal	6
+18	582	chce kupic	7
+38	582	chce kupic	9
+56	582	chce kupic	6
+12	583	chce kupic	7
+67	583	posiada	6
+81	584	chce kupic	7
+63	585	sprzedal	10
+129	585	posiada	8
+31	586	chce kupic	8
+13	587	sprzedal	9
+36	587	posiada	6
+42	587	posiada	7
+56	587	posiada	8
+58	587	posiada	8
+98	587	posiada	9
+114	587	posiada	9
+117	587	posiada	8
+16	588	posiada	8
+102	588	posiada	8
+131	588	posiada	8
+28	589	posiada	8
+32	589	sprzedal	10
+50	589	sprzedal	10
+8	590	sprzedal	10
+14	590	sprzedal	7
+58	590	sprzedal	6
+101	590	sprzedal	6
+84	591	sprzedal	7
+103	591	sprzedal	8
+125	591	chce kupic	8
+9	592	chce kupic	7
+116	592	chce kupic	6
+128	592	chce kupic	6
+17	593	posiada	7
+28	593	chce kupic	9
+88	593	sprzedal	10
+45	594	posiada	9
+72	594	chce kupic	9
+97	594	sprzedal	7
+36	595	posiada	6
+41	595	sprzedal	8
+106	595	sprzedal	10
+87	596	chce kupic	9
+120	596	chce kupic	7
+1	597	chce kupic	9
+3	597	chce kupic	6
+16	597	posiada	7
+106	597	chce kupic	10
+122	597	sprzedal	7
+61	598	posiada	9
+110	598	chce kupic	7
+91	599	sprzedal	9
+24	600	posiada	6
+72	600	posiada	7
+89	600	posiada	9
+109	600	posiada	6
+72	601	posiada	6
+78	601	posiada	8
+100	601	posiada	8
+125	601	posiada	10
+33	602	posiada	7
+59	602	posiada	9
+65	602	posiada	8
+115	602	sprzedal	10
+116	602	sprzedal	7
+48	603	sprzedal	6
+58	603	sprzedal	9
+71	603	sprzedal	9
+15	604	sprzedal	7
+46	604	sprzedal	6
+68	604	sprzedal	6
+79	604	chce kupic	8
+5	605	chce kupic	6
+47	605	chce kupic	7
+54	605	chce kupic	7
+22	606	posiada	7
+45	606	chce kupic	7
+65	606	sprzedal	7
+78	606	posiada	10
+81	606	chce kupic	9
+128	606	sprzedal	10
+71	607	posiada	7
+39	608	sprzedal	10
+56	608	sprzedal	7
+90	608	chce kupic	6
+92	608	chce kupic	6
+34	609	chce kupic	7
+108	609	chce kupic	10
+102	610	posiada	7
+7	611	chce kupic	6
+37	611	sprzedal	9
+58	611	posiada	9
+92	611	chce kupic	7
+14	612	sprzedal	9
+35	612	posiada	8
+50	612	posiada	9
+3	613	posiada	6
+43	613	posiada	6
+130	613	posiada	6
+75	614	posiada	7
+107	614	posiada	7
+4	615	posiada	10
+53	615	posiada	9
+96	615	posiada	7
+105	615	posiada	10
+111	615	sprzedal	10
+117	615	sprzedal	8
+39	616	sprzedal	9
+15	617	sprzedal	9
+42	617	sprzedal	10
+57	617	sprzedal	6
+63	617	sprzedal	9
+71	617	sprzedal	10
+80	617	chce kupic	6
+116	617	chce kupic	6
+128	618	chce kupic	8
+20	619	chce kupic	10
+28	619	posiada	10
+81	619	chce kupic	9
+101	619	sprzedal	6
+110	619	posiada	6
+21	620	chce kupic	7
+88	620	sprzedal	9
+123	620	posiada	9
+42	621	sprzedal	8
+58	621	sprzedal	7
+66	621	chce kupic	6
+68	621	chce kupic	6
+27	622	chce kupic	6
+77	622	chce kupic	7
+112	622	posiada	7
+118	622	chce kupic	8
+5	623	sprzedal	7
+11	623	posiada	9
+33	623	chce kupic	8
+46	623	sprzedal	6
+109	623	posiada	9
+73	624	posiada	8
+105	624	posiada	6
+119	624	posiada	6
+121	624	posiada	6
+49	625	posiada	6
+127	625	posiada	8
+7	626	posiada	6
+24	626	posiada	10
+55	626	posiada	10
+58	626	posiada	9
+106	626	sprzedal	10
+57	628	sprzedal	8
+71	628	sprzedal	6
+98	628	sprzedal	8
+121	628	sprzedal	6
+123	628	sprzedal	10
+37	629	sprzedal	10
+51	629	sprzedal	8
+56	629	chce kupic	6
+71	629	chce kupic	9
+97	629	chce kupic	9
+125	629	chce kupic	9
+131	629	posiada	7
+76	630	chce kupic	7
+89	630	sprzedal	10
+97	630	posiada	8
+108	630	chce kupic	7
+123	630	sprzedal	6
+61	631	posiada	7
+65	631	sprzedal	8
+32	632	sprzedal	7
+33	632	chce kupic	7
+102	632	chce kupic	6
+108	632	chce kupic	7
+22	633	chce kupic	7
+46	633	posiada	6
+107	633	chce kupic	9
+120	633	sprzedal	8
+70	634	posiada	7
+126	634	chce kupic	6
+79	635	sprzedal	9
+91	635	posiada	9
+117	635	posiada	7
+120	635	posiada	8
+129	635	posiada	9
+8	636	posiada	8
+47	636	posiada	8
+65	636	posiada	6
+101	636	posiada	10
+20	637	posiada	7
+77	637	posiada	6
+81	637	posiada	9
+125	637	sprzedal	10
+22	638	sprzedal	9
+76	639	sprzedal	10
+68	640	sprzedal	8
+86	640	sprzedal	10
+101	640	sprzedal	7
+36	641	sprzedal	9
+42	641	sprzedal	9
+60	641	chce kupic	10
+83	641	chce kupic	6
+16	642	chce kupic	8
+67	642	chce kupic	9
+78	642	posiada	8
+8	643	chce kupic	8
+47	643	sprzedal	6
+4	644	posiada	6
+15	644	chce kupic	7
+30	644	sprzedal	7
+78	644	posiada	6
+95	644	sprzedal	7
+119	644	sprzedal	9
+3	645	chce kupic	7
+13	645	chce kupic	8
+23	645	chce kupic	10
+24	645	chce kupic	9
+98	645	posiada	7
+101	645	chce kupic	8
+34	646	sprzedal	7
+57	646	posiada	8
+71	646	chce kupic	10
+44	647	sprzedal	6
+131	647	posiada	7
+53	648	posiada	9
+59	648	posiada	6
+74	648	posiada	10
+99	648	posiada	9
+122	648	posiada	7
+42	649	posiada	10
+47	649	posiada	9
+122	649	posiada	8
+127	649	posiada	9
+31	650	posiada	8
+40	650	sprzedal	9
+65	650	sprzedal	7
+82	650	sprzedal	8
+93	650	sprzedal	9
+94	650	sprzedal	8
+110	650	sprzedal	8
+131	650	sprzedal	10
+31	651	sprzedal	8
+33	651	chce kupic	9
+7	652	chce kupic	8
+20	652	chce kupic	7
+36	652	chce kupic	9
+101	652	posiada	6
+14	653	chce kupic	8
+41	653	sprzedal	10
+48	653	posiada	6
+82	653	chce kupic	10
+98	653	sprzedal	9
+18	654	posiada	8
+50	654	sprzedal	10
+128	654	sprzedal	8
+51	655	chce kupic	10
+119	655	chce kupic	6
+13	656	chce kupic	8
+23	656	chce kupic	6
+109	656	posiada	6
+111	656	chce kupic	9
+4	657	sprzedal	9
+84	657	posiada	6
+96	657	chce kupic	6
+70	658	sprzedal	9
+12	659	posiada	8
+16	659	posiada	6
+74	659	posiada	10
+131	659	posiada	8
+23	660	posiada	8
+106	660	posiada	10
+115	660	posiada	8
+94	661	posiada	8
+106	661	posiada	9
+113	661	posiada	8
+7	662	posiada	7
+22	662	sprzedal	10
+27	662	sprzedal	8
+46	662	sprzedal	6
+74	662	sprzedal	7
+77	662	sprzedal	9
+87	662	sprzedal	7
+114	662	sprzedal	7
+38	663	sprzedal	9
+57	663	chce kupic	9
+82	663	chce kupic	10
+8	664	chce kupic	10
+105	664	chce kupic	8
+66	666	posiada	6
+52	667	chce kupic	6
+61	667	sprzedal	6
+8	668	posiada	10
+51	668	chce kupic	9
+64	668	sprzedal	6
+65	668	posiada	10
+88	668	sprzedal	7
+122	668	sprzedal	8
+130	668	chce kupic	6
+28	669	chce kupic	9
+47	669	chce kupic	10
+53	669	chce kupic	7
+83	669	posiada	10
+9	670	chce kupic	6
+14	670	sprzedal	6
+20	670	posiada	9
+23	670	chce kupic	9
+42	670	sprzedal	7
+98	670	posiada	8
+18	671	posiada	8
+79	671	posiada	6
+48	672	posiada	7
+86	672	posiada	9
+102	673	posiada	8
+27	674	posiada	9
+44	674	posiada	6
+56	674	posiada	8
+71	674	posiada	8
+98	674	posiada	6
+32	675	sprzedal	9
+52	675	sprzedal	8
+91	675	sprzedal	10
+113	675	sprzedal	9
+11	676	sprzedal	6
+21	676	sprzedal	7
+9	677	sprzedal	8
+59	677	sprzedal	9
+60	677	chce kupic	7
+13	678	chce kupic	6
+19	678	chce kupic	10
+58	678	chce kupic	10
+75	678	posiada	10
+81	678	chce kupic	8
+100	678	sprzedal	6
+117	678	posiada	9
+126	678	chce kupic	9
+4	679	sprzedal	8
+38	679	posiada	8
+46	679	sprzedal	9
+68	679	sprzedal	10
+75	679	chce kupic	7
+64	680	chce kupic	6
+90	680	chce kupic	7
+105	680	chce kupic	6
+131	680	posiada	7
+33	681	chce kupic	7
+84	681	sprzedal	9
+123	681	posiada	6
+26	682	chce kupic	8
+59	682	sprzedal	7
+86	682	posiada	9
+9	683	posiada	6
+24	683	posiada	6
+72	683	posiada	9
+124	683	posiada	8
+5	684	posiada	8
+30	684	posiada	9
+33	684	posiada	10
+123	684	posiada	6
+29	685	posiada	6
+45	685	posiada	8
+121	685	sprzedal	8
+24	686	sprzedal	9
+127	686	sprzedal	9
+92	687	sprzedal	8
+122	688	sprzedal	7
+128	688	sprzedal	7
+23	689	sprzedal	9
+91	689	sprzedal	10
+112	690	chce kupic	8
+122	690	chce kupic	9
+62	691	chce kupic	9
+65	691	chce kupic	8
+76	691	posiada	6
+115	691	chce kupic	8
+23	692	sprzedal	8
+26	692	posiada	6
+89	692	chce kupic	6
+45	693	sprzedal	8
+59	693	posiada	9
+88	693	sprzedal	9
+125	693	sprzedal	8
+48	694	chce kupic	10
+52	694	chce kupic	8
+22	695	chce kupic	10
+51	695	chce kupic	6
+130	695	posiada	10
+25	696	chce kupic	8
+55	696	sprzedal	10
+111	696	posiada	6
+4	697	chce kupic	10
+60	697	sprzedal	8
+62	697	posiada	10
+95	697	posiada	8
+13	698	posiada	6
+69	698	posiada	8
+125	698	posiada	7
+21	699	posiada	10
+51	699	posiada	6
+56	699	posiada	10
+44	700	posiada	9
+77	700	posiada	9
+96	700	posiada	10
+104	700	sprzedal	7
+1	701	sprzedal	6
+49	701	sprzedal	8
+61	701	sprzedal	9
+64	701	sprzedal	6
+76	701	sprzedal	8
+93	701	sprzedal	6
+116	701	sprzedal	10
+27	702	chce kupic	10
+74	702	chce kupic	7
+80	702	chce kupic	7
+101	703	chce kupic	7
+128	703	posiada	9
+5	704	chce kupic	8
+40	704	sprzedal	8
+75	704	posiada	8
+128	704	chce kupic	7
+8	705	sprzedal	10
+25	705	posiada	6
+88	705	sprzedal	8
+78	706	sprzedal	10
+22	707	chce kupic	7
+77	707	chce kupic	9
+101	707	chce kupic	6
+15	708	chce kupic	8
+114	708	posiada	6
+119	708	chce kupic	8
+121	708	sprzedal	9
+2	709	posiada	8
+9	709	chce kupic	10
+23	709	sprzedal	7
+64	709	posiada	8
+101	709	posiada	7
+102	709	posiada	9
+43	710	posiada	10
+1	711	posiada	8
+57	711	posiada	10
+28	712	posiada	9
+51	712	posiada	8
+100	712	posiada	7
+60	713	posiada	7
+69	713	posiada	7
+11	714	sprzedal	9
+13	714	sprzedal	10
+59	714	sprzedal	6
+72	714	sprzedal	6
+85	714	sprzedal	10
+103	714	sprzedal	7
+4	715	sprzedal	6
+15	715	sprzedal	6
+22	715	chce kupic	9
+56	715	chce kupic	8
+121	715	chce kupic	10
+9	716	chce kupic	7
+15	716	posiada	10
+18	716	chce kupic	9
+20	716	sprzedal	7
+76	716	posiada	6
+128	716	chce kupic	7
+117	717	sprzedal	10
+7	718	posiada	8
+53	718	sprzedal	8
+59	718	sprzedal	9
+129	718	chce kupic	7
+52	719	chce kupic	10
+115	719	chce kupic	8
+118	719	chce kupic	8
+121	719	posiada	9
+61	720	chce kupic	6
+111	720	sprzedal	9
+128	720	posiada	10
+44	721	chce kupic	7
+7	722	sprzedal	10
+12	722	posiada	8
+87	722	posiada	9
+26	723	posiada	10
+19	724	posiada	6
+30	724	posiada	10
+83	724	posiada	6
+84	724	posiada	9
+130	724	posiada	9
+45	725	posiada	6
+94	725	posiada	6
+118	725	posiada	9
+12	726	sprzedal	6
+58	726	sprzedal	9
+125	726	sprzedal	10
+15	727	sprzedal	6
+30	727	sprzedal	10
+50	727	sprzedal	7
+69	727	sprzedal	10
+97	727	sprzedal	8
+130	727	chce kupic	8
+5	728	chce kupic	8
+41	728	chce kupic	7
+57	728	chce kupic	8
+74	728	posiada	9
+103	728	chce kupic	10
+115	728	sprzedal	6
+119	728	posiada	9
+121	728	chce kupic	9
+31	729	sprzedal	7
+65	729	posiada	6
+112	729	sprzedal	6
+125	729	sprzedal	8
+35	730	chce kupic	8
+96	730	chce kupic	10
+112	730	chce kupic	6
+118	730	chce kupic	8
+24	731	posiada	10
+39	731	chce kupic	8
+93	731	sprzedal	7
+100	731	posiada	8
+21	732	chce kupic	6
+25	732	sprzedal	7
+53	733	posiada	6
+105	733	posiada	6
+14	734	posiada	9
+56	734	posiada	6
+92	734	posiada	8
+16	735	posiada	7
+31	735	posiada	10
+93	735	posiada	7
+95	735	posiada	9
+111	735	posiada	6
+126	735	posiada	9
+8	736	sprzedal	10
+50	736	sprzedal	8
+67	736	sprzedal	10
+122	736	sprzedal	6
+65	737	sprzedal	10
+33	738	sprzedal	10
+65	738	sprzedal	6
+67	738	sprzedal	6
+96	738	chce kupic	9
+97	738	chce kupic	6
+115	738	chce kupic	6
+2	739	chce kupic	6
+17	739	posiada	10
+43	739	chce kupic	10
+99	739	sprzedal	7
+131	739	posiada	8
+48	740	chce kupic	8
+65	740	sprzedal	8
+78	740	posiada	8
+98	740	sprzedal	7
+105	740	sprzedal	8
+120	740	chce kupic	8
+23	741	chce kupic	6
+26	741	chce kupic	6
+50	741	chce kupic	6
+127	741	posiada	9
+29	742	chce kupic	7
+77	742	sprzedal	10
+118	742	posiada	9
+32	743	chce kupic	6
+87	743	sprzedal	9
+10	744	posiada	9
+19	744	posiada	6
+33	744	posiada	8
+81	744	posiada	7
+86	744	posiada	7
+99	744	posiada	9
+17	745	posiada	7
+43	745	posiada	9
+52	746	posiada	9
+55	746	posiada	9
+72	746	posiada	9
+78	746	sprzedal	7
+112	746	sprzedal	9
+123	746	sprzedal	10
+125	746	sprzedal	9
+129	746	sprzedal	9
+4	747	sprzedal	10
+8	747	sprzedal	10
+43	747	sprzedal	8
+44	747	chce kupic	8
+83	747	chce kupic	6
+96	747	chce kupic	7
+99	747	chce kupic	6
+104	747	posiada	10
+5	748	chce kupic	7
+16	748	sprzedal	6
+21	748	posiada	6
+60	748	chce kupic	6
+87	748	sprzedal	10
+8	749	posiada	9
+24	749	sprzedal	9
+46	749	sprzedal	7
+67	749	chce kupic	7
+82	749	chce kupic	8
+125	749	chce kupic	9
+128	749	chce kupic	7
+6	750	posiada	7
+85	751	chce kupic	8
+103	751	sprzedal	10
+114	751	posiada	9
+6	752	chce kupic	6
+19	752	sprzedal	8
+65	752	posiada	7
+80	752	posiada	9
+110	752	posiada	9
+19	753	posiada	9
+34	753	posiada	6
+72	753	posiada	7
+89	753	posiada	8
+120	753	posiada	9
+22	754	posiada	10
+53	754	posiada	6
+108	754	posiada	8
+123	754	sprzedal	9
+24	755	sprzedal	9
+32	755	sprzedal	6
+54	755	sprzedal	8
+70	755	sprzedal	6
+69	756	sprzedal	6
+94	756	sprzedal	7
+118	756	sprzedal	10
+17	757	chce kupic	10
+55	757	chce kupic	7
+59	757	chce kupic	8
+64	757	chce kupic	6
+13	758	posiada	9
+122	758	chce kupic	7
+58	759	sprzedal	6
+74	759	posiada	9
+88	759	chce kupic	10
+97	759	sprzedal	9
+106	759	posiada	6
+121	759	sprzedal	10
+3	760	sprzedal	8
+12	760	chce kupic	8
+16	760	chce kupic	7
+36	760	chce kupic	8
+52	760	chce kupic	10
+32	761	posiada	10
+56	761	chce kupic	7
+73	761	sprzedal	7
+85	761	posiada	10
+112	761	chce kupic	6
+126	761	sprzedal	9
+128	761	posiada	8
+36	762	posiada	9
+104	762	posiada	9
+122	762	posiada	9
+58	763	posiada	10
+92	763	posiada	8
+95	763	posiada	6
+52	764	posiada	6
+90	764	posiada	7
+23	765	posiada	10
+62	765	posiada	6
+121	765	sprzedal	10
+5	766	sprzedal	10
+75	766	sprzedal	6
+79	766	sprzedal	7
+90	766	sprzedal	7
+118	766	sprzedal	9
+130	766	sprzedal	10
+82	767	sprzedal	8
+86	767	chce kupic	7
+99	767	chce kupic	10
+4	768	chce kupic	9
+55	768	chce kupic	6
+104	768	posiada	10
+11	769	chce kupic	8
+41	769	sprzedal	9
+45	769	posiada	8
+86	769	chce kupic	9
+12	770	sprzedal	6
+33	770	posiada	8
+85	770	sprzedal	8
+90	770	sprzedal	6
+100	770	chce kupic	10
+60	771	chce kupic	6
+72	771	chce kupic	9
+129	771	chce kupic	9
+2	772	posiada	8
+13	772	chce kupic	7
+35	772	sprzedal	6
+68	772	posiada	7
+76	772	chce kupic	9
+79	772	sprzedal	9
+9	773	posiada	10
+23	773	posiada	8
+45	773	posiada	10
+106	773	posiada	7
+109	773	posiada	10
+110	773	posiada	7
+47	774	posiada	10
+117	774	posiada	6
+48	775	posiada	8
+60	775	posiada	7
+125	775	posiada	7
+20	776	sprzedal	7
+130	776	sprzedal	9
+64	777	sprzedal	7
+103	777	sprzedal	6
+104	777	sprzedal	8
+109	777	sprzedal	10
+40	778	sprzedal	9
+72	778	sprzedal	7
+105	778	chce kupic	7
+107	778	chce kupic	6
+118	778	chce kupic	8
+2	779	chce kupic	6
+22	779	posiada	7
+39	779	chce kupic	8
+41	779	sprzedal	6
+48	779	posiada	10
+64	779	chce kupic	7
+110	779	sprzedal	9
+124	779	posiada	10
+36	780	sprzedal	6
+71	780	sprzedal	9
+83	780	chce kupic	7
+105	780	chce kupic	10
+120	781	chce kupic	6
+16	782	chce kupic	8
+29	782	posiada	7
+60	782	chce kupic	8
+65	782	sprzedal	6
+76	782	posiada	9
+83	782	chce kupic	10
+30	783	sprzedal	7
+49	783	posiada	8
+77	783	posiada	7
+81	783	posiada	6
+10	784	posiada	8
+16	784	posiada	7
+51	784	posiada	10
+94	784	posiada	7
+129	784	posiada	6
+58	785	posiada	6
+63	785	posiada	6
+71	785	posiada	8
+91	785	sprzedal	6
+49	786	sprzedal	7
+51	787	sprzedal	6
+55	787	sprzedal	8
+59	787	sprzedal	8
+3	788	sprzedal	6
+13	788	sprzedal	7
+69	789	sprzedal	10
+2	790	chce kupic	9
+60	790	chce kupic	6
+67	790	chce kupic	6
+93	790	chce kupic	7
+105	790	posiada	6
+120	790	chce kupic	9
+19	791	sprzedal	6
+122	791	posiada	10
+128	791	chce kupic	10
+15	792	sprzedal	8
+56	792	posiada	6
+69	792	sprzedal	10
+97	792	sprzedal	9
+112	792	chce kupic	6
+121	792	chce kupic	10
+126	792	chce kupic	8
+130	792	chce kupic	9
+12	793	posiada	7
+32	793	chce kupic	7
+41	793	sprzedal	10
+62	793	posiada	7
+71	793	chce kupic	10
+111	793	sprzedal	6
+38	794	posiada	9
+53	794	posiada	6
+57	794	posiada	8
+59	794	posiada	6
+70	794	posiada	8
+71	794	posiada	10
+115	794	posiada	10
+116	794	posiada	9
+125	794	posiada	9
+11	795	posiada	7
+38	795	posiada	8
+69	795	sprzedal	10
+78	795	sprzedal	6
+123	795	sprzedal	9
+124	795	sprzedal	9
+77	796	sprzedal	7
+98	796	sprzedal	7
+124	796	sprzedal	7
+17	797	sprzedal	6
+55	797	chce kupic	8
+84	797	chce kupic	6
+113	797	chce kupic	8
+92	798	chce kupic	6
+101	798	posiada	8
+107	798	chce kupic	6
+6	799	sprzedal	10
+37	799	posiada	7
+49	799	chce kupic	7
+114	799	sprzedal	8
+123	800	posiada	10
+26	801	sprzedal	10
+44	801	sprzedal	6
+56	801	chce kupic	9
+6	802	chce kupic	9
+49	802	chce kupic	9
+50	802	chce kupic	6
+51	802	posiada	8
+104	802	chce kupic	6
+129	802	sprzedal	8
+18	803	posiada	7
+27	803	chce kupic	10
+50	804	sprzedal	9
+100	804	posiada	9
+110	804	posiada	9
+16	805	posiada	6
+29	805	posiada	6
+34	805	posiada	7
+72	805	posiada	8
+80	805	posiada	8
+121	805	posiada	6
+26	806	posiada	7
+41	806	posiada	6
+70	806	posiada	8
+27	807	sprzedal	8
+23	808	sprzedal	10
+110	808	sprzedal	9
+129	808	sprzedal	7
+55	809	sprzedal	7
+111	810	sprzedal	6
+95	811	sprzedal	8
+96	811	sprzedal	9
+126	811	chce kupic	10
+130	811	chce kupic	6
+41	812	chce kupic	6
+87	812	chce kupic	7
+101	812	posiada	10
+5	813	chce kupic	6
+6	813	sprzedal	6
+64	813	posiada	8
+108	813	chce kupic	7
+127	813	sprzedal	7
+15	814	posiada	6
+59	814	sprzedal	8
+81	814	sprzedal	6
+116	814	chce kupic	8
+32	815	chce kupic	8
+47	815	chce kupic	7
+53	815	chce kupic	10
+65	815	posiada	6
+94	815	chce kupic	7
+109	815	sprzedal	10
+49	816	posiada	10
+62	816	chce kupic	7
+65	816	sprzedal	8
+92	816	posiada	10
+127	816	posiada	9
+46	817	posiada	6
+108	817	posiada	8
+127	817	posiada	8
+22	818	posiada	8
+65	818	posiada	6
+78	818	posiada	10
+108	818	posiada	6
+23	819	posiada	7
+27	819	posiada	8
+43	819	sprzedal	7
+80	819	sprzedal	8
+83	819	sprzedal	9
+105	819	sprzedal	8
+115	819	sprzedal	7
+12	820	sprzedal	9
+19	820	sprzedal	8
+37	820	sprzedal	6
+57	821	chce kupic	7
+80	821	chce kupic	6
+114	821	chce kupic	9
+124	821	chce kupic	9
+131	821	posiada	9
+44	822	chce kupic	8
+61	822	sprzedal	6
+77	822	posiada	7
+123	822	chce kupic	8
+21	823	sprzedal	6
+33	823	posiada	8
+40	823	sprzedal	6
+48	823	sprzedal	8
+24	824	chce kupic	6
+36	824	chce kupic	10
+50	824	chce kupic	10
+111	824	chce kupic	9
+37	825	posiada	8
+40	825	chce kupic	10
+67	825	sprzedal	8
+99	825	posiada	8
+115	825	chce kupic	7
+118	825	sprzedal	7
+37	826	posiada	7
+74	826	posiada	9
+77	826	posiada	10
+89	826	posiada	9
+7	827	posiada	6
+18	827	posiada	9
+21	827	posiada	6
+61	827	posiada	7
+66	827	posiada	6
+75	827	posiada	7
+82	827	posiada	7
+87	827	sprzedal	8
+90	827	sprzedal	10
+41	828	sprzedal	6
+6	829	sprzedal	8
+83	829	sprzedal	6
+85	829	sprzedal	9
+130	829	sprzedal	6
+3	830	sprzedal	8
+15	830	chce kupic	7
+86	830	chce kupic	6
+92	830	chce kupic	10
+108	830	chce kupic	6
+124	830	posiada	7
+42	831	chce kupic	8
+102	831	sprzedal	8
+114	831	posiada	10
+115	831	chce kupic	6
+121	831	sprzedal	7
+35	832	posiada	8
+97	832	sprzedal	8
+104	832	sprzedal	10
+128	832	chce kupic	6
+18	833	chce kupic	10
+23	833	chce kupic	6
+41	833	chce kupic	7
+46	833	posiada	9
+80	833	chce kupic	7
+1	834	sprzedal	6
+96	834	posiada	9
+51	835	chce kupic	6
+69	835	sprzedal	9
+109	835	posiada	6
+128	836	posiada	9
+15	837	posiada	10
+49	837	posiada	9
+6	838	posiada	10
+17	838	posiada	10
+37	838	posiada	7
+47	838	posiada	10
+49	838	posiada	7
+68	838	posiada	9
+47	839	posiada	7
+126	839	sprzedal	9
+76	840	sprzedal	10
+88	840	sprzedal	7
+115	840	sprzedal	7
+56	841	sprzedal	6
+85	841	sprzedal	7
+126	841	sprzedal	6
+59	842	sprzedal	8
+99	842	chce kupic	10
+117	842	chce kupic	8
+6	843	chce kupic	10
+18	843	chce kupic	9
+83	843	posiada	8
+97	843	chce kupic	8
+76	844	sprzedal	9
+39	845	posiada	9
+47	845	chce kupic	8
+88	845	sprzedal	10
+103	845	posiada	10
+82	846	sprzedal	8
+97	846	sprzedal	8
+15	847	chce kupic	7
+18	847	chce kupic	6
+25	847	chce kupic	6
+40	847	chce kupic	9
+17	848	posiada	6
+52	848	chce kupic	6
+78	848	sprzedal	10
+102	848	posiada	10
+59	849	chce kupic	8
+79	849	sprzedal	7
+78	850	posiada	9
+79	850	posiada	10
+81	850	posiada	7
+7	851	posiada	6
+23	851	posiada	6
+42	851	posiada	9
+43	851	posiada	9
+89	851	posiada	6
+93	851	posiada	8
+106	851	posiada	9
+127	851	posiada	9
+109	852	sprzedal	6
+122	852	sprzedal	8
+5	853	sprzedal	7
+14	853	sprzedal	9
+85	853	sprzedal	7
+29	854	sprzedal	9
+44	854	sprzedal	9
+73	854	sprzedal	8
+101	854	chce kupic	6
+109	854	chce kupic	10
+131	854	chce kupic	6
+50	855	chce kupic	6
+71	855	posiada	7
+15	856	chce kupic	7
+21	856	sprzedal	7
+46	856	posiada	9
+60	856	chce kupic	9
+96	856	sprzedal	8
+109	856	posiada	7
+40	857	sprzedal	9
+63	857	sprzedal	9
+76	857	chce kupic	8
+126	857	chce kupic	8
+12	858	chce kupic	8
+69	858	chce kupic	6
+13	859	posiada	9
+111	859	chce kupic	7
+113	859	sprzedal	10
+35	860	posiada	6
+90	860	chce kupic	6
+40	861	sprzedal	9
+48	861	posiada	7
+53	861	posiada	10
+69	861	posiada	8
+74	861	posiada	10
+89	862	posiada	10
+109	862	posiada	6
+117	862	posiada	6
+126	862	posiada	9
+27	863	posiada	8
+42	863	posiada	9
+121	863	posiada	9
+20	864	sprzedal	9
+22	864	sprzedal	8
+24	864	sprzedal	9
+98	864	sprzedal	8
+107	864	sprzedal	6
+124	864	sprzedal	6
+127	864	sprzedal	10
+15	865	sprzedal	6
+21	865	chce kupic	10
+33	865	chce kupic	6
+63	865	chce kupic	10
+75	865	chce kupic	9
+89	865	posiada	7
+124	865	chce kupic	6
+30	866	sprzedal	7
+43	866	posiada	8
+50	866	chce kupic	6
+65	866	sprzedal	7
+75	866	posiada	10
+3	867	sprzedal	9
+5	867	sprzedal	10
+37	867	chce kupic	8
+44	867	chce kupic	7
+107	867	chce kupic	9
+111	867	chce kupic	10
+119	867	posiada	6
+29	868	chce kupic	6
+31	868	sprzedal	6
+42	868	posiada	9
+50	868	chce kupic	10
+63	868	sprzedal	7
+81	868	posiada	6
+127	868	posiada	9
+12	869	posiada	10
+15	869	posiada	8
+24	869	posiada	10
+87	869	posiada	10
+53	870	posiada	9
+77	870	posiada	6
+111	870	posiada	9
+129	870	posiada	6
+12	871	posiada	8
+34	871	sprzedal	8
+44	871	sprzedal	6
+54	871	sprzedal	7
+130	871	sprzedal	6
+78	872	sprzedal	10
+83	872	sprzedal	10
+103	872	sprzedal	6
+120	873	sprzedal	10
+29	874	chce kupic	8
+55	874	chce kupic	6
+85	874	chce kupic	10
+104	874	chce kupic	10
+107	874	posiada	10
+10	875	chce kupic	9
+19	875	sprzedal	9
+48	875	posiada	10
+73	875	chce kupic	8
+123	875	sprzedal	7
+23	876	posiada	8
+109	877	sprzedal	9
+32	878	sprzedal	9
+109	878	chce kupic	10
+54	879	chce kupic	10
+67	879	chce kupic	10
+69	879	chce kupic	9
+71	879	posiada	10
+9	880	chce kupic	6
+34	880	sprzedal	6
+104	880	posiada	7
+34	881	chce kupic	9
+101	881	sprzedal	10
+117	881	posiada	2
+3	882	posiada	4
+5	882	posiada	6
+92	882	posiada	5
+124	882	posiada	5
+49	883	posiada	2
+62	883	posiada	10
+74	883	posiada	2
+105	883	posiada	6
+118	883	posiada	8
+12	884	posiada	9
+21	884	sprzedal	6
+7	885	sprzedal	5
+35	885	sprzedal	6
+118	885	sprzedal	9
+126	885	sprzedal	7
+32	886	sprzedal	5
+114	886	sprzedal	9
+9	887	sprzedal	6
+53	887	chce kupic	9
+8	888	chce kupic	6
+63	889	chce kupic	8
+68	889	chce kupic	10
+1	890	posiada	5
+5	890	chce kupic	5
+15	890	sprzedal	10
+58	890	posiada	8
+69	890	chce kupic	8
+82	890	sprzedal	10
+102	890	posiada	8
+111	890	sprzedal	10
+77	891	sprzedal	9
+82	891	chce kupic	6
+16	892	chce kupic	6
+30	892	chce kupic	10
+119	892	chce kupic	5
+62	893	posiada	9
+101	893	chce kupic	5
+4	894	sprzedal	7
+31	894	posiada	7
+43	894	chce kupic	8
+83	894	sprzedal	9
+97	894	posiada	5
+129	896	posiada	8
+18	897	posiada	7
+44	897	posiada	7
+82	897	posiada	7
+4	898	posiada	10
+21	898	posiada	8
+27	898	posiada	5
+28	898	posiada	7
+37	898	posiada	9
+57	898	posiada	9
+77	898	sprzedal	8
+82	898	sprzedal	7
+19	899	sprzedal	9
+24	899	sprzedal	5
+25	899	sprzedal	10
+37	899	sprzedal	6
+49	899	sprzedal	9
+118	899	sprzedal	8
+77	901	chce kupic	9
+89	901	chce kupic	5
+120	901	chce kupic	5
+15	902	chce kupic	6
+27	903	posiada	10
+31	903	chce kupic	5
+41	903	sprzedal	7
+71	903	posiada	5
+4	904	chce kupic	7
+49	904	sprzedal	6
+60	904	posiada	10
+82	904	sprzedal	8
+111	904	sprzedal	9
+123	904	chce kupic	6
+44	905	chce kupic	5
+79	905	chce kupic	9
+83	905	chce kupic	6
+3	906	posiada	6
+33	906	chce kupic	8
+59	906	sprzedal	5
+71	906	posiada	6
+82	906	chce kupic	9
+10	907	sprzedal	10
+32	907	posiada	8
+52	907	posiada	5
+120	907	posiada	10
+5	908	posiada	9
+21	908	posiada	6
+48	909	posiada	10
+68	909	posiada	10
+87	909	posiada	7
+121	909	posiada	7
+6	910	posiada	5
+8	910	posiada	7
+11	910	sprzedal	7
+39	910	sprzedal	9
+114	910	sprzedal	7
+6	911	sprzedal	10
+13	911	sprzedal	10
+61	911	sprzedal	9
+24	912	sprzedal	6
+54	912	sprzedal	7
+97	912	chce kupic	9
+13	913	chce kupic	5
+21	913	chce kupic	10
+31	913	chce kupic	7
+37	913	posiada	6
+64	913	chce kupic	5
+84	913	sprzedal	10
+97	913	posiada	6
+119	913	chce kupic	7
+126	913	sprzedal	7
+129	913	posiada	9
+7	914	sprzedal	6
+84	914	sprzedal	8
+98	914	chce kupic	9
+1	915	chce kupic	8
+18	915	chce kupic	5
+29	915	chce kupic	8
+54	915	posiada	7
+35	916	chce kupic	6
+95	916	sprzedal	6
+19	917	posiada	7
+99	917	chce kupic	6
+89	918	sprzedal	8
+103	918	posiada	9
+9	919	posiada	8
+12	919	posiada	10
+59	919	posiada	5
+81	919	posiada	7
+100	919	posiada	9
+102	919	posiada	7
+115	919	posiada	8
+8	920	posiada	7
+17	920	posiada	9
+32	920	posiada	8
+73	920	sprzedal	7
+80	920	sprzedal	6
+23	921	sprzedal	10
+41	921	sprzedal	9
+44	921	sprzedal	9
+72	921	sprzedal	7
+10	922	sprzedal	9
+21	922	sprzedal	5
+41	922	chce kupic	7
+78	922	chce kupic	8
+93	922	chce kupic	9
+113	922	chce kupic	7
+1	923	posiada	6
+16	923	chce kupic	9
+51	923	sprzedal	10
+86	923	posiada	5
+125	923	chce kupic	7
+3	924	sprzedal	9
+13	924	posiada	8
+63	924	sprzedal	8
+68	924	sprzedal	7
+73	924	chce kupic	7
+75	924	chce kupic	5
+79	924	chce kupic	8
+97	924	chce kupic	10
+116	924	posiada	9
+121	924	chce kupic	6
+18	925	sprzedal	6
+37	925	posiada	6
+47	925	chce kupic	6
+68	925	sprzedal	5
+118	925	posiada	10
+18	926	posiada	5
+20	926	posiada	10
+29	926	posiada	8
+41	926	posiada	7
+78	926	posiada	7
+23	927	posiada	6
+110	927	posiada	6
+65	928	posiada	5
+96	928	posiada	8
+107	928	posiada	6
+119	928	sprzedal	6
+123	928	sprzedal	10
+59	929	sprzedal	10
+82	929	sprzedal	9
+115	929	sprzedal	9
+120	929	sprzedal	9
+31	930	sprzedal	10
+109	930	sprzedal	5
+4	931	chce kupic	8
+39	931	chce kupic	5
+50	931	chce kupic	8
+123	931	chce kupic	6
+1	932	posiada	7
+14	932	chce kupic	8
+16	932	sprzedal	8
+65	932	posiada	7
+114	932	chce kupic	6
+120	932	sprzedal	7
+125	932	posiada	9
+15	933	sprzedal	8
+20	933	sprzedal	10
+38	933	chce kupic	9
+48	933	chce kupic	7
+72	933	chce kupic	7
+89	933	chce kupic	9
+22	934	posiada	7
+66	934	chce kupic	10
+99	934	sprzedal	7
+94	935	posiada	10
+96	935	chce kupic	9
+111	935	sprzedal	7
+28	936	posiada	8
+40	936	posiada	9
+46	936	posiada	9
+109	936	posiada	7
+18	937	posiada	5
+20	937	posiada	6
+31	937	posiada	8
+34	937	posiada	10
+64	937	posiada	10
+97	937	posiada	6
+112	937	posiada	10
+22	938	sprzedal	7
+55	938	sprzedal	9
+64	938	sprzedal	7
+74	938	sprzedal	9
+103	938	sprzedal	8
+23	939	sprzedal	7
+46	939	sprzedal	7
+74	939	sprzedal	5
+124	939	chce kupic	9
+126	939	chce kupic	7
+113	940	chce kupic	5
+26	941	chce kupic	7
+85	941	posiada	7
+118	941	chce kupic	5
+122	941	sprzedal	8
+127	941	posiada	8
+129	941	chce kupic	5
+1	942	sprzedal	6
+33	942	posiada	8
+46	942	sprzedal	6
+52	942	sprzedal	10
+94	942	chce kupic	5
+3	943	chce kupic	10
+47	943	chce kupic	9
+106	943	chce kupic	6
+109	943	posiada	6
+118	943	chce kupic	9
+83	944	sprzedal	10
+100	944	posiada	5
+129	944	chce kupic	5
+29	945	sprzedal	8
+27	946	posiada	10
+31	946	posiada	5
+65	946	posiada	5
+85	946	posiada	5
+111	946	posiada	7
+31	947	posiada	10
+48	947	posiada	6
+59	947	posiada	10
+73	947	posiada	9
+80	947	posiada	7
+8	948	posiada	8
+59	948	sprzedal	10
+26	949	sprzedal	10
+27	949	sprzedal	9
+38	949	sprzedal	7
+82	949	sprzedal	6
+122	949	sprzedal	9
+12	950	sprzedal	7
+31	950	sprzedal	6
+42	950	chce kupic	10
+58	950	chce kupic	8
+62	950	chce kupic	10
+91	950	chce kupic	9
+113	950	posiada	6
+49	951	chce kupic	6
+51	951	sprzedal	6
+81	951	posiada	9
+24	952	chce kupic	8
+58	952	sprzedal	9
+88	952	posiada	6
+93	952	sprzedal	7
+24	953	sprzedal	8
+57	953	chce kupic	8
+85	953	chce kupic	8
+4	954	chce kupic	9
+21	954	chce kupic	6
+108	954	posiada	6
+127	954	chce kupic	10
+88	955	sprzedal	6
+22	956	posiada	7
+35	956	chce kupic	6
+67	956	sprzedal	8
+100	956	posiada	10
+125	956	posiada	10
+30	958	posiada	5
+58	958	posiada	5
+129	958	posiada	5
+104	959	posiada	9
+111	959	posiada	6
+6	960	posiada	7
+10	960	posiada	6
+14	960	posiada	5
+48	960	posiada	5
+55	960	sprzedal	9
+60	960	sprzedal	6
+93	960	sprzedal	7
+6	961	sprzedal	5
+27	961	sprzedal	10
+38	961	sprzedal	8
+44	961	sprzedal	9
+46	961	sprzedal	5
+17	962	chce kupic	7
+44	962	chce kupic	5
+95	962	chce kupic	7
+127	962	chce kupic	6
+83	963	posiada	9
+89	963	chce kupic	10
+4	964	sprzedal	6
+10	964	posiada	6
+19	964	chce kupic	9
+21	964	sprzedal	8
+59	964	posiada	8
+67	964	sprzedal	10
+97	964	sprzedal	8
+103	964	chce kupic	7
+15	965	chce kupic	8
+26	965	chce kupic	6
+113	965	chce kupic	5
+115	965	posiada	8
+126	965	chce kupic	10
+73	966	sprzedal	7
+81	966	posiada	9
+130	966	chce kupic	10
+5	967	sprzedal	5
+21	967	posiada	9
+75	967	posiada	7
+82	967	posiada	7
+107	968	posiada	6
+28	969	posiada	10
+118	969	posiada	5
+2	970	posiada	7
+29	971	posiada	10
+58	971	posiada	9
+59	971	posiada	7
+103	971	posiada	7
+130	971	sprzedal	9
+13	972	sprzedal	6
+14	972	sprzedal	5
+36	972	sprzedal	5
+121	972	sprzedal	6
+95	973	sprzedal	9
+114	973	sprzedal	5
+15	974	sprzedal	8
+21	974	chce kupic	8
+58	974	chce kupic	5
+80	974	chce kupic	7
+93	974	chce kupic	5
+26	975	posiada	8
+76	975	chce kupic	8
+83	975	sprzedal	9
+118	975	posiada	10
+125	975	chce kupic	8
+45	976	sprzedal	5
+54	976	posiada	8
+112	976	sprzedal	9
+52	977	sprzedal	9
+14	978	chce kupic	6
+67	978	chce kupic	6
+68	978	chce kupic	6
+4	979	chce kupic	5
+42	979	posiada	7
+69	979	chce kupic	7
+95	979	sprzedal	9
+18	980	posiada	6
+70	980	chce kupic	8
+86	980	sprzedal	8
+102	980	posiada	8
+104	980	posiada	10
+33	981	posiada	9
+48	981	posiada	9
+80	981	posiada	9
+86	981	posiada	8
+90	981	posiada	9
+96	981	posiada	9
+114	981	posiada	8
+121	981	posiada	10
+127	981	posiada	9
+6	982	sprzedal	10
+54	982	sprzedal	8
+85	982	sprzedal	5
+26	983	sprzedal	8
+46	983	sprzedal	7
+109	983	sprzedal	7
+23	984	sprzedal	9
+42	984	sprzedal	7
+65	984	chce kupic	9
+103	985	chce kupic	10
+120	985	chce kupic	8
+55	986	chce kupic	9
+57	986	posiada	7
+78	986	chce kupic	6
+97	986	sprzedal	5
+2	987	posiada	10
+13	987	chce kupic	7
+44	987	sprzedal	10
+51	987	posiada	6
+100	987	sprzedal	10
+104	987	sprzedal	8
+124	987	chce kupic	8
+112	988	chce kupic	10
+41	989	chce kupic	9
+53	989	chce kupic	7
+68	989	posiada	8
+75	989	chce kupic	9
+103	989	sprzedal	5
+106	989	posiada	8
+4	990	chce kupic	5
+33	990	sprzedal	10
+29	992	posiada	10
+31	993	posiada	7
+69	993	posiada	5
+126	993	posiada	8
+130	993	posiada	7
+11	994	posiada	9
+16	995	posiada	8
+23	995	posiada	10
+86	995	posiada	8
+131	995	posiada	7
+24	996	posiada	8
+56	996	sprzedal	7
+57	996	sprzedal	8
+116	996	sprzedal	9
+14	997	sprzedal	5
+58	997	sprzedal	10
+76	997	sprzedal	9
+15	998	sprzedal	7
+19	998	sprzedal	10
+43	998	chce kupic	8
+61	998	chce kupic	10
+65	999	chce kupic	8
+81	999	chce kupic	9
+101	999	posiada	8
+121	999	chce kupic	10
+124	999	sprzedal	8
+126	999	posiada	7
+1	1000	chce kupic	6
+13	1000	sprzedal	5
+24	1000	posiada	8
+84	1000	sprzedal	9
+130	1000	sprzedal	8
+36	1001	chce kupic	9
+43	1001	chce kupic	10
+59	1001	chce kupic	6
+76	1001	chce kupic	5
+78	1001	posiada	8
+99	1001	chce kupic	6
+119	1001	sprzedal	7
+129	1001	posiada	7
+47	1002	chce kupic	6
+123	1002	sprzedal	8
+5	1003	posiada	5
+24	1003	posiada	6
+27	1003	posiada	10
+104	1003	posiada	7
+18	1004	posiada	7
+26	1004	posiada	9
+42	1004	posiada	9
+59	1004	posiada	7
+71	1004	posiada	6
+72	1004	posiada	8
+73	1004	posiada	10
+98	1004	sprzedal	9
+105	1004	sprzedal	7
+50	1005	sprzedal	9
+75	1005	sprzedal	8
+106	1005	sprzedal	5
+19	1006	sprzedal	7
+38	1006	sprzedal	7
+62	1006	sprzedal	9
+74	1006	chce kupic	9
+79	1006	chce kupic	10
+89	1006	chce kupic	7
+16	1007	chce kupic	6
+25	1007	posiada	6
+60	1007	chce kupic	7
+108	1007	sprzedal	5
+12	1008	posiada	10
+33	1008	chce kupic	8
+67	1008	sprzedal	8
+85	1008	posiada	8
+102	1008	sprzedal	10
+12	1009	sprzedal	5
+17	1009	chce kupic	9
+56	1009	chce kupic	9
+64	1009	chce kupic	9
+85	1009	chce kupic	9
+99	1009	posiada	6
+9	1010	chce kupic	8
+29	1010	sprzedal	6
+56	1010	posiada	9
+68	1010	chce kupic	5
+100	1010	sprzedal	8
+76	1011	posiada	7
+97	1011	posiada	6
+113	1011	posiada	9
+120	1011	posiada	9
+20	1012	posiada	5
+33	1012	posiada	6
+108	1012	posiada	6
+114	1012	posiada	7
+37	1013	posiada	9
+117	1013	posiada	8
+131	1013	posiada	9
+6	1014	sprzedal	7
+19	1014	sprzedal	8
+31	1014	sprzedal	10
+36	1014	sprzedal	6
+48	1014	sprzedal	8
+116	1014	sprzedal	6
+118	1014	sprzedal	10
+126	1014	sprzedal	5
+1	1015	chce kupic	5
+9	1015	chce kupic	9
+46	1015	chce kupic	8
+82	1015	chce kupic	8
+92	1015	posiada	9
+41	1016	chce kupic	9
+43	1016	sprzedal	6
+66	1016	posiada	7
+7	1017	chce kupic	8
+15	1017	sprzedal	7
+18	1017	posiada	6
+60	1017	sprzedal	6
+78	1017	sprzedal	9
+120	1017	chce kupic	9
+4	1018	chce kupic	5
+13	1018	chce kupic	9
+19	1018	chce kupic	9
+58	1018	posiada	8
+112	1018	chce kupic	9
+14	1019	sprzedal	9
+40	1019	posiada	6
+50	1019	chce kupic	8
+97	1019	sprzedal	7
+106	1019	posiada	9
+40	1020	posiada	6
+73	1020	posiada	8
+79	1020	posiada	5
+108	1020	posiada	5
+58	1021	posiada	5
+105	1021	posiada	7
+108	1021	posiada	5
+38	1022	posiada	6
+65	1022	posiada	5
+81	1022	posiada	5
+82	1022	sprzedal	7
+105	1022	sprzedal	6
+116	1022	sprzedal	7
+17	1023	sprzedal	9
+19	1023	sprzedal	5
+88	1023	sprzedal	10
+95	1023	sprzedal	9
+109	1023	sprzedal	8
+125	1023	chce kupic	7
+105	1024	chce kupic	5
+3	1025	chce kupic	6
+36	1025	chce kupic	10
+79	1026	posiada	8
+129	1027	chce kupic	6
+30	1028	sprzedal	8
+49	1029	posiada	10
+88	1029	chce kupic	7
+91	1029	sprzedal	6
+96	1029	posiada	10
+99	1029	sprzedal	5
+61	1030	sprzedal	9
+76	1030	chce kupic	9
+83	1030	chce kupic	9
+129	1030	chce kupic	10
+105	1031	chce kupic	10
+13	1032	posiada	10
+75	1032	chce kupic	5
+101	1032	sprzedal	9
+125	1032	posiada	10
+37	1033	chce kupic	8
+60	1033	sprzedal	9
+75	1033	posiada	7
+93	1033	posiada	5
+130	1033	posiada	5
+1	1034	posiada	7
+41	1034	posiada	5
+46	1034	posiada	6
+55	1034	posiada	6
+114	1034	posiada	8
+128	1034	posiada	8
+10	1035	posiada	9
+29	1035	posiada	8
+36	1036	sprzedal	5
+43	1036	sprzedal	5
+66	1036	sprzedal	10
+110	1036	sprzedal	7
+19	1037	sprzedal	5
+43	1037	sprzedal	8
+55	1037	sprzedal	9
+85	1037	sprzedal	8
+114	1037	chce kupic	8
+83	1038	chce kupic	7
+94	1038	chce kupic	6
+31	1039	chce kupic	9
+45	1039	posiada	7
+55	1039	chce kupic	5
+15	1040	sprzedal	5
+40	1040	posiada	8
+63	1040	chce kupic	9
+69	1040	sprzedal	6
+28	1041	posiada	7
+51	1041	sprzedal	10
+70	1041	sprzedal	10

@@ -1,0 +1,4 @@
+A	autostrada
+K	droga krajowa
+S	droga ekspresowa
+W	droga wojewodzka
