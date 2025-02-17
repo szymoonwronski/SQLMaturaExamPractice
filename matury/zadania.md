@@ -553,7 +553,7 @@ czasu przebywały najdłużej na terenie szkoły.
 
 ```sql
 WITH czasy AS (
-    SELECT e.IdUcznia, TIMEDIFF(e.Wyjscie, e.Wejscie) czas
+  SELECT e.IdUcznia, TIMEDIFF(e.Wyjscie, e.Wejscie) czas
 	FROM ewidencja e
 )
 SELECT u.IdUcznia, u.Imie, u.Nazwisko
@@ -601,5 +601,211 @@ WHERE e.IdUcznia IS NULL
 | Mateusz   | Kordas   |
 | Krzysztof | Michalak |
 | Oliwier   | Ziolko   |
+
+</details>
+
+### Maj 2021
+
+#### 6.1
+
+Podaj 5 krajów, z których najwięcej graczy dołączyło do gry w 2018 roku. Dla każdego z tych
+krajów podaj liczbę graczy, którzy dołączyli w 2018 roku.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT g.kraj, COUNT(*) liczba
+FROM gracze g
+WHERE YEAR(g.data_dolaczenia) = 2018
+GROUP BY g.kraj
+ORDER BY liczba DESC
+LIMIT 5
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| kraj              | liczba # 1 |
+| ----------------- | ---------- |
+| Polska            | 11         |
+| Stany Zjednoczone | 8          |
+| Francja           | 7          |
+| Niemcy            | 6          |
+| Rosja             | 6          |
+
+</details>
+
+#### 6.2
+
+Podaj sumę wartości pola strzał (strzal) dla każdej klasy jednostek, które mają „elf” jako część
+nazwy.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.nazwa, SUM(k.strzal) suma
+FROM jednostki j
+JOIN klasy k ON j.nazwa = k.nazwa
+WHERE k.nazwa LIKE "%elf%"
+GROUP BY k.nazwa
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa                 | suma |
+| --------------------- | ---- |
+| ciemny elf            | 555  |
+| elfi czarodziej       | 435  |
+| lesny elf             | 1815 |
+| wysoki elf-gwardzista | 870  |
+
+</details>
+
+#### 6.3
+
+Podaj numery graczy, którzy nie mają artylerzystów (jednostek o nazwie artylerzysta). Numery
+podaj w porządku rosnącym.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT g.id_gracza
+FROM gracze g
+LEFT JOIN jednostki j ON g.id_gracza = j.id_gracza AND j.nazwa = "artylerzysta"
+WHERE j.id_jednostki IS NULL
+ORDER BY g.id_gracza
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| id_gracza |
+| --------- |
+| 22        |
+| 24        |
+| 29        |
+| 35        |
+| 36        |
+| 37        |
+| 38        |
+| 47        |
+| 54        |
+| 61        |
+| 64        |
+| 72        |
+| 110       |
+| 114       |
+| 115       |
+| 122       |
+| 123       |
+| 138       |
+| 141       |
+| 167       |
+
+</details>
+
+#### 6.4
+
+Jeden krok jednostki to przejście o 1 w dowolnym z czterech kierunków (północ, południe,
+wschód lub zachód). W jednej turze jednostka może wykonać co najwyżej tyle kroków, ile
+wynosi jej szybkosc. Innymi słowy jednostka w ciągu jednej tury może przemieścić się z punktu
+(x,y) do punktu (x1,y1), jeśli |x – x1| + |y – y1| ≤ szybkosc.\
+Tytułowa Kamienna Brama znajduje się w miejscu (100,100). Wyszukaj jednostki, które mogą
+w jednej turze dojść do Bramy, i podziel je na poszczególne klasy. Utwórz zestawienie, które
+dla każdej klasy poda jej nazwę oraz liczbę jednostek z tej klasy mogących w jednej turze
+osiągnąć Bramę.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.nazwa, COUNT(*) liczba
+FROM jednostki j
+JOIN klasy k ON j.nazwa = k.nazwa
+WHERE ABS(100 - j.lok_x) + ABS(100 - j.lok_y) <= k.szybkosc
+GROUP BY k.nazwa
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa                 | liczba |
+| --------------------- | ------ |
+| architekt             | 1      |
+| artylerzysta          | 4      |
+| balista               | 2      |
+| ciemny elf            | 1      |
+| drwal                 | 3      |
+| elfi czarodziej       | 1      |
+| goniec                | 2      |
+| ifryt                 | 1      |
+| kaplan                | 2      |
+| kawalerzysta          | 7      |
+| konny lucznik         | 4      |
+| kusznik               | 1      |
+| lekki jezdziec        | 19     |
+| lucznik               | 1      |
+| mag powietrza         | 3      |
+| mag wody              | 2      |
+| paladyn               | 1      |
+| piechur               | 7      |
+| pikinier              | 5      |
+| robotnik              | 5      |
+| topornik              | 5      |
+| wysoki elf-gwardzista | 1      |
+| zwiadowca             | 4      |
+
+</details>
+
+#### 6.5
+
+Jeśli w pewnej lokalizacji znajdują się jednostki więcej niż jednego gracza, toczy się tam
+(jedna) bitwa. Oblicz:\
+a) ile bitew ma miejsce na planszy,\
+b) w ilu bitwach biorą udział gracze z Polski.\
+**Uwaga**: zauważ, że w jednej lokalizacji może się znajdować więcej niż jedna jednostka tego
+samego gracza.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH bitwy AS (
+  SELECT
+    j.lok_x,
+    j.lok_y,
+    COUNT(DISTINCT g.id_gracza) liczba,
+    SUM(CASE WHEN g.kraj = 'Polska' THEN 1 ELSE 0 END) polakow
+  FROM jednostki j
+  JOIN gracze g ON j.id_gracza = g.id_gracza
+  GROUP BY j.lok_x, j.lok_y
+  HAVING liczba > 1
+)
+SELECT
+  COUNT(*) ile_bitew,
+  SUM(CASE WHEN b.polakow > 0 THEN 1 ELSE 0 END) ile_polakow
+FROM bitwy b
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| ile_bitew | ile_polakow |
+| --------- | ----------- |
+| 1061      | 245         |
 
 </details>
