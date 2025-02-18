@@ -448,8 +448,10 @@ instalacji wykonanych w tej firmie. Wynik posortuj nierosnąco według liczby in
 <details>
 <summary>Comment</summary>
 
-Using 'LEFT JOIN' ensures that all firms are included in the result set even if they have no installations.\
-Using 'INNER JOIN' would result in firms with no installations being excluded from the result set.
+The task is to count the number of installations performed in each company.\
+However, using INNER JOIN would exclude companies with no installations from the results.\
+To ensure all companies are included, even those without installations, LEFT JOIN should be used instead.\
+This way, companies without any installations will still appear in the results with a count of zero.
 
 </details>
 
