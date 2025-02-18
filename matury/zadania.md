@@ -310,6 +310,24 @@ WHERE s.promocja = true AND g.kategoria = "logiczna"
 
 ### Czerwiec 2023
 
+<details>
+<summary>Problematic data</summary>
+
+Let's try to import data from the `instalacje.txt` file.\
+The problem is with the `data_i` column, where the date is stored as `DD.MM.YYYY` instead of `YYYY-MM-DD`.\
+What are we going to do is to define its type as `varchar` which will allow use to just import the data.\
+Then we can change the format of the date to `YYYY-MM-DD`.\
+
+```sql
+UPDATE instalacje
+SET data_i = STR_TO_DATE(data_i, '%d.%m.%Y')
+```
+
+Having done that, we can change the type of the column to `date` for easy calculations.\
+Done!
+
+</details>
+
 #### 7.1
 
 Dla każdego typu urządzenia podaj liczbę instalacji aplikacji na tym typie urządzenia.
@@ -809,5 +827,203 @@ FROM bitwy b
 | ile_bitew | ile_polakow |
 | --------- | ----------- |
 | 1061      | 245         |
+
+</details>
+
+### Maj 2020
+
+<details>
+<summary>Problematic data</summary>
+
+Let's try to import data from the `panstwa.txt` file.\
+The problem is with the `Populacja` column, which uses `,` as a decimal separator instead of `.`.\
+What are we going to do is to define its type as `varchar` which will allow use to just import the data.\
+Then we can replace the `,` with `.`.\
+
+```sql
+UPDATE panstwa
+SET Populacja = REPLACE(Populacja, ',', '.')
+```
+
+Having done that, we can change the type of the column to `decimal(8, 1)` for easy calculations.\
+Done!
+
+</details>
+
+#### 5.1
+
+Utwórz zestawienie, które dla każdej rodziny językowej podaje, ile języków do niej należy.
+Posortuj zestawienie nierosnąco według liczby języków.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT Rodzina, COUNT(*) liczba
+FROM jezyki
+GROUP BY Rodzina
+ORDER BY liczba DESC
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Rodzina                    | liczba |
+| -------------------------- | ------ |
+| nigero-kongijska           | 137    |
+| austronezyjska             | 65     |
+| indoeuropejska             | 63     |
+| sino-tybetanska            | 43     |
+| nilo-saharyjska            | 30     |
+| afroazjatycka              | 28     |
+| dajska                     | 23     |
+| austroazjatycka            | 20     |
+| turecka                    | 15     |
+| drawidyjska                | 15     |
+| jezyk izolowany            | 8      |
+| polnocno-wschodniokaukaska | 7      |
+| otomang                    | 7      |
+| mongolska                  | 5      |
+| majanska                   | 5      |
+| hmong-mien                 | 4      |
+| abchasko-adygijska         | 3      |
+| uralska                    | 3      |
+| tupi                       | 1      |
+| keczua                     | 1      |
+| algijska                   | 1      |
+| uto-aztecka                | 1      |
+| na-dene                    | 1      |
+| tungusko-mandzurska        | 1      |
+
+</details>
+
+#### 5.2
+
+Podaj liczbę języków, które nie są językami urzędowymi w żadnym państwie. Przy
+rozwiązywaniu zadania pamiętaj, że w jednym państwie może być kilka języków urzędowych
+oraz że dany język może być językiem urzędowym w jednym państwie, a w innym – nie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM jezyki j
+WHERE NOT EXISTS (
+	SELECT 1
+	FROM uzytkownicy u
+	WHERE u.Jezyk = j.Jezyk AND u.Urzedowy = "tak"
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 445    |
+
+</details>
+
+#### 5.3
+
+Podaj wszystkie języki, którymi posługują się użytkownicy na co najmniej czterech
+kontynentach.\
+**Uwaga**: dla uproszczenia przyjmujemy, że państwo leży na tym kontynencie, na którym
+znajduje się jego stolica.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT u.Jezyk
+FROM uzytkownicy u
+JOIN panstwa p ON u.Panstwo = p.Panstwo
+GROUP BY u.Jezyk
+HAVING COUNT(DISTINCT p.Kontynent) >= 4
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Jezyk      |
+| ---------- |
+| angielski  |
+| arabski    |
+| gudzaracki |
+| tamilski   |
+
+</details>
+
+#### 5.4
+
+Znajdź 6 języków, którymi posługuje się łącznie najwięcej mieszkańców obu Ameryk
+(„Ameryka Polnocna” i „Ameryka Poludniowa”), a które nie należą do rodziny
+indoeuropejskiej („indoeuropejska”). Dla każdego z nich podaj nazwę, rodzinę językową
+i liczbę użytkowników w obu Amerykach łącznie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT j.Jezyk, j.Rodzina, SUM(u.Uzytkownicy) liczba
+FROM uzytkownicy u
+JOIN panstwa p ON u.Panstwo = p.Panstwo
+JOIN jezyki j ON u.Jezyk = j.Jezyk
+WHERE p.Kontynent IN ("Ameryka Polnocna", "Ameryka Poludniowa") AND j.Rodzina != "indoeuropejska"
+GROUP BY j.Jezyk
+ORDER BY liczba DESC
+LIMIT 6
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Jezyk       | Rodzina         | liczba |
+| ----------- | --------------- | ------ |
+| mandarynski | sino-tybetanska | 3.1    |
+| arabski     | afroazjatycka   | 2.7    |
+| tagalog     | austronezyjska  | 1.9    |
+| wietnamski  | austroazjatycka | 1.5    |
+| nahuatl     | uto-aztecka     | 1.4    |
+| koreanski   | jezyk izolowany | 1.2    |
+
+</details>
+
+#### 5.5
+
+Znajdź państwa, w których co najmniej 30% populacji posługuje się językiem, który nie jest
+językiem urzędowym obowiązującym w tym państwie. Dla każdego takiego państwa podaj
+jego nazwę i język, którym posługuje się co najmniej 30% populacji, a który nie jest
+urzędowym językiem w tym państwie, oraz procent populacji posługującej się tym językiem.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT p.Panstwo, u.Jezyk, 100 * u.Uzytkownicy / p.Populacja procent
+FROM uzytkownicy u
+JOIN panstwa p ON u.Panstwo = p.Panstwo
+WHERE u.Urzedowy = "nie" AND u.Uzytkownicy >= 0.3 * p.Populacja
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Panstwo   | Jezyk      | procent  |
+| --------- | ---------- | -------- |
+| Etiopia   | oromo      | 35.51308 |
+| Indonezja | jawajski   | 32.72516 |
+| Pakistan  | pendzabski | 40.44468 |
 
 </details>
