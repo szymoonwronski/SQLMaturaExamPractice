@@ -1039,3 +1039,214 @@ WHERE u.Urzedowy = "nie" AND u.Uzytkownicy >= 0.3 * p.Populacja
 | Pakistan  | pendzabski | 40.44468 |
 
 </details>
+
+### Maj 2019
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2019-maj-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Podaj listę wszystkich nazw perfum, których jednym ze składników jest „absolut jasminu”.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT p.nazwa_p
+FROM sklad s
+JOIN perfumy p ON s.id_perfum = p.id_perfum
+WHERE s.nazwa_skladnika = "absolut jasminu"
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_p       |
+| ------------- |
+| Oyal Priather |
+| Ologne D'oud  |
+| Uelques FleuE |
+
+</details>
+
+#### 6.2
+
+Podaj listę różnych rodzin zapachów. Dla każdej rodziny podaj jej nazwę, cenę najtańszych
+perfum z tej rodziny i ich nazwę.
+
+<details>
+<summary>Solution - using WITH (CTE - Common Table Expression)</summary>
+
+```sql
+WITH najtansze AS (
+	SELECT p.rodzina_zapachow, MIN(p.cena) najmniej
+	FROM perfumy p
+	GROUP BY p.rodzina_zapachow
+)
+SELECT n.rodzina_zapachow, n.najmniej, p.nazwa_p
+FROM najtansze n
+JOIN perfumy p ON n.rodzina_zapachow = p.rodzina_zapachow AND n.najmniej = p.cena
+```
+
+</details>
+
+<details>
+<summary>Solution - using subquery in WHERE</summary>
+
+```sql
+SELECT p.rodzina_zapachow, p.cena, p.nazwa_p
+FROM perfumy p
+WHERE p.cena = (
+  SELECT MIN(p2.cena)
+	FROM perfumy p2
+	WHERE p.rodzina_zapachow = p2.rodzina_zapachow
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| rodzina_zapachow      | najmniej | nazwa_p              |
+| --------------------- | -------- | -------------------- |
+| aromatyczna           | 124      | Ibrary Ollec D'amore |
+| cytrusowa             | 259      | Sian Grad            |
+| cytrusowo-aromatyczna | 178      | Re Nostrum,ir        |
+| drzewna               | 123      | Pperlee Bouquet      |
+| kwiatowa              | 110      | Ose Deurmaline       |
+| kwiatowo-drzewna      | 104      | Rougna               |
+| kwiatowo-orientalna   | 103      | Arla : Vivace        |
+| kwiatowo-szyprowa     | 287      | Etish Pothal         |
+| orientalna            | 113      | Anille La Tosca      |
+| orientalna lagodna    | 122      | Ndy Warhol S Rose    |
+| orientalno-drzewna    | 138      | LackNight            |
+| owocowa               | 154      | Ake Perfucturne      |
+| pudrowa               | 139      | Ivm Cristal          |
+| skorzana              | 112      | Ui Mare              |
+| szyprowa              | 226      | Usk ti 1888          |
+| szyprowo-skorzana     | 158      | Uir OtPlace          |
+| wodna                 | 146      | Ilver Mounaya        |
+| zielona               | 406      | EOman                |
+
+</details>
+
+#### 6.3
+
+Utwórz uporządkowaną alfabetycznie listę wszystkich nazw marek, które nie zawierają
+w swoich perfumach żadnego składnika mającego w nazwie słowo „paczula”.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT m.nazwa_m
+FROM marki m
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM sklad s
+	JOIN perfumy p ON s.id_perfum = p.id_perfum
+	WHERE p.id_marki = m.id_marki AND s.nazwa_skladnika LIKE "%paczula%"
+)
+ORDER BY m.nazwa_m
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_m        |
+| -------------- |
+| Aison Eranciro |
+| Arthbey        |
+| Embert Lucas   |
+| Enmith         |
+| Nnick a Kieffo |
+
+</details>
+
+#### 6.4
+
+Ceny wszystkich perfum marki Mou De Rosine z rodziny o nazwie „orientalno-drzewna”
+zostały obniżone o 15%. Podaj listę zawierającą wszystkie nazwy takich perfum i ich ceny po
+obniżce. Listę posortuj niemalejąco według ceny.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT p.nazwa_p, p.cena * 0.85 nowa_cena
+FROM perfumy p
+JOIN marki m ON p.id_marki = m.id_marki
+WHERE m.nazwa_m = "Mou De Rosine" AND p.rodzina_zapachow = "orientalno-drzewna"
+ORDER BY nowa_cena
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_p           | nowa_cena |
+| ----------------- | --------- |
+| Ourn Boise        | 141.95    |
+| Onou Back         | 222.70    |
+| Pic An            | 230.35    |
+| Nterl Bambola     | 292.40    |
+| Ubilatio Champs   | 381.65    |
+| Ibrary Ollec D'or | 489.60    |
+| Ate An            | 544.85    |
+| Elov & Musc       | 660.45    |
+
+</details>
+
+#### 6.5
+
+Istnieją marki, których wszystkie perfumy należą do tylko jednej rodziny zapachów. Podaj listę
+wszystkich nazw takich marek. Lista powinna zawierać nazwy marek i nazwy odpowiednich
+rodzin zapachów.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT m.nazwa_m, p.rodzina_zapachow
+FROM marki m
+JOIN perfumy p ON m.id_marki = p.id_marki
+GROUP BY m.id_marki
+HAVING COUNT(DISTINCT p.rodzina_zapachow) = 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_m        | rodzina_zapachow    |
+| -------------- | ------------------- |
+| Ightce         | aromatyczna         |
+| X ICologne     | orientalno-drzewna  |
+| Nnick a Kieffo | orientalna          |
+| Enmith         | kwiatowo-orientalna |
+| Issmkunstwerke | orientalna          |
+
+</details>
+
+### Maj 2018
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2018-maj-matura-rozszerzona-2.pdf)
+
+### Maj 2017
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2017-maj-matura-rozszerzona-2.pdf)
+
+### Maj 2016
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2016-maj-matura-rozszerzona-2.pdf)
+
+### Maj 2015
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2015-maj-matura-rozszerzona-2.pdf)
