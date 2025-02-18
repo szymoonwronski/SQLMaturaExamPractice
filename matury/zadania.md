@@ -4,6 +4,8 @@
 
 ### Maj 2024
 
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/2024/05/informatyka-2024-maj-matura-rozszerzona.pdf)
+
 #### 8.1
 
 Podaj imię i nazwisko kierowcy, dla którego suma kwot za wszystkie mandaty była
@@ -122,6 +124,8 @@ WHERE r.IdFotoradaru IS NULL
 </details>
 
 ### Maj 2023
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/2024/03/informatyka-2023-maj-matura-rozszerzona.pdf)
 
 #### 7.1
 
@@ -309,6 +313,8 @@ WHERE s.promocja = true AND g.kategoria = "logiczna"
 </details>
 
 ### Czerwiec 2023
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/2024/03/informatyka-2023-czerwiec-matura-rozszerzona.pdf)
 
 <details>
 <summary>Problematic data</summary>
@@ -503,6 +509,8 @@ ORDER BY liczba DESC
 
 ### Maj 2022
 
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2022-maj-matura-rozszerzona-2.pdf)
+
 #### 6.1
 
 Oblicz i podaj, ile wszystkich wejść dziewcząt z klas o profilu biologiczno-chemicznym
@@ -625,6 +633,8 @@ WHERE e.IdUcznia IS NULL
 </details>
 
 ### Maj 2021
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2021-maj-matura-rozszerzona-2.pdf)
 
 #### 6.1
 
@@ -831,6 +841,8 @@ FROM bitwy b
 </details>
 
 ### Maj 2020
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2020-maj-matura-rozszerzona-2.pdf)
 
 <details>
 <summary>Problematic data</summary>
