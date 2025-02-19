@@ -1239,6 +1239,163 @@ HAVING COUNT(DISTINCT p.rodzina_zapachow) = 1
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2018-maj-matura-rozszerzona-2.pdf)
 
+#### 6.1
+
+Znajdź 10 najczęstszych rodzajów dysków (czyli 10 najczęściej występujących pojemności)
+wśród komputerów w centrum. Dla każdej ze znalezionych pojemności podaj liczbę
+komputerów z takim dyskiem. Posortuj zestawienie nierosnąco względem liczby komputerów
+z dyskiem o danej pojemności.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.Pojemnosc_dysku, COUNT(*) liczba
+FROM komputery k
+GROUP BY k.Pojemnosc_dysku
+ORDER BY liczba DESC
+LIMIT 10
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Pojemnosc_dysku | liczba |
+| --------------- | ------ |
+| 300             | 173    |
+| 200             | 31     |
+| 500             | 31     |
+| 800             | 29     |
+| 700             | 28     |
+| 600             | 26     |
+| 400             | 20     |
+| 290             | 11     |
+| 220             | 10     |
+| 160             | 10     |
+
+</details>
+
+#### 6.2
+
+Znajdź wszystkie komputery w sekcji A, w których trzeba było przynajmniej dziesięciokrotnie
+wymieniać podzespoły. Podaj ich numery, a także liczbę wymian podzespołów dla każdego
+z nich.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.Numer_komputera, COUNT(*) liczba
+FROM komputery k
+JOIN awarie a ON k.Numer_komputera = a.Numer_komputera
+JOIN naprawy n ON a.Numer_zgloszenia = n.Numer_zgloszenia
+WHERE k.Sekcja = "A" AND n.Rodzaj = "wymiana"
+GROUP BY k.Numer_komputera
+HAVING liczba >= 10
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Numer_komputera | liczba |
+| --------------- | ------ |
+| 42              | 11     |
+| 123             | 11     |
+| 171             | 12     |
+| 202             | 12     |
+
+</details>
+
+#### 6.3
+
+Pewnego dnia nastąpiła awaria wszystkich komputerów w jednej z sekcji. Podaj datę awarii
+oraz symbol sekcji, w której nastąpiła awaria.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.Sekcja, DATE(a.Czas_awarii) dzien
+FROM awarie a
+JOIN komputery k ON a.Numer_komputera = k.Numer_komputera
+GROUP BY k.Sekcja, DATE(a.Czas_awarii)
+HAVING COUNT(*) = (
+    SELECT COUNT(*)
+	FROM komputery k2
+    WHERE k2.Sekcja = k.Sekcja
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Sekcja | dzien      |
+| ------ | ---------- |
+| Q      | 2015-12-23 |
+
+</details>
+
+#### 6.4
+
+Znajdź awarię, której usunięcie trwało najdłużej (czas liczymy od wystąpienia awarii do
+momentu zakończenia ostatniej z napraw, jakiej ta awaria wymagała). Podaj numer zgłoszenia,
+czas wystąpienia awarii i czas zakończenia ostatniej naprawy.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT a.Numer_zgloszenia, a.Czas_awarii, MAX(n.Czas_naprawy) ostatnia_naprawa
+FROM awarie a
+JOIN naprawy n ON a.Numer_zgloszenia = n.Numer_zgloszenia
+GROUP BY n.Numer_zgloszenia
+ORDER BY TIMEDIFF(MAX(n.Czas_naprawy), a.Czas_awarii) DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Numer_zgloszenia | Czas_awarii         | ostatnia_naprawa    |
+| ---------------- | ------------------- | ------------------- |
+| 2087             | 2015-11-06 12:38:46 | 2015-11-13 12:38:32 |
+
+</details>
+
+#### 6.5
+
+Podaj liczbę komputerów, które nie uległy żadnej awarii o priorytecie większym lub równym
+8 (wliczamy w to też komputery, które w ogóle nie uległy awarii).
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM komputery k
+LEFT JOIN awarie a ON k.Numer_komputera = a.Numer_komputera AND a.Priorytet >= 8
+WHERE a.Numer_zgloszenia IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 149    |
+
+</details>
+
 ### Maj 2017
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2017-maj-matura-rozszerzona-2.pdf)
