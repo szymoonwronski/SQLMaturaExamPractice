@@ -1400,6 +1400,150 @@ WHERE a.Numer_zgloszenia IS NULL
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2017-maj-matura-rozszerzona-2.pdf)
 
+#### 5.1
+
+a) Podaj, ile towarzyskich, ile ligowych oraz ile pucharowych meczów rozegrała drużyna
+Galop Kucykowo z drużynami ze swego miasta.\
+b) W którym roku drużyna Galop Kucykowo rozegrała najwięcej meczów z drużynami
+ze swego miasta (łącznie wszystkie rodzaje meczów)? Podaj rok i liczbę tych meczów.
+
+<details>
+<summary>Solution A</summary>
+
+```sql
+SELECT w.Rodzaj_meczu, COUNT(*) liczba
+FROM wyniki w
+JOIN druzyny d ON w.Id_druzyny = d.Id_druzyny
+WHERE d.Miasto = "Kucykowo"
+GROUP BY w.Rodzaj_meczu
+```
+
+</details>
+
+<details>
+<summary>Answer A</summary>
+
+| Rodzaj_meczu | liczba |
+| ------------ | ------ |
+| L            | 113    |
+| P            | 25     |
+| T            | 6      |
+
+</details>
+
+<details>
+<summary>Solution B</summary>
+
+```sql
+SELECT YEAR(w.Data_meczu) rok, COUNT(*) liczba
+FROM wyniki w
+JOIN druzyny d ON w.Id_druzyny = d.Id_druzyny
+WHERE d.Miasto = "Kucykowo"
+GROUP BY rok
+ORDER BY liczba DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer B</summary>
+
+| rok  | liczba |
+| ---- | ------ |
+| 2007 | 21     |
+
+</details>
+
+#### 5.2
+
+Podaj listę zawierającą nazwy drużyn, z którymi drużyna Galop Kucykowo ma zerowy bilans
+bramkowy, tzn. łączna liczba bramek zdobytych we wszystkich meczach rozegranych z daną
+drużyną jest równa łącznej liczbie bramek straconych w tych meczach.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT d.Nazwa
+FROM wyniki w
+JOIN druzyny d ON w.Id_druzyny = d.Id_druzyny
+GROUP BY d.Id_druzyny
+HAVING SUM(w.Bramki_zdobyte) = SUM(w.Bramki_stracone)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Nazwa       |
+| ----------- |
+| Zwinne Mewy |
+| Nocne Pumy  |
+
+</details>
+
+#### 5.3
+
+Podaj liczby meczów wyjazdowych – wygranych, przegranych i zremisowanych – przez
+drużynę Galop Kucykowo.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT
+	CASE
+		WHEN w.Bramki_zdobyte > w.Bramki_stracone THEN "wygrane"
+		WHEN w.Bramki_zdobyte = w.Bramki_stracone THEN "zremisowane"
+        ELSE "przegrane"
+    END rezultat,
+    COUNT(*) liczba
+FROM wyniki w
+WHERE w.Gdzie = "W"
+GROUP BY rezultat
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| rezultat    | liczba |
+| ----------- | ------ |
+| przegrane   | 452    |
+| wygrane     | 579    |
+| zremisowane | 170    |
+
+</details>
+
+#### 5.4
+
+Podaj, ilu sędziów spośród tych zapisanych w pliku sedziowie.txt nie sędziowało
+żadnego pucharowego meczu drużyny Galop Kucykowo.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM sedziowie s
+LEFT JOIN wyniki w ON w.Nr_licencji = s.Nr_licencji AND w.Rodzaj_meczu = "P"
+WHERE w.Id_meczu IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 22     |
+
+</details>
+
 ### Maj 2016
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2016-maj-matura-rozszerzona-2.pdf)
