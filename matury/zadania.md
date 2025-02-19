@@ -1624,10 +1624,10 @@ Podaj liczbę kobiet i liczbę mężczyzn wśród studentów.
 ```sql
 SELECT
 	CASE
-    	WHEN (SUBSTR(s.pesel, 10, 1)) % 2 = 0 THEN "kobiet"
+    WHEN (SUBSTR(s.pesel, 10, 1)) % 2 = 0 THEN "kobiet"
 		ELSE "mezczyzn"
 	END plec,
-    COUNT(*) liczba
+  COUNT(*) liczba
 FROM studenci s
 GROUP BY plec
 ```
@@ -1689,7 +1689,7 @@ funkcjonowało.
 ```sql
 SELECT SUM(liczba_ksiazek) liczba
 FROM (
-    SELECT m.id_pok, COUNT(DISTINCT w.tytul) liczba_ksiazek
+  SELECT m.id_pok, COUNT(DISTINCT w.tytul) liczba_ksiazek
 	FROM wypozyczenia w
 	LEFT JOIN meldunek m ON w.pesel = m.pesel
 	GROUP BY m.id_pok
