@@ -1145,8 +1145,8 @@ w swoich perfumach żadnego składnika mającego w nazwie słowo „paczula”.
 SELECT m.nazwa_m
 FROM marki m
 WHERE NOT EXISTS (
-    SELECT 1
-    FROM sklad s
+  SELECT 1
+  FROM sklad s
 	JOIN perfumy p ON s.id_perfum = p.id_perfum
 	WHERE p.id_marki = m.id_marki AND s.nazwa_skladnika LIKE "%paczula%"
 )
@@ -1324,9 +1324,9 @@ FROM awarie a
 JOIN komputery k ON a.Numer_komputera = k.Numer_komputera
 GROUP BY k.Sekcja, DATE(a.Czas_awarii)
 HAVING COUNT(*) = (
-    SELECT COUNT(*)
+  SELECT COUNT(*)
 	FROM komputery k2
-    WHERE k2.Sekcja = k.Sekcja
+  WHERE k2.Sekcja = k.Sekcja
 )
 ```
 
@@ -1496,10 +1496,10 @@ drużynę Galop Kucykowo.
 SELECT
 	CASE
 		WHEN w.Bramki_zdobyte > w.Bramki_stracone THEN "wygrane"
-		WHEN w.Bramki_zdobyte = w.Bramki_stracone THEN "zremisowane"
-        ELSE "przegrane"
-    END rezultat,
-    COUNT(*) liczba
+	  WHEN w.Bramki_zdobyte = w.Bramki_stracone THEN "zremisowane"
+    ELSE "przegrane"
+  END rezultat,
+  COUNT(*) liczba
 FROM wyniki w
 WHERE w.Gdzie = "W"
 GROUP BY rezultat
@@ -1547,6 +1547,165 @@ WHERE w.Id_meczu IS NULL
 ### Maj 2016
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2016-maj-matura-rozszerzona-2.pdf)
+
+#### 5.1
+
+Podaj imię i nazwisko osoby, która wypożyczyła najwięcej podręczników. Wypisz tytuły
+wszystkich książek przez nią wypożyczonych.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH najwiecej_wypozyczen AS (
+  SELECT w.pesel
+  FROM wypozyczenia w
+  GROUP BY w.pesel
+  ORDER BY COUNT(*) DESC
+  LIMIT 1
+)
+SELECT s.imie, s.nazwisko, w.tytul
+FROM wypozyczenia w
+JOIN studenci s ON w.pesel = s.pesel
+WHERE s.pesel = (SELECT nw.pesel FROM najwiecej_wypozyczen nw);
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| imie      | nazwisko    | tytul                   |
+| --------- | ----------- | ----------------------- |
+| KRZYSZTOF | LEWANDOWSKI | TEORIA GRAFOW           |
+| KRZYSZTOF | LEWANDOWSKI | JEZYKI PROGRAMOWANIA II |
+| KRZYSZTOF | LEWANDOWSKI | METODY NUMERYCZNE II    |
+| KRZYSZTOF | LEWANDOWSKI | FLASH I PHP             |
+
+</details>
+
+#### 5.2
+
+Podaj średnią liczbę osób zameldowanych w jednym pokoju. Wynik zaokrąglij
+do 4 miejsc po przecinku.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT ROUND(AVG(liczba_osob), 4) srednia
+FROM (
+  SELECT m.id_pok, COUNT(*) liczba_osob
+	FROM meldunek m
+	GROUP BY m.id_pok
+) AS pokoje
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| srednia |
+| ------- |
+| 4.7101  |
+
+</details>
+
+#### 5.3
+
+W numerze PESEL zawarta jest informacja o płci osoby. Jeżeli przedostatnia cyfra numeru
+jest parzysta, to PESEL należy do kobiety, jeśli nieparzysta, to do mężczyzny.
+Podaj liczbę kobiet i liczbę mężczyzn wśród studentów.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT
+	CASE
+    	WHEN (SUBSTR(s.pesel, 10, 1)) % 2 = 0 THEN "kobiet"
+		ELSE "mezczyzn"
+	END plec,
+    COUNT(*) liczba
+FROM studenci s
+GROUP BY plec
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| plec     | liczba |
+| -------- | ------ |
+| kobiet   | 138    |
+| mezczyzn | 192    |
+
+</details>
+
+#### 5.4
+
+Podaj nazwiska i imiona studentów, którzy nie mieszkają w pokojach w miasteczku
+akademickim. Listę posortuj alfabetycznie wg nazwisk.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT s.nazwisko, s.imie
+FROM studenci s
+LEFT JOIN meldunek m ON s.pesel = m.pesel
+WHERE m.id_pok IS NULL
+ORDER BY s.nazwisko
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwisko      | imie   |
+| ------------- | ------ |
+| DYLAG         | JACEK  |
+| NAJDA         | PIOTR  |
+| PIETRASZEWSKI | STEFAN |
+| SIECZKOWSKI   | MACIEJ |
+| ZALESKA       | JULIA  |
+
+</details>
+
+#### 5.5
+
+Biblioteka planuje wprowadzenie zakazu wypożyczania kilku egzemplarzy tego samego
+tytułu podręcznika studentom mieszkającym w jednym pokoju. Gdy ta zasada będzie
+obowiązywać, w żadnym pokoju nie powtórzy się żaden tytuł podręcznika.
+Podaj, ile byłoby wypożyczonych podręczników, gdyby takie ograniczenie już
+funkcjonowało.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT SUM(liczba_ksiazek) liczba
+FROM (
+    SELECT m.id_pok, COUNT(DISTINCT w.tytul) liczba_ksiazek
+	FROM wypozyczenia w
+	LEFT JOIN meldunek m ON w.pesel = m.pesel
+	GROUP BY m.id_pok
+) AS ksiazki
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 316    |
+
+</details>
 
 ### Maj 2015
 
