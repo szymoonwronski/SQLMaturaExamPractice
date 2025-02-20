@@ -1710,3 +1710,143 @@ FROM (
 ### Maj 2015
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/nowa-rozszerzona/informatyka-2015-maj-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Podaj sezon i nazwę wyścigu Grand Prix, w którym Robert Kubica zdobył najwięcej
+punktów.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT r.Rok, r.GrandPrix
+FROM wyniki w
+JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
+JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
+WHERE k.Imie = "Robert" AND k.Nazwisko = "Kubica"
+ORDER BY w.Punkty DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Rok  | GrandPrix |
+| ---- | --------- |
+| 2010 | Australia |
+
+</details>
+
+#### 6.2
+
+W których z miejsc podanych w plikach rozegrano najmniejszą liczbę wyścigów Grand Prix
+w latach 2000–2012?
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT w.GrandPrix
+FROM wyscigi w
+GROUP BY w.GrandPrix
+ORDER BY COUNT(*)
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| GrandPrix |
+| --------- |
+| Indie     |
+
+</details>
+
+#### 6.3
+
+Klasyfikacja generalna w danym sezonie jest tworzona na podstawie sumy punktów
+uzyskanych przez kierowców w wyścigach rozegranych w tym sezonie. Utwórz zestawienie
+zawierające nazwiska i imiona kierowców – zwycięzców klasyfikacji generalnej w sezonach
+2000, 2006 i 2012 wraz z liczbami punktów przez nich uzyskanymi.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH suma_punktow AS (
+	SELECT r.Rok, k.Imie, k.Nazwisko, SUM(w.Punkty) liczba_punktow
+	FROM wyniki w
+	JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
+	JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
+  WHERE r.Rok IN (2000, 2006, 2012)
+  GROUP BY r.Rok, k.Id_kierowcy
+),
+zwyciezcy AS (
+  SELECT sp.Rok, MAX(sp.liczba_punktow) punkty
+  FROM suma_punktow sp
+	GROUP BY sp.Rok
+)
+SELECT r.Rok, k.Imie, k.Nazwisko, SUM(w.Punkty) punkty
+FROM wyniki w
+JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
+JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
+GROUP BY r.Rok, k.Id_kierowcy
+HAVING punkty = (
+	SELECT z.punkty FROM zwyciezcy z WHERE z.Rok = r.Rok
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Rok  | Imie      | Nazwisko   | punkty |
+| ---- | --------- | ---------- | ------ |
+| 2000 | Michael   | Schumacher | 108    |
+| 2006 | Fernando  | Alonso     | 134    |
+| 2012 | Sebastian | Vettel     | 281    |
+
+</details>
+
+#### 6.4
+
+Dla każdego kraju, którego reprezentanci zdobywali punkty w sezonie 2012, podaj liczbę tych
+reprezentantów.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.Kraj, COUNT(DISTINCT k.Id_kierowcy) liczba
+FROM wyniki w
+JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
+JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
+WHERE r.Rok = 2012
+GROUP BY k.Kraj
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Kraj            | liczba |
+| --------------- | ------ |
+| Australia       | 2      |
+| Brazylia        | 2      |
+| Finlandia       | 1      |
+| Francja         | 2      |
+| Hiszpania       | 1      |
+| Japonia         | 1      |
+| Meksyk          | 1      |
+| Niemcy          | 4      |
+| Wenezuela       | 1      |
+| Wielka Brytania | 3      |
+
+</details>
