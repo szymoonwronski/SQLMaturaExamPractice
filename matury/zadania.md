@@ -429,6 +429,34 @@ LIMIT 1
 
 </details>
 
+#### 8.4
+
+Informacje o szczepieniach rozszerzono o dodatkowe dane:\
+• do tabeli WIZYTY dodano pole kod_punktu – określające punkt szczepień, w którym
+odbyło się szczepienie\
+• dodano tabele PACJENCI i PUNKT_SZCZEPIEN\
+• w tabeli PACJENCI podano numer PESEL pacjenta (pesel) i województwo
+(województwo_pacjenta), w którym pacjent mieszka\
+• w tabeli PUNKT_SZCZEPIEN podano kod punktu (kod_punktu) szczepienia
+i województwo (województwo_punktu), w którym znajduje się punkt szczepień.\
+Zapisz w języku SQL zapytanie, w którym podasz numery PESEL pacjentów, którzy przyjęli
+co najmniej jedną dawkę szczepienia w województwie innym niż to, w którym mieszkają.\
+Twoja odpowiedź będzie poprawna, także jeżeli PESEL pacjenta będzie wypisany więcej niż
+jeden raz.\
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT DISTINCT p.pesel
+FROM WIZYTY w
+JOIN PACJENCI p ON w.pesel = p.pesel
+JOIN PUNKT_SZCZEPIEN ps ON w.kod_punktu = ps.kod_punktu
+WHERE p.wojewodztwo_pacjenta != w.wojewodztwo_punktu
+```
+
+</details>
+
 ### Czerwiec 2023
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/2024/03/informatyka-2023-czerwiec-matura-rozszerzona.pdf)
