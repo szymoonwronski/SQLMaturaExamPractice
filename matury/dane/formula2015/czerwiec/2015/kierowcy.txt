@@ -1,4 +1,3 @@
-pesel	data_prawa_jazdy	miasto
 63041309329	1985-04-26	Elblag
 47052983237	1970-01-13	Elblag
 58051145351	1982-06-16	Opole

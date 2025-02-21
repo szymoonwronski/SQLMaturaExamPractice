@@ -1,4 +1,3 @@
-id_zespolu;nazwa;liczba_artystow
 101;Male nutki;10
 102;Szalone gitary;8
 103;Niebieskie kontrabasy;12

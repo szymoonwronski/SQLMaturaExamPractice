@@ -1,4 +1,3 @@
-Id	Srod_lok	Pora_roku
 1	rower	wiosna
 1	rower	lato
 1	rower	jesien

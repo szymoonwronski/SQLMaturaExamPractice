@@ -1,4 +1,3 @@
-Id_programu	program	rodzaj	cena
 1	Photoshop	grafika	890
 2	Lightroom	grafika	320
 3	Illustrator	grafika	1230

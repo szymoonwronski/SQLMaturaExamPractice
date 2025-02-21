@@ -1,4 +1,3 @@
-Id_pakietu	Id_programu	
 11	6	
 72	284	
 20	45	

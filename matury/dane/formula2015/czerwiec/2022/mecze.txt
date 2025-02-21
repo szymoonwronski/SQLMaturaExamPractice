@@ -1,4 +1,3 @@
-Id_meczu;Data;Id_klubu;Sety_wygrane;Sety_przegrane;Id_sedziego
 1;2019-10-16;102;1;3;319
 2;2019-10-19;106;3;2;306
 3;2019-10-19;109;0;3;317

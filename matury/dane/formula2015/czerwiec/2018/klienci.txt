@@ -1,4 +1,3 @@
-Nr_klienta;Imie;Nazwisko
 123261;Nela;Aabacka
 123156;Cyrenia;Abbacka
 123252;Marcislaw;Abbacki

@@ -1,4 +1,3 @@
-Id_pakietu	nazwa_pakietu	firma
 1	Adobe Creative Cloud	Adobe Systems
 2	Adobe Creative Suite	Adobe Systems
 3	Adobe CS6 Design	Adobe Systems

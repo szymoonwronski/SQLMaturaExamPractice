@@ -1,4 +1,3 @@
-Id_przedmiotu;Nazwa_przedmiotu;Data;Godzina;Typ
 1;jezyk polski;2014-05-05;09:00;obowiazkowy
 2;matematyka;2014-05-06;09:00;obowiazkowy
 3;jezyk lacinski i kultura antyczna;2014-05-06;14:00;dodatkowy

@@ -1,4 +1,3 @@
-Id	Nazwisko	Imie	Wiek	Wyksztalcenie	Dochod	Wojewodztwo
 1	Adamczuk	Magdalena	69	wyzsze	3500	Pomorskie
 2	Adamczyk	Urszula	41	wyzsze	2250	Slaskie
 3	Adamowicz	Jakub	34	srednie	2550	Swietokrzyskie

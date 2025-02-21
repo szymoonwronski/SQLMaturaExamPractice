@@ -1,4 +1,3 @@
-Id_zdajacego;Nazwisko;Imie;PESEL;Data_urodzenia
 1;Nizinska;Ewelina;94011301221;1994-01-13
 2;Bek;Jan;94032901531;1994-03-29
 3;Marciniak;Anna;95070301788;1995-07-03

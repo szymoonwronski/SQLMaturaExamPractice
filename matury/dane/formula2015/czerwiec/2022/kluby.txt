@@ -1,4 +1,3 @@
-Id_klubu;Nazwa;Miasto
 101;Sfinks;Szymbark
 102;Zenit;Licowo 
 103;Victoria;Radelko

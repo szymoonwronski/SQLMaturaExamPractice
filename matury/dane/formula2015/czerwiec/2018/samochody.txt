@@ -1,4 +1,3 @@
-Nr_ew;Nr_firmowy;Miejscowosc;Nr_rej
 1266;B10;Wielka Wola;WI1344
 1267;B100;Wielka Wola;WI1254
 1268;B105;Wielka Wola;WI1249

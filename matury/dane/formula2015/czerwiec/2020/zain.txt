@@ -1,4 +1,3 @@
-Id	Zainteresowania
 14	polityka
 254	muzyka
 201	jezyki

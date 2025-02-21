@@ -1,4 +1,3 @@
-kod_wyk	nazwa	mandat	punkty
 18	Zajmowanie wiecej niz jednego, wyznaczonego na jezdni, pasa ruchu	150	8
 19	Naruszenie obowiazku poruszania sie po poboczu przez kierujacego pojazdem	100	4
 20	Nieustapienie miejsca nadjezdzajacemu pojazdowi szynowemu przez kierujacego pojazdem	250	5

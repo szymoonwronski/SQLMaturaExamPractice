@@ -1,4 +1,3 @@
-Id_agenta	Imie	Nazwisko
 1	Adam	Nowak
 2	Karolina	Adamczyk
 3	Milena	Karwik

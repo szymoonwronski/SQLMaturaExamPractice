@@ -1,4 +1,3 @@
-Id_sedziego;Imie;Nazwisko
 301;Jan;Malinowski
 302;Szymon;Rutkowski
 303;Anna;Nowak

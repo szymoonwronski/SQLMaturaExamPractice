@@ -1,4 +1,3 @@
-Id_zdajacego;Id_przedmiotu
 1;1
 2;1
 3;1

@@ -1,4 +1,3 @@
-kod_miasta;miasto;wojewodztwo
 99-522;Bialystok;podlaskie
 99-531;Bielsko-Biala;slaskie
 99-504;Bydgoszcz;kujawsko-pomorskie

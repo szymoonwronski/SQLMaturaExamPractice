@@ -1,4 +1,3 @@
-Id_klienta	Nazwisko	Imie
 1	Osure	Patryk
 2	Moroz	Justyna
 3	Zapotoczny	Anna

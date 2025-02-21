@@ -1,4 +1,3 @@
-Id_oferty	Id_klienta
 AB643MN	55
 AB536MN	54
 AB537DT	80
