@@ -312,6 +312,123 @@ WHERE s.promocja = true AND g.kategoria = "logiczna"
 
 </details>
 
+### Czerwiec 2024
+
+[View Matura](https://arkusze.pl/maturalne/informatyka-2024-czerwiec-matura-rozszerzona.pdf)
+
+#### 8.1
+
+Dla każdej szczepionki podaj, ile łącznie jej dawek zostało podanych pacjentom. Jako wynik
+podaj listę zawierającą kod szczepionki i liczbę dawek. Lista powinna być posortowana
+nierosnąco według liczby dawek.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT w.kod_szczepionki, COUNT(*) liczba
+FROM wizyty w
+GROUP BY w.kod_szczepionki
+ORDER BY liczba DESC
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| kod_szczepionki | liczba |
+| --------------- | ------ |
+| sz15_5d         | 111    |
+| sz10_4d         | 83     |
+| sz21_5d         | 82     |
+| sz17_4d         | 81     |
+| sz20_5d         | 79     |
+| sz9_5d          | 73     |
+| sz3_5d          | 72     |
+| sz13_5d         | 71     |
+| sz1_3d          | 69     |
+| sz6_3d          | 64     |
+| sz12_3d         | 60     |
+| sz7_5d          | 60     |
+| sz24_3d         | 59     |
+| sz22_3d         | 45     |
+| sz18_2d         | 38     |
+| sz19_2d         | 35     |
+| sz4_2d          | 34     |
+| sz8_2d          | 29     |
+| sz16_1d         | 28     |
+| sz11_1d         | 25     |
+| sz23_1d         | 23     |
+| sz5_1d          | 23     |
+| sz14_1d         | 16     |
+| sz2_1d          | 15     |
+
+</details>
+
+#### 8.2
+
+Podaj, ilu różnych pacjentów przyjęło przynajmniej jedną dawkę szczepionki o kodzie
+sz12_3d. Podaj, ile wśród nich było kobiet (płeć określa przedostatnia cyfra numeru PESEL,
+cyfra parzysta oznacza płeć żeńską).
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH lista AS (
+  SELECT w.Pesel
+  FROM wizyty w
+  WHERE w.kod_szczepionki = "sz12_3d"
+  GROUP BY w.Pesel
+)
+SELECT
+	COUNT(*) wszystkich,
+	SUM(CASE WHEN SUBSTR(l.Pesel, 10, 1) % 2 = 0 THEN 1 ELSE 0 END) kobiet
+FROM lista l
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| wszystkich | kobiet |
+| ---------- | ------ |
+| 24         | 17     |
+
+</details>
+
+#### 8.3
+
+Podaj rok i miesiąc, w którym najwięcej osób ukończyło szczepienie (czyli: w tym miesiącu
+przyjęło ostatnią rekomendowaną dawkę danego szczepienia). Podaj także liczbę osób,
+które ukończyły szczepienie w tym terminie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT YEAR(w.data_szczepienia) rok, MONTH(w.data_szczepienia) miesiac, COUNT(*) liczba
+FROM wizyty w
+JOIN szczepionki s ON w.kod_szczepionki = s.kod_szczepionki
+WHERE w.numer_dawki = s.liczba_dawek
+GROUP BY rok, miesiac
+ORDER BY liczba DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| rok  | miesiac | liczba |
+| ---- | ------- | ------ |
+| 2023 | 5       | 48     |
+
+</details>
+
 ### Czerwiec 2023
 
 [View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/2024/03/informatyka-2023-czerwiec-matura-rozszerzona.pdf)
