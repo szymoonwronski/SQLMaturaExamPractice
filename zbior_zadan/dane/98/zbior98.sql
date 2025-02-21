@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 15, 2025 at 06:43 PM
+-- Generation Time: Feb 21, 2025 at 03:16 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -33,7 +33,7 @@ CREATE TABLE `oceny` (
   `Id_ucznia` varchar(255) NOT NULL,
   `Id_przedmiotu` int(11) NOT NULL,
   `Ocena` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `oceny`
@@ -13255,7 +13255,7 @@ INSERT INTO `oceny` (`Id_oceny`, `Data`, `Id_ucznia`, `Id_przedmiotu`, `Ocena`) 
 CREATE TABLE `przedmioty` (
   `Id_przedmiotu` int(11) NOT NULL,
   `Nazwa_przedmiotu` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `przedmioty`
@@ -13301,7 +13301,7 @@ CREATE TABLE `uczniowie` (
   `Imie` varchar(255) NOT NULL,
   `Nazwisko` varchar(255) NOT NULL,
   `Klasa` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `uczniowie`
