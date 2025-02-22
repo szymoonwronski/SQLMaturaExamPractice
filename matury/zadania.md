@@ -2651,3 +2651,184 @@ WHERE a.Imie LIKE "%a"
 | 3250.0000 |
 
 </details>
+
+### Czerwiec 2019
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2019-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Która oferta wzbudziła zainteresowanie największej liczby klientów? Podaj jej identyfikator
+oraz imię i nazwisko agenta, który się nią zajmował. Jest tylko jedna taka oferta.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT z.Id_oferty, a.Imie, a.Nazwisko
+FROM zainteresowanie z
+JOIN oferty o ON z.Id_oferty = o.Id_oferty
+JOIN agenci a ON o.Id_agenta = a.Id_agenta
+GROUP BY o.Id_oferty
+ORDER BY COUNT(*) DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Id_oferty | Imie  | Nazwisko |
+| --------- | ----- | -------- |
+| AB553DN   | Karol | Zakowicz |
+
+</details>
+
+#### 6.2
+
+Podaj średnią cenę ofert w każdym województwie. Zestawienie uporządkuj alfabetycznie
+według nazw województw. Wyniki podaj z dokładnością do dwóch miejsc po przecinku.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT o.Woj, ROUND(AVG(o.Cena), 2) srednia
+FROM oferty o
+GROUP BY o.Woj
+ORDER BY o.Woj
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Woj                 | srednia   |
+| ------------------- | --------- |
+| dolnoslaskie        | 345000.00 |
+| kujawsko-pomorskie  | 299000.00 |
+| lodzkie             | 304100.00 |
+| lubelskie           | 260879.33 |
+| lubuskie            | 227283.33 |
+| malopolskie         | 650000.00 |
+| mazowieckie         | 267082.83 |
+| opolskie            | 400000.00 |
+| podkarpackie        | 301312.50 |
+| podlaskie           | 271206.95 |
+| pomorskie           | 414150.00 |
+| swietokrzyskie      | 319207.63 |
+| warminsko-mazurskie | 132450.00 |
+| wielkopolskie       | 298600.00 |
+| zachodniopomorskie  | 269025.20 |
+
+</details>
+
+#### 6.3
+
+Którzy agenci mają aktualne oferty mieszkań z basenem? Przygotuj zestawienie, które będzie
+zawierało następujące elementy: imię i nazwisko agenta opiekującego się daną ofertą,
+identyfikator oferty, województwo, powierzchnię i cenę mieszkania w danej ofercie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT a.Imie, a.Nazwisko, o.Id_oferty, o.Woj, o.Pow, o.Cena
+FROM oferty o
+JOIN agenci a ON o.Id_agenta = a.Id_agenta
+WHERE o.Id_oferty LIKE "%MT" AND o.Status = "A"
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie      | Nazwisko  | Id_oferty | Woj           | Pow | Cena   |
+| --------- | --------- | --------- | ------------- | --- | ------ |
+| Adam      | Nowak     | AB557MT   | lubelskie     | 83  | 349000 |
+| Adam      | Nowak     | AB695MT   | podkarpackie  | 162 | 420800 |
+| Adam      | Nowak     | AB702MT   | mazowieckie   | 49  | 186000 |
+| Milena    | Karwik    | AB691MT   | lubuskie      | 39  | 170000 |
+| Piotr     | Kopacz    | AB543MT   | podlaskie     | 85  | 325000 |
+| Krzysztof | Nowak     | AB700MT   | mazowieckie   | 85  | 265000 |
+| Karol     | Zakowicz  | AB644MT   | mazowieckie   | 76  | 174500 |
+| Karol     | Szwarc    | AB699MT   | lodzkie       | 68  | 190500 |
+| Rozalia   | Siedlecka | AB696MT   | wielkopolskie | 42  | 160000 |
+
+</details>
+
+#### 6.4
+
+Podaj imiona i nazwiska agentów, którzy spośród swoich ofert z 2017 roku nie sprzedali
+żadnego domu ani mieszkania.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT DISTINCT a.Imie, a.Nazwisko
+FROM oferty o
+JOIN agenci a ON o.Id_agenta = a.Id_agenta
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM oferty o2
+  WHERE o2.Id_agenta = a.Id_agenta
+  AND YEAR(o2.Data_zglosz) = 2017
+  AND o2.Status = "S"
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie      | Nazwisko     |
+| --------- | ------------ |
+| Milena    | Karwik       |
+| Jerzy     | Andrzejewski |
+| Krzysztof | Nowak        |
+
+</details>
+
+#### 6.5
+
+Podaj listę aktualnych ofert sprzedaży tych domów i mieszkań, które mają powierzchnię
+powyżej 180 m2 i co najmniej 2 łazienki. W zestawieniu uwzględnij identyfikator oferty,
+powierzchnię nieruchomości, liczbę pokoi i liczbę łazienek, cenę oraz imię i nazwisko agenta
+opiekującego się daną ofertą.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT o.Id_oferty, o.Pow, o.L_pokoi, o.L_laz, o.Cena, a.Imie, a.Nazwisko
+FROM oferty o
+JOIN agenci a ON o.Id_agenta = a.Id_agenta
+WHERE o.Status = "A" AND o.Pow > 180 AND o.L_laz >= 2
+```
+
+</details>
+
+<details>
+
+<summary>Answer</summary>
+
+| Id_oferty | Pow | L_pokoi | L_laz | Cena   | Imie      | Nazwisko |
+| --------- | --- | ------- | ----- | ------ | --------- | -------- |
+| AB680DT   | 220 | 6       | 2     | 520000 | Adam      | Nowak    |
+| AB682DN   | 203 | 5       | 3     | 485000 | Adam      | Nowak    |
+| AB686MN   | 192 | 6       | 2     | 375000 | Adam      | Nowak    |
+| AB672DT   | 212 | 6       | 2     | 575000 | Sebastian | Babij    |
+| AB683DN   | 195 | 5       | 2     | 395800 | Piotr     | Kopacz   |
+| AB692DT   | 244 | 8       | 3     | 650000 | Piotr     | Kopacz   |
+| AB666DN   | 220 | 6       | 3     | 450000 | Krzysztof | Nowak    |
+| AB693DN   | 182 | 7       | 2     | 425000 | Krzysztof | Nowak    |
+| AB670DN   | 208 | 5       | 3     | 358400 | Karol     | Zakowicz |
+| AB694DN   | 212 | 8       | 3     | 630000 | Karol     | Szwarc   |
+| AB697DN   | 195 | 6       | 2     | 460000 | Karol     | Szwarc   |
+
+</details>
