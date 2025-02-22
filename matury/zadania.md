@@ -2466,3 +2466,188 @@ HAVING weekend > powszedni
 | Powolne fortepiany    | 4         | 5       |
 
 </details>
+
+### Czerwiec 2020
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2020-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Podaj liczbę kobiet i liczbę mężczyzn uczestniczących w ankiecie. Możesz wykorzystać fakt,
+że w danych imiona wszystkich kobiet (i tylko kobiet) kończą się literą „a”.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT
+  CASE WHEN a.Imie LIKE "%a" THEN "kobiety" ELSE "mezczyzni" END plec,
+  COUNT(*) liczba
+FROM dane_ankiet a
+GROUP BY plec
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| plec      | liczba |
+| --------- | ------ |
+| kobiety   | 161    |
+| mezczyzni | 119    |
+
+</details>
+
+#### 6.2
+
+Utwórz zestawienie zawierające nazwy poszczególnych środków lokomocji oraz liczby
+ankietowanych z województwa mazowieckiego korzystających z nich latem.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH korzystajacy AS (
+  SELECT l.Srod_lok, COUNT(*) liczba
+  FROM lok l
+  JOIN dane_ankiet a ON l.Id = a.Id
+  WHERE l.Pora_roku = "lato" AND a.Wojewodztwo = "Mazowieckie"
+  GROUP BY l.Srod_lok
+)
+SELECT DISTINCT l.Srod_lok, k.liczba
+FROM lok l
+LEFT JOIN korzystajacy k ON l.Srod_lok = k.Srod_lok
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Srod_lok | liczba |
+| -------- | ------ |
+| autobus  | 1      |
+| pociag   | 5      |
+| rower    | 13     |
+| samochod | 4      |
+| tramwaj  | 20     |
+
+</details>
+
+#### 6.3
+
+Utwórz zestawienie zawierające nazwy województw, w których w badaniu wzięło udział
+więcej niż 20 osób. Dla każdego z tych województw podaj liczbę ankietowanych osób.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT a.Wojewodztwo, COUNT(*) liczba
+FROM dane_ankiet a
+GROUP BY a.Wojewodztwo
+HAVING liczba > 20
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Wojewodztwo   | liczba |
+| ------------- | ------ |
+| Dolnoslaskie  | 30     |
+| Mazowieckie   | 43     |
+| Slaskie       | 23     |
+| Wielkopolskie | 30     |
+
+</details>
+
+#### 6.4
+
+Znajdź ankietowanych, którzy są w wieku powyżej 50 lat, mają wykształcenie wyższe
+(wyzsze) lub średnie (srednie) oraz nie interesują się ani informatyką (informatyka),
+ani grami komputerowymi (gry komputerowe). Utwórz zestawienie (posortowane
+alfabetycznie według nazwiska) zawierające imiona i nazwiska tych ankietowanych oraz
+nazwy województw, z których oni pochodzą. W zestawieniu dane każdej osoby mogą wystąpić
+tylko raz.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT a.Imie, a.Nazwisko, a.Wojewodztwo
+FROM dane_ankiet a
+WHERE a.Wiek > 50
+  AND a.Wyksztalcenie IN ("wyzsze", "srednie")
+  AND NOT EXISTS (
+    SELECT 1
+    FROM zain z
+    WHERE z.Id = a.Id
+      AND z.Zainteresowania IN ("informatyka", "gry komputerowe")
+  )
+ORDER BY a.Nazwisko
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie      | Nazwisko      | Wojewodztwo           |
+| --------- | ------------- | --------------------- |
+| Maria     | Bobowik       | Lubelskie             |
+| Elzbieta  | Borowska      | Malopolskie           |
+| Anna      | Borowska      | Malopolskie           |
+| Sebastian | Busma         | Lubuskie              |
+| Marta     | Czajewska     | Pomorskie             |
+| Barbara   | Dziegielewska | Pomorskie             |
+| Piotr     | Gawkowski     | Podkarpackie          |
+| Kamila    | Glowacka      | Swietokrzyskie        |
+| Andrzej   | Iwaszczuk     | Mazowieckie           |
+| Michal    | Janasz        | Mazowieckie           |
+| Justyna   | Jankowska     | Mazowieckie           |
+| Marcin    | Jasinski      | Mazowieckie           |
+| Grzegorz  | Kanadys       | Warminsko - Mazurskie |
+| Katarzyna | Karwowska     | Mazowieckie           |
+| Marta     | Kimsza        | Pomorskie             |
+| Klara     | Klimaszewska  | Dolnoslaskie          |
+| Emilia    | Kobeszko      | Lubelskie             |
+| Maria     | Korol         | Malopolskie           |
+| Piotr     | Korzunowicz   | Dolnoslaskie          |
+| Karolina  | Kozlowska     | Mazowieckie           |
+| Monika    | Krasowska     | Lubelskie             |
+
+</details>
+
+#### 6.5
+
+Podaj średni dochód kobiet z województwa zachodniopomorskiego, dla których jednym ze
+środków lokomocji jest rower.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT AVG(a.Dochod) srednia
+FROM dane_ankiet a
+WHERE a.Imie LIKE "%a"
+  AND a.Wojewodztwo = "Zachodniopomorskie"
+  AND EXISTS (
+    SELECT 1
+    FROM lok l
+    WHERE l.Id = a.Id AND l.Srod_lok = "rower"
+  )
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| srednia   |
+| --------- |
+| 3250.0000 |
+
+</details>
