@@ -2166,6 +2166,23 @@ WHERE sp.Id_meczu IS NULL
 
 </details>
 
+<details>Solution 2</summary>
+
+```sql
+SELECT s.Imie, s.Nazwisko
+FROM sedziowie s
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM mecze m
+  JOIN kluby k ON m.Id_klubu = k.Id_klubu
+  WHERE k.Miasto IN ("Licowo", "Szymbark")
+    AND m.Data BETWEEN "2019-10-15" AND "2019-12-15"
+    AND m.Id_sedziego = s.Id_sedziego
+)
+```
+
+</details>
+
 <details>
 <summary>Answer</summary>
 
@@ -2211,6 +2228,22 @@ HAVING wygranych >= przegranych
 </details>
 
 <details>
+<summary>Solution 2</summary>
+
+```sql
+SELECT
+  k.Nazwa, k.Miasto,
+  SUM(CASE WHEN m.Sety_wygrane > m.Sety_przegrane THEN 1 ELSE 0 END) wygranych,
+  SUM(CASE WHEN m.Sety_wygrane < m.Sety_przegrane THEN 1 ELSE 0 END) przegranych
+FROM mecze m
+JOIN kluby k ON m.Id_klubu = k.Id_klubu
+GROUP BY k.Id_klubu
+HAVING wygranych >= przegranych
+```
+
+</details>
+
+<details>
 <summary>Answer</summary>
 
 | Nazwa       | Miasto    | wygranych | przegranych |
@@ -2227,5 +2260,209 @@ HAVING wygranych >= przegranych
 | Huraganer   | Szymbark  | 8         | 8           |
 | Waleczni    | Preziowo  | 7         | 5           |
 | Libero      | Warkowo   | 8         | 5           |
+
+</details>
+
+### Czerwiec 2021
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2021-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Ile koncertów odbyło się w lipcu?
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM koncerty k
+WHERE MONTH(k.data) = 7
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 122    |
+
+</details>
+
+#### 6.2
+
+Podaj nazwę miasta, w którym wystąpiło łącznie najwięcej artystów (wykonawców). Jeżeli
+miast, w których wystąpiła największa liczba artystów jest więcej niż jedno, podaj nazwy ich
+wszystkich.\
+**Uwaga**: artystę, który w danym mieście wystąpił ze swoim zespołem kilkakrotnie, liczymy tylko
+raz.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH sq1 AS (
+  SELECT k.kod_miasta, z.id_zespolu, z.liczba_artystow
+  FROM koncerty k
+  JOIN zespoly z ON k.id_zespolu = z.id_zespolu
+  GROUP BY k.kod_miasta, z.id_zespolu
+),
+sq2 AS (
+  SELECT sq1.kod_miasta, SUM(sq1.liczba_artystow) liczba
+  FROM sq1
+  GROUP BY sq1.kod_miasta
+)
+SELECT m.miasto
+FROM sq2 s
+JOIN miasta m ON s.kod_miasta = m.kod_miasta
+WHERE s.liczba = (SELECT MAX(sq2.liczba) FROM sq2)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| miasto               |
+| -------------------- |
+| Grudziadz            |
+| Piotrkow Trybunalski |
+
+</details>
+
+#### 6.3
+
+Wykonaj zestawienie, w którym dla każdego województwa podasz średnią liczbę koncertów
+w przeliczeniu na jedno miasto w tym województwie. Wyniki podaj w zaokrągleniu do dwóch
+miejsc po przecinku i posortuj od najwyższej do najniższej średniej.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH sq1 AS (
+  SELECT m.wojewodztwo, COUNT(*) liczba_miast
+  FROM miasta m
+  GROUP BY m.wojewodztwo
+),
+sq2 AS (
+  SELECT m.wojewodztwo, COUNT(*) liczba_koncertow
+  FROM koncerty k
+  JOIN miasta m ON k.kod_miasta = m.kod_miasta
+  GROUP BY m.wojewodztwo
+)
+SELECT sq1.wojewodztwo, ROUND(sq2.liczba_koncertow / sq1.liczba_miast, 2) srednia
+FROM sq1
+JOIN sq2 ON sq1.wojewodztwo = sq2.wojewodztwo
+ORDER BY srednia DESC
+```
+
+</details>
+
+<details>
+<summary>Solution 2</summary>
+
+```sql
+SELECT
+  m.wojewodztwo,
+  ROUND(COUNT(DISTINCT k.id) / COUNT(DISTINCT m.kod_miasta), 2) srednia
+FROM miasta m
+LEFT JOIN koncerty k ON k.kod_miasta = m.kod_miasta
+GROUP BY m.wojewodztwo
+ORDER BY srednia DESC
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| wojewodztwo         | srednia |
+| ------------------- | ------- |
+| swietokrzyskie      | 8.00    |
+| lodzkie             | 7.00    |
+| opolskie            | 7.00    |
+| lubuskie            | 6.50    |
+| slaskie             | 5.53    |
+| malopolskie         | 5.33    |
+| lubelskie           | 5.00    |
+| podkarpackie        | 5.00    |
+| dolnoslaskie        | 4.75    |
+| kujawsko-pomorskie  | 4.25    |
+| wielkopolskie       | 4.25    |
+| podlaskie           | 4.00    |
+| warminsko-mazurskie | 4.00    |
+| zachodniopomorskie  | 4.00    |
+| mazowieckie         | 2.67    |
+| pomorskie           | 2.67    |
+
+</details>
+
+#### 6.4
+
+Podaj nazwy zespołów, które nie koncertowały w okresie od 20 lipca do 25 lipca włącznie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT z.nazwa
+FROM zespoly z
+LEFT JOIN koncerty k ON z.id_zespolu = k.id_zespolu AND k.data BETWEEN "2017-07-20" AND "2017-07-25"
+WHERE k.id IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa               |
+| ------------------- |
+| Male nutki          |
+| Stare mandoliny     |
+| Wiosenne bebny      |
+| Powolne fortepiany  |
+| Ciche organy        |
+| Fajne trojkaty      |
+| Rozstrojone pianina |
+| Metalowe klarnety   |
+| Zlote saksofony     |
+| Piszczace trabki    |
+
+</details>
+
+#### 6.5
+
+Podaj nazwy zespołów, które częściej koncertowały w weekendy (sobota, niedziela) niż w dni
+powszednie (od poniedziałku do piątku). Dla każdego z tych zespołów podaj liczbę koncertów
+w weekendy oraz liczbę koncertów w dni powszednie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT
+  z.nazwa,
+  COUNT(CASE WHEN WEEKDAY(k.data) BETWEEN 0 AND 4 THEN 1 END) powszedni,
+  COUNT(CASE WHEN WEEKDAY(k.data) BETWEEN 5 AND 6 THEN 1 END) weekend
+FROM koncerty k
+JOIN zespoly z ON k.id_zespolu = z.id_zespolu
+GROUP BY z.id_zespolu
+HAVING weekend > powszedni
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa                 | powszedni | weekend |
+| --------------------- | --------- | ------- |
+| Niebieskie kontrabasy | 1         | 4       |
+| Wiosenne bebny        | 3         | 4       |
+| Powolne fortepiany    | 4         | 5       |
 
 </details>
