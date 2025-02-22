@@ -202,9 +202,9 @@ Podaj liczbę graczy, którzy nie posiadają żadnej z ocenianych przez siebie g
 SELECT COUNT(DISTINCT o.id_gracza) liczba
 FROM oceny o
 WHERE NOT EXISTS (
-	SELECT 1
-	FROM oceny io
-	WHERE io.id_gracza = o.id_gracza AND io.stan = "posiada"
+  SELECT 1
+  FROM oceny io
+  WHERE io.id_gracza = o.id_gracza AND io.stan = "posiada"
 )
 ```
 
@@ -383,8 +383,8 @@ WITH lista AS (
   GROUP BY w.Pesel
 )
 SELECT
-	COUNT(*) wszystkich,
-	SUM(CASE WHEN SUBSTR(l.Pesel, 10, 1) % 2 = 0 THEN 1 ELSE 0 END) kobiet
+  COUNT(*) wszystkich,
+  SUM(CASE WHEN SUBSTR(l.Pesel, 10, 1) % 2 = 0 THEN 1 ELSE 0 END) kobiet
 FROM lista l
 ```
 
@@ -727,7 +727,7 @@ czasu przebywały najdłużej na terenie szkoły.
 ```sql
 WITH czasy AS (
   SELECT e.IdUcznia, TIMEDIFF(e.Wyjscie, e.Wejscie) czas
-	FROM ewidencja e
+  FROM ewidencja e
 )
 SELECT u.IdUcznia, u.Imie, u.Nazwisko
 FROM uczen u
@@ -1069,9 +1069,9 @@ oraz że dany język może być językiem urzędowym w jednym państwie, a w inn
 SELECT COUNT(*) liczba
 FROM jezyki j
 WHERE NOT EXISTS (
-	SELECT 1
-	FROM uzytkownicy u
-	WHERE u.Jezyk = j.Jezyk AND u.Urzedowy = "tak"
+  SELECT 1
+  FROM uzytkownicy u
+  WHERE u.Jezyk = j.Jezyk AND u.Urzedowy = "tak"
 )
 ```
 
@@ -1226,9 +1226,9 @@ perfum z tej rodziny i ich nazwę.
 
 ```sql
 WITH najtansze AS (
-	SELECT p.rodzina_zapachow, MIN(p.cena) najmniej
-	FROM perfumy p
-	GROUP BY p.rodzina_zapachow
+  SELECT p.rodzina_zapachow, MIN(p.cena) najmniej
+  FROM perfumy p
+  GROUP BY p.rodzina_zapachow
 )
 SELECT n.rodzina_zapachow, n.najmniej, p.nazwa_p
 FROM najtansze n
@@ -1245,8 +1245,8 @@ SELECT p.rodzina_zapachow, p.cena, p.nazwa_p
 FROM perfumy p
 WHERE p.cena = (
   SELECT MIN(p2.cena)
-	FROM perfumy p2
-	WHERE p.rodzina_zapachow = p2.rodzina_zapachow
+  FROM perfumy p2
+  WHERE p.rodzina_zapachow = p2.rodzina_zapachow
 )
 ```
 
@@ -1292,8 +1292,8 @@ FROM marki m
 WHERE NOT EXISTS (
   SELECT 1
   FROM sklad s
-	JOIN perfumy p ON s.id_perfum = p.id_perfum
-	WHERE p.id_marki = m.id_marki AND s.nazwa_skladnika LIKE "%paczula%"
+  JOIN perfumy p ON s.id_perfum = p.id_perfum
+  WHERE p.id_marki = m.id_marki AND s.nazwa_skladnika LIKE "%paczula%"
 )
 ORDER BY m.nazwa_m
 ```
@@ -1470,7 +1470,7 @@ JOIN komputery k ON a.Numer_komputera = k.Numer_komputera
 GROUP BY k.Sekcja, DATE(a.Czas_awarii)
 HAVING COUNT(*) = (
   SELECT COUNT(*)
-	FROM komputery k2
+  FROM komputery k2
   WHERE k2.Sekcja = k.Sekcja
 )
 ```
@@ -1639,9 +1639,9 @@ drużynę Galop Kucykowo.
 
 ```sql
 SELECT
-	CASE
-		WHEN w.Bramki_zdobyte > w.Bramki_stracone THEN "wygrane"
-	  WHEN w.Bramki_zdobyte = w.Bramki_stracone THEN "zremisowane"
+  CASE
+    WHEN w.Bramki_zdobyte > w.Bramki_stracone THEN "wygrane"
+    WHEN w.Bramki_zdobyte = w.Bramki_stracone THEN "zremisowane"
     ELSE "przegrane"
   END rezultat,
   COUNT(*) liczba
@@ -1741,8 +1741,8 @@ do 4 miejsc po przecinku.
 SELECT ROUND(AVG(liczba_osob), 4) srednia
 FROM (
   SELECT m.id_pok, COUNT(*) liczba_osob
-	FROM meldunek m
-	GROUP BY m.id_pok
+  FROM meldunek m
+  GROUP BY m.id_pok
 ) AS pokoje
 ```
 
@@ -1768,10 +1768,10 @@ Podaj liczbę kobiet i liczbę mężczyzn wśród studentów.
 
 ```sql
 SELECT
-	CASE
+  CASE
     WHEN (SUBSTR(s.pesel, 10, 1)) % 2 = 0 THEN "kobiet"
-		ELSE "mezczyzn"
-	END plec,
+    ELSE "mezczyzn"
+  END plec,
   COUNT(*) liczba
 FROM studenci s
 GROUP BY plec
@@ -1835,9 +1835,9 @@ funkcjonowało.
 SELECT SUM(liczba_ksiazek) liczba
 FROM (
   SELECT m.id_pok, COUNT(DISTINCT w.tytul) liczba_ksiazek
-	FROM wypozyczenia w
-	LEFT JOIN meldunek m ON w.pesel = m.pesel
-	GROUP BY m.id_pok
+  FROM wypozyczenia w
+  LEFT JOIN meldunek m ON w.pesel = m.pesel
+  GROUP BY m.id_pok
 ) AS ksiazki
 ```
 
@@ -1924,17 +1924,17 @@ zawierające nazwiska i imiona kierowców – zwycięzców klasyfikacji generaln
 
 ```sql
 WITH suma_punktow AS (
-	SELECT r.Rok, k.Imie, k.Nazwisko, SUM(w.Punkty) liczba_punktow
-	FROM wyniki w
-	JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
-	JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
+  SELECT r.Rok, k.Imie, k.Nazwisko, SUM(w.Punkty) liczba_punktow
+  FROM wyniki w
+  JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
+  JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
   WHERE r.Rok IN (2000, 2006, 2012)
   GROUP BY r.Rok, k.Id_kierowcy
 ),
 zwyciezcy AS (
   SELECT sp.Rok, MAX(sp.liczba_punktow) punkty
   FROM suma_punktow sp
-	GROUP BY sp.Rok
+  GROUP BY sp.Rok
 )
 SELECT r.Rok, k.Imie, k.Nazwisko, SUM(w.Punkty) punkty
 FROM wyniki w
@@ -1942,7 +1942,7 @@ JOIN kierowcy k ON w.Id_kierowcy = k.Id_kierowcy
 JOIN wyscigi r ON w.Id_wyscigu = r.Id_wyscigu
 GROUP BY r.Rok, k.Id_kierowcy
 HAVING punkty = (
-	SELECT z.punkty FROM zwyciezcy z WHERE z.Rok = r.Rok
+  SELECT z.punkty FROM zwyciezcy z WHERE z.Rok = r.Rok
 )
 ```
 
@@ -1993,5 +1993,239 @@ GROUP BY k.Kraj
 | Niemcy          | 4      |
 | Wenezuela       | 1      |
 | Wielka Brytania | 3      |
+
+</details>
+
+### Czerwiec 2022
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2022-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Ile meczów zakończyło się tzw. tie-breakiem, czyli rozegrano w nich dokładnie pięć setów?
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM mecze m
+WHERE m.Sety_wygrane + m.Sety_przegrane = 5
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 109    |
+
+</details>
+
+#### 6.2
+
+Utwórz zestawienie miast z liczbą rozegranych w nich meczów. Wyniki posortuj
+od największej liczby meczów do najmniejszej.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.Miasto, COUNT(*) liczba
+FROM mecze m
+JOIN kluby k ON m.Id_klubu = k.Id_klubu
+GROUP BY k.Miasto
+ORDER BY liczba DESC
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Miasto     | liczba |
+| ---------- | ------ |
+| Wiralow    | 41     |
+| Kukurykow  | 39     |
+| Szymbark   | 32     |
+| Preziowo   | 30     |
+| Bialowo    | 21     |
+| Gorkowo    | 18     |
+| Kielkowo   | 17     |
+| Licowo     | 15     |
+| Radelko    | 15     |
+| Sadelko    | 15     |
+| Koszalkowo | 15     |
+| Orecin     | 14     |
+| Barylkowo  | 14     |
+| Rezkow     | 13     |
+| Warkowo    | 13     |
+| Lewkowo    | 12     |
+
+</details>
+
+#### 6.3
+
+Podaj imiona i nazwiska sędziów, którzy poprowadzili więcej spotkań (meczów) niż średnia
+liczba spotkań przeprowadzonych przez jednego sędziego.
+
+<details>
+<summary>Comment</summary>
+
+The question asks for the first name and last name of the referees, but to get full points, we also need to include the number of matches each referee officiated. The expected answer format includes this extra column, so without it, we’d only get 2 out of 3 points - which feels a bit unfair.
+
+</details>
+
+<details>
+<summary>Solution (mine)</summary>
+
+```sql
+WITH srednia AS (
+  SELECT COUNT(*) / (SELECT COUNT(*) FROM sedziowie) sr
+  FROM mecze
+)
+SELECT s.Imie, s.Nazwisko
+FROM mecze m
+JOIN sedziowie s ON m.Id_sedziego = s.Id_sedziego
+GROUP BY s.Id_sedziego
+HAVING COUNT(*) > (SELECT sr FROM srednia)
+```
+
+</details>
+
+<details>
+<summary>Answer (mine)</summary>
+
+| Imie       | Nazwisko  |
+| ---------- | --------- |
+| Szymon     | Rutkowski |
+| Natalia    | Jankowska |
+| Kamila     | Majewska  |
+| Franciszek | Dudek     |
+| Monika     | Kowalczyk |
+| Barbara    | Kaczmarek |
+| Katarzyna  | Olszewska |
+
+</details>
+
+<details>
+<summary>Solution (theirs - expected)</summary>
+
+```sql
+WITH srednia AS (
+  SELECT COUNT(*) / (SELECT COUNT(*) FROM sedziowie) sr
+  FROM mecze
+)
+SELECT s.Imie, s.Nazwisko, COUNT(*) liczba
+FROM mecze m
+JOIN sedziowie s ON m.Id_sedziego = s.Id_sedziego
+GROUP BY s.Id_sedziego
+HAVING liczba > (SELECT sr FROM srednia)
+```
+
+</details>
+
+<details>
+<summary>Answer (theirs - expected)</summary>
+
+| Imie       | Nazwisko  | liczba |
+| ---------- | --------- | ------ |
+| Szymon     | Rutkowski | 21     |
+| Natalia    | Jankowska | 36     |
+| Kamila     | Majewska  | 21     |
+| Franciszek | Dudek     | 27     |
+| Monika     | Kowalczyk | 26     |
+| Barbara    | Kaczmarek | 21     |
+| Katarzyna  | Olszewska | 25     |
+
+</details>
+
+#### 6.4
+
+Podaj imiona i nazwiska sędziów, którzy nie prowadzili żadnego spotkania (meczu) ani
+w Licowie („Licowo”), ani w Szymbarku (”Szymbark”) w okresie od 15 października 2019 roku
+do 15 grudnia 2019 roku.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH spotkania AS (
+  SELECT m.Id_meczu, m.Id_sedziego
+  FROM mecze m
+  JOIN kluby k ON m.Id_klubu = k.Id_klubu
+  WHERE k.Miasto IN ("Licowo", "Szymbark") AND m.Data BETWEEN "2019-10-15" AND "2019-12-15"
+)
+SELECT s.Imie, s.Nazwisko
+FROM sedziowie s
+LEFT JOIN spotkania sp ON s.Id_sedziego = sp.Id_sedziego
+WHERE sp.Id_meczu IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie       | Nazwisko    |
+| ---------- | ----------- |
+| Jan        | Malinowski  |
+| Anna       | Nowak       |
+| Agnieszka  | Wieczorek   |
+| Kamila     | Majewska    |
+| Piotr      | Lewandowski |
+| Franciszek | Dudek       |
+| Barbara    | Kaczmarek   |
+| Zofia      | Grabowska   |
+
+</details>
+
+#### 6.5
+
+Spotkanie (mecz) jest wygrane, jeśli liczba wygranych setów w tym spotkaniu jest większa
+niż liczba setów przegranych. Utwórz zestawienie klubów, w przypadku których liczba
+wygranych spotkań jest większa lub równa liczbie spotkań przegranych. Dla każdego takiego
+klubu podaj jego nazwę, miasto oraz liczby spotkań wygranych i przegranych.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH wyniki AS (
+  SELECT m.Id_klubu,
+  CASE WHEN m.Sety_wygrane > m.Sety_przegrane THEN "wygrane" ELSE "przegrane" END wynik
+  FROM mecze m
+)
+SELECT
+  k.Nazwa, k.Miasto,
+  SUM(CASE WHEN w.wynik = "wygrane" THEN 1 ELSE 0 END) wygranych,
+  SUM(CASE WHEN w.wynik = "przegrane" THEN 1 ELSE 0 END) przegranych
+FROM wyniki w
+JOIN kluby k ON w.Id_klubu = k.Id_klubu
+GROUP BY w.Id_klubu
+HAVING wygranych >= przegranych
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Nazwa       | Miasto    | wygranych | przegranych |
+| ----------- | --------- | --------- | ----------- |
+| Sfinks      | Szymbark  | 9         | 7           |
+| Zenit       | Licowo    | 8         | 7           |
+| Victoria    | Radelko   | 10        | 5           |
+| Zjednoczeni | Kukurykow | 10        | 8           |
+| Olimpia     | Orecin    | 9         | 5           |
+| Stolar      | Wiralow   | 11        | 9           |
+| Astecja     | Rezkow    | 10        | 3           |
+| Bradownia   | Preziowo  | 9         | 9           |
+| Spirca      | Lewkowo   | 6         | 6           |
+| Huraganer   | Szymbark  | 8         | 8           |
+| Waleczni    | Preziowo  | 7         | 5           |
+| Libero      | Warkowo   | 8         | 5           |
 
 </details>
