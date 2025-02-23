@@ -3060,3 +3060,177 @@ WHERE w.Lp IS NULL
 | 72     |
 
 </details>
+
+### Czerwiec 2017
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2017-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Wyszukaj wszystkie programy z rodzaju edytor dokumentow tekstowych, które są
+zawarte przynajmniej w dwóch różnych pakietach. Utwórz zestawienie zawierające dla
+każdego z tych programów: jego nazwę, cenę oraz liczbę pakietów, w których jest zawarty.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT pr.program, pr.cena, COUNT(*) liczba_pakietow
+FROM zestawy z
+JOIN programy pr ON z.Id_programu = pr.Id_programu
+JOIN pakiety pa ON z.Id_pakietu = pa.Id_pakietu
+WHERE pr.rodzaj = "edytor dokumentow tekstowych"
+GROUP BY pr.Id_programu
+HAVING liczba_pakietow >= 2
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| program                   | cena | liczba_pakietow |
+| ------------------------- | ---- | --------------- |
+| Word                      | 120  | 4               |
+| Publisher                 | 170  | 3               |
+| Writer                    | 0    | 3               |
+| Foxit Redactor for Office | 1621 | 2               |
+
+</details>
+
+#### 6.2
+
+Podaj unikatową listę nazw pakietów zawierających takie programy, w których do opisu
+rodzaju użyto słowo: zarzadzanie (unikatowa lista zawiera elementy bez powtórzeń).
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT DISTINCT pa.nazwa_pakietu
+FROM zestawy z
+JOIN programy pr ON z.Id_programu = pr.Id_programu
+JOIN pakiety pa ON z.Id_pakietu = pa.Id_pakietu
+WHERE pr.rodzaj LIKE "%zarzadzanie%"
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_pakietu                           |
+| --------------------------------------- |
+| Calligra Suite                          |
+| gDOC                                    |
+| DocuPDF                                 |
+| GFI Security                            |
+| IBM Data Software                       |
+| OKAY                                    |
+| Sales Partner                           |
+| Subiekt                                 |
+| SolarWinds Systems Management           |
+| SolarWinds Free System Management Tools |
+
+</details>
+
+#### 6.3
+
+Dla każdego pakietu oblicz jego wartość, czyli sumę cen programów w nim zawartych.
+Utwórz zestawienie zawierające trzy najdroższe pakiety (o największych wartościach), dla
+każdego z nich podaj nazwę pakietu, nazwę firmy i wartość.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT pa.nazwa_pakietu, pa.firma, SUM(pr.cena) wartosc
+FROM zestawy z
+JOIN programy pr ON z.Id_programu = pr.Id_programu
+JOIN pakiety pa ON z.Id_pakietu = pa.Id_pakietu
+GROUP BY pa.Id_pakietu
+ORDeR BY wartosc DESC
+LIMIT 3
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_pakietu                 | firma        | wartosc |
+| ----------------------------- | ------------ | ------- |
+| SolarWinds Systems Management | SolarWinds   | 57520   |
+| MicroStation                  | Bentley      | 35736   |
+| GFI Security                  | GFI Software | 14811   |
+
+</details>
+
+#### 6.4
+
+Podaj nazwy wszystkich programów, które nie występują w żadnym pakiecie.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT pr.program
+FROM programy pr
+LEFT JOIN zestawy z ON pr.Id_programu = z.Id_programu
+WHERE z.Lp IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| program         |
+| --------------- |
+| Lightroom       |
+| Audition        |
+| Scribus         |
+| Adobe PageMaker |
+| QuarkXPress     |
+
+</details>
+
+#### 6.5
+
+Wyszukaj takie pakiety, które zawierają przynajmniej jeden program w cenie większej niż
+0 zł (komercyjny) i przynajmniej jeden program w cenie równej 0 zł (darmowy). Utwórz
+zestawienie, w którym podasz nazwy tych pakietów oraz liczbę programów komercyjnych,
+a także liczbę programów darmowych w nim zawartych dla każdego pakietu.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT pa.nazwa_pakietu,
+  SUM(CASE WHEN pr.cena = 0 THEN 1 ELSE 0 END) darmowych,
+  SUM(CASE WHEN pr.cena != 0 THEN 1 ELSE 0 END) komercyjnych
+FROM zestawy z
+JOIN programy pr ON z.Id_programu = pr.Id_programu
+JOIN pakiety pa ON z.Id_pakietu = pa.Id_pakietu
+GROUP BY pa.Id_pakietu
+HAVING darmowych >= 1 AND komercyjnych >= 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa_pakietu              | darmowych | komercyjnych |
+| -------------------------- | --------- | ------------ |
+| Expression Studio          | 1         | 3            |
+| Logo-Gry                   | 2         | 8            |
+| MicroStation               | 1         | 4            |
+| dbForge                    | 1         | 5            |
+| ApexSQL Developer          | 2         | 7            |
+| DaemonTools Lite           | 1         | 8            |
+| IconCool Software          | 1         | 4            |
+| Sothink Suite              | 1         | 6            |
+| Foxit PDF Development Kits | 1         | 2            |
+
+</details>
