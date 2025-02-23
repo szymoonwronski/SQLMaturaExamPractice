@@ -2832,3 +2832,231 @@ WHERE o.Status = "A" AND o.Pow > 180 AND o.L_laz >= 2
 | AB697DN   | 195 | 6       | 2     | 460000 | Karol     | Szwarc   |
 
 </details>
+
+### Czerwiec 2018
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2018-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 6.1
+
+Utwórz zestawienie zawierające następujące informacje: imię, nazwisko, nr rejestracyjny
+samochodu, czas wypożyczenia (różnica między datą wypożyczenia i datą zwrotu – liczba dób),
+należność za wypożyczenie. Wiersze posortuj rosnąco według nazwiska klienta, a następnie –
+według imienia klienta i numeru rejestracyjnego samochodu. Podaj pierwszy i ostatni wiersz
+z uzyskanej tabeli.
+**Uwaga**: dla daty wypożyczenia 2015-05-24 i daty zwrotu 2015-05-28 czas wypożyczenia to
+4 doby.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+(
+  SELECT k.Imie, k.Nazwisko, s.Nr_rej,
+    DATEDIFF(w.Zwrot, w.Wypozyczenie) czas,
+    c.Cena * DATEDIFF(w.Zwrot, w.Wypozyczenie) cena
+  FROM wypozyczenia w
+  JOIN samochody s ON w.Nr_ew = s.Nr_ew
+  JOIN klienci k ON w.Nr_klienta = k.Nr_klienta
+  JOIN ceny_za_dobe c ON LEFT(s.Nr_firmowy, 1) = c.Klasa
+  ORDER BY k.Nazwisko, k.Imie, s.Nr_rej
+  LIMIT 1
+)
+UNION
+(
+  SELECT k.Imie, k.Nazwisko, s.Nr_rej,
+    DATEDIFF(w.Zwrot, w.Wypozyczenie) czas,
+    c.Cena * DATEDIFF(w.Zwrot, w.Wypozyczenie) cena
+  FROM wypozyczenia w
+  JOIN samochody s ON w.Nr_ew = s.Nr_ew
+  JOIN klienci k ON w.Nr_klienta = k.Nr_klienta
+  JOIN ceny_za_dobe c ON LEFT(s.Nr_firmowy, 1) = c.Klasa
+  ORDER BY k.Nazwisko DESC, k.Imie DESC, s.Nr_rej DESC
+  LIMIT 1
+)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie    | Nazwisko | Nr_rej | czas | cena |
+| ------- | -------- | ------ | ---- | ---- |
+| Nela    | Aabacka  | WI1150 | 2    | 160  |
+| Aaricia | Zgbacka  | WI1126 | 11   | 880  |
+
+</details>
+
+#### 6.2
+
+Dla każdej klasy samochodu podaj liczbę wypożyczeń samochodów tej klasy.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT LEFT(s.Nr_firmowy, 1) klasa, COUNT(*) liczba
+FROM wypozyczenia w
+JOIN samochody s ON w.Nr_ew = s.Nr_ew
+GROUP BY klasa
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| klasa | liczba |
+| ----- | ------ |
+| B     | 100    |
+| C     | 48     |
+| D     | 53     |
+
+</details>
+
+#### 6.3
+
+Podaj imię i nazwisko osoby(osób), która(e) wypożyczała(y) samochody największą liczbę
+razy, oraz liczbę tych wypożyczeń.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH sq AS (
+  SELECT w.Nr_klienta, COUNT(*) liczba
+  FROM wypozyczenia w
+  GROUP BY w.Nr_klienta
+)
+SELECT k.Imie, k.Nazwisko, s.liczba
+FROM sq s
+JOIN klienci k ON s.Nr_klienta = k.Nr_klienta
+WHERE s.liczba = (SELECT MAX(liczba) FROM sq)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Imie   | Nazwisko | liczba |
+| ------ | -------- | ------ |
+| Ramzes | Hcbacki  | 5      |
+
+</details>
+
+#### 6.4
+
+Przygotuj zestawienie samochodów, które nie były wypożyczane. Podaj ich liczbę w podziale
+na klasy i miejscowości.
+
+<details>
+<summary>Comment</summary>
+
+Expected answer differs from mine.\
+They don't inlcude cars from those cities: Piarowa and Wielka Wola.\
+But I don't know why though, because I don't see any reason to do so.
+
+</details>
+
+<details>
+<summary>Solution - simple</summary>
+
+```sql
+SELECT s.Miejscowosc, LEFT(s.Nr_firmowy, 1) klasa, COUNT(*) liczba
+FROM samochody s
+LEFT JOIN wypozyczenia w ON s.Nr_ew = w.Nr_ew
+WHERE w.Lp IS NULL
+GROUP BY s.Miejscowosc, klasa
+```
+
+</details>
+
+<details>
+<summary>Answer (mine)</summary>
+
+| Miejscowosc  | klasa | liczba |
+| ------------ | ----- | ------ |
+| Aniolkowo    | B     | 12     |
+| Aniolkowo    | C     | 8      |
+| Aniolkowo    | D     | 7      |
+| Manipulatowo | B     | 31     |
+| Manipulatowo | C     | 14     |
+| Manipulatowo | D     | 11     |
+| Nieszczerzyn | B     | 17     |
+| Nieszczerzyn | C     | 9      |
+| Nieszczerzyn | D     | 4      |
+| Piarowa      | B     | 16     |
+| Piarowa      | C     | 18     |
+| Piarowa      | D     | 8      |
+| Wielka Wola  | B     | 25     |
+| Wielka Wola  | C     | 11     |
+| Wielka Wola  | D     | 7      |
+
+</details>
+
+<details>
+<summary>Solution - pivot</summary>
+
+```sql
+SELECT s.Miejscowosc,
+SUM(CASE WHEN LEFT(s.Nr_firmowy, 1) = "B" THEN 1 ELSE 0 END) B,
+SUM(CASE WHEN LEFT(s.Nr_firmowy, 1) = "C" THEN 1 ELSE 0 END) C,
+SUM(CASE WHEN LEFT(s.Nr_firmowy, 1) = "D" THEN 1 ELSE 0 END) D
+FROM samochody s
+LEFT JOIN wypozyczenia w ON s.Nr_ew = w.Nr_ew
+WHERE w.Lp IS NULL
+GROUP BY s.Miejscowosc
+```
+
+</details>
+
+<details>
+<summary>Answer (mine)</summary>
+
+| Miejscowosc  | B   | C   | D   |
+| ------------ | --- | --- | --- |
+| Aniolkowo    | 12  | 8   | 7   |
+| Manipulatowo | 31  | 14  | 11  |
+| Nieszczerzyn | 17  | 9   | 4   |
+| Piarowa      | 16  | 18  | 8   |
+| Wielka Wola  | 25  | 11  | 7   |
+
+</details>
+
+<details>
+<summary>Answer (thiers)</summary>
+
+| Miejscowosc  | B   | C   | D   |
+| ------------ | --- | --- | --- |
+| Aniolkowo    | 12  | 8   | 7   |
+| Manipulatowo | 31  | 14  | 11  |
+| Nieszczerzyn | 17  | 9   | 4   |
+
+</details>
+
+#### 6.5
+
+Podaj liczbę zarejestrowanych klientów, którzy nie wypożyczyli żadnego samochodu.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM klienci k
+LEFT JOIN wypozyczenia w ON k.Nr_klienta = w.Nr_klienta
+WHERE w.Lp IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 72     |
+
+</details>
