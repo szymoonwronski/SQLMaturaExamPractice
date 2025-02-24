@@ -3234,3 +3234,227 @@ HAVING darmowych >= 1 AND komercyjnych >= 1
 | Foxit PDF Development Kits | 1         | 2            |
 
 </details>
+
+### Czerwiec 2016
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2016-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 5.1
+
+Utwórz zestawienie zawierające nazwiska i imiona zdających, którzy zdawali egzamin
+maturalny z informatyki. Wyniki uporządkuj alfabetycznie według nazwisk zdających.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT m.Nazwisko, m.Imie
+FROM zdaje z
+JOIN maturzysta m ON z.Id_zdajacego = m.Id_zdajacego
+JOIN przedmioty p ON z.Id_przedmiotu = p.Id_przedmiotu
+WHERE p.Nazwa_przedmiotu = "informatyka"
+ORDER BY m.Nazwisko
+```
+
+</details>
+
+<details>
+
+<summary>Answer</summary>
+
+| Nazwisko   | Imie     |
+| ---------- | -------- |
+| Badowski   | Fryderyk |
+| Barszcz    | Tomasz   |
+| Makowicz   | Magda    |
+| Nowak      | Pawel    |
+| Nowakowski | Marek    |
+| Rybicka    | Maria    |
+| Wysocka    | Justyna  |
+
+</details>
+
+#### 5.2
+
+Podaj nazwę przedmiotu, który był zdawany najczęściej jako przedmiot dodatkowy, oraz
+liczbę osób, które go wybrały.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT p.Nazwa_przedmiotu, COUNT(*) liczba
+FROM zdaje z
+JOIN przedmioty p ON z.Id_przedmiotu = p.Id_przedmiotu
+WHERE p.Typ = "dodatkowy"
+GROUP BY p.Id_przedmiotu
+ORDER BY liczba DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Nazwa_przedmiotu        | liczba |
+| ----------------------- | ------ |
+| wiedza o spoleczenstwie | 8      |
+
+</details>
+
+#### 5.3
+
+Podaj nazwiska i imiona wszystkich zdających, którzy wybrali największą liczbę egzaminów
+maturalnych z przedmiotów dodatkowych, oraz podaj liczbę tych przedmiotów.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+WITH sq AS (
+  SELECT z.Id_zdajacego, COUNT(*) liczba
+  FROM zdaje z
+  JOIN przedmioty p ON z.Id_przedmiotu = p.Id_przedmiotu
+  WHERE p.Typ = "dodatkowy"
+  GROUP BY z.Id_zdajacego
+)
+SELECT m.Nazwisko, m.Imie, s.liczba
+FROM sq s
+JOIN maturzysta m ON s.Id_zdajacego = m.Id_zdajacego
+WHERE s.liczba = (SELECT MAX(liczba) FROM sq)
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Nazwisko | Imie   | liczba |
+| -------- | ------ | ------ |
+| Bajda    | Maria  | 3      |
+| Zalicki  | Marcin | 3      |
+| Baranska | Joanna | 3      |
+
+</details>
+
+#### 5.4
+
+Podaj nazwę przedmiotu dodatkowego, który nie został ani razu wybrany na egzaminie
+maturalnym.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT DISTINCT p.Nazwa_przedmiotu
+FROM przedmioty p
+LEFT JOIN zdaje z ON p.Id_przedmiotu = z.Id_przedmiotu
+WHERE z.Lp IS NULL
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| Nazwa_przedmiotu                  |
+| --------------------------------- |
+| jezyk lacinski i kultura antyczna |
+
+</details>
+
+#### 5.5
+
+Podaj imię i nazwisko najmłodszego maturzysty oraz nazwy przedmiotów dodatkowych, które
+ta osoba wybrała na egzaminie maturalnym.
+
+<details>
+<summary>Comment</summary>
+
+Expected answer doesn't check if the subject is additional or not.\
+But question clearly states that only additional subjects should be displayed.
+
+</details>
+
+<details>
+<summary>Solution (mine)</summary>
+
+```sql
+SELECT m.Imie, m.Nazwisko, p.Nazwa_przedmiotu
+FROM zdaje z
+JOIN przedmioty p ON z.Id_przedmiotu = p.Id_przedmiotu
+JOIN maturzysta m ON z.Id_zdajacego = m.Id_zdajacego
+WHERE p.Typ = "dodatkowy" AND m.Id_zdajacego = (
+  SELECT m.Id_zdajacego
+  FROM maturzysta m
+  ORDER BY m.Data_urodzenia DESC
+  LIMIT 1
+)
+```
+
+</details>
+
+<details>
+<summary>Answer (mine)</summary>
+
+| Imie  | Nazwisko   | Nazwa_przedmiotu |
+| ----- | ---------- | ---------------- |
+| Marek | Nowakowski | informatyka      |
+
+</details>
+
+<details>
+<summary>Solution (theirs)</summary>
+
+```sql
+SELECT m.Imie, m.Nazwisko, p.Nazwa_przedmiotu
+FROM zdaje z
+JOIN przedmioty p ON z.Id_przedmiotu = p.Id_przedmiotu
+JOIN maturzysta m ON z.Id_zdajacego = m.Id_zdajacego
+WHERE m.Id_zdajacego = (
+  SELECT m.Id_zdajacego
+  FROM maturzysta m
+  ORDER BY m.Data_urodzenia DESC
+  LIMIT 1
+)
+```
+
+</details>
+
+<details>
+<summary>Answer (theirs)</summary>
+
+| Imie  | Nazwisko   | Nazwa_przedmiotu |
+| ----- | ---------- | ---------------- |
+| Marek | Nowakowski | jezyk polski     |
+| Marek | Nowakowski | matematyka       |
+| Marek | Nowakowski | jezyk niemiecki  |
+| Marek | Nowakowski | informatyka      |
+
+</details>
+
+#### 5.6
+
+Podaj liczbę mężczyzn, którzy przystąpili do egzaminu maturalnego. Wykorzystaj
+przedostatnią cyfrę numeru PESEL, która tylko dla mężczyzn jest nieparzysta.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT COUNT(*) liczba
+FROM maturzysta m
+WHERE SUBSTR(m.PESEL, 10, 1) % 2 = 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| liczba |
+| ------ |
+| 180    |
+
+</details>
