@@ -3458,3 +3458,162 @@ WHERE SUBSTR(m.PESEL, 10, 1) % 2 = 1
 | 180    |
 
 </details>
+
+### Czerwiec 2015
+
+[View Matura](https://www.korepetycjezinformatyki.pl/wp-content/uploads/matury-czerwiec/informatyka-2015-czerwiec-matura-rozszerzona-2.pdf)
+
+#### 5.1
+
+Podaj nazwę wykroczenia, za które kierowcy byli najczęściej karani, oraz liczbę jego
+wystąpień.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT w.nazwa, COUNT(*) liczba
+FROM mandaty m
+JOIN wykroczenia w ON m.kod_wyk = w.kod_wyk
+GROUP BY w.kod_wyk
+ORDER BY liczba DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa                                                | liczba |
+| ---------------------------------------------------- | ------ |
+| Przekroczenie dopuszczalnej predkosci o 21 - 30 km/h | 77     |
+
+</details>
+
+#### 5.2
+
+Wykonaj zestawienie zawierające numery PESEL tych kierowców, którzy zdali egzamin na
+prawo jazdy w 2013 roku i otrzymali w sumie więcej niż 20 punktów karnych. Zestawienie
+powinno zawierać również uzyskane przez nich łączne liczby punktów karnych.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.pesel, SUM(w.punkty) liczba
+FROM mandaty m
+JOIN wykroczenia w ON m.kod_wyk = w.kod_wyk
+JOIN kierowcy k ON m.pesel = k.pesel
+WHERE YEAR(k.data_prawa_jazdy) = 2013
+GROUP BY k.pesel
+HAVING liczba > 20
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| pesel       | liczba |
+| ----------- | ------ |
+| 80062465997 | 27     |
+| 81011159031 | 32     |
+| 81011807736 | 26     |
+
+</details>
+
+#### 5.3
+
+Wykonaj zestawienie zawierające nazwy wszystkich wykroczeń, które w swojej nazwie
+zawierają tekst „naruszenie zakazu”. Przy wyszukiwaniu nazw wykroczeń nie rozróżniaj
+wielkości liter.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT w.nazwa
+FROM wykroczenia w
+WHERE w.nazwa LIKE "%naruszenie zakazu%"
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| nazwa                                                                                                |
+| ---------------------------------------------------------------------------------------------------- |
+| Naruszenie zakazu wyprzedzania pojazdu silnikowego przy dojezdzaniu do wierzcholka wzniesienia       |
+| Naruszenie zakazu wyprzedzania na zakretach oznaczonych znakami ostrzegawczymi                       |
+| Naruszenie zakazu wyprzedzania na skrzyzowaniach                                                     |
+| Naruszenie zakazu zawracania na autostradzie lub drodze ekspresowej                                  |
+| Naruszenie zakazu postoju w miejscach utrudniajacych wjazd lub wyjazd                                |
+| Naruszenie zakazu postoju w miejscach utrudniajacych dostep do innego prawidowo zaparkowanego pojadu |
+| Naruszenie zakazu postoju przed lub za przejazdem kolejowym                                          |
+| Naruszenie zakazu postoju w strefie zamieszkania w miejscach innych niz wyznaczone                   |
+| W czasie jazdy naruszenie zakazu palenia tytoniu lub spozywania pokarmow.                            |
+
+</details>
+
+#### 5.4
+
+Podaj, w którym miesiącu wypisano najmniej mandatów. Dla tego miesiąca podaj łączną
+kwotę mandatów oraz ich liczbę.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT MONTH(m.data_wyk) miesiac, SUM(w.mandat) suma, COUNT(*) liczba
+FROM mandaty m
+JOIN wykroczenia w ON m.kod_wyk = w.kod_wyk
+GROUP BY miesiac
+ORDER BY liczba
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| miesiac | suma  | liczba |
+| ------- | ----- | ------ |
+| 2       | 12750 | 63     |
+
+</details>
+
+#### 5.5
+
+Podaj liczbę kierowców, którzy nie otrzymali żadnego mandatu. Podaj miasto, z którego
+pochodzi najwięcej takich kierowców.
+
+<details>
+<summary>Solution</summary>
+
+```sql
+SELECT k.miasto,
+  (SELECT COUNT(*)
+  FROM kierowcy k2
+  LEFT JOIN mandaty m2 ON k2.pesel = m2.pesel
+  WHERE m2.lp IS NULL) liczba
+FROM kierowcy k
+LEFT JOIN mandaty m ON k.pesel = m.pesel
+WHERE m.lp IS NULL
+GROUP BY k.miasto
+ORDER BY COUNT(*) DESC
+LIMIT 1
+```
+
+</details>
+
+<details>
+<summary>Answer</summary>
+
+| miasto   | liczba |
+| -------- | ------ |
+| Warszawa | 190    |
+
+</details>
